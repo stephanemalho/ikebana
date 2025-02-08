@@ -18,3 +18,7 @@ body {
     color: var(--title);
     @apply font-semibold text-3xl;
 }
+
+.section-left-red {
+    @apply flex flex-col  justify-center items-center basis-2/5 bg-[#B1454A]
+}
