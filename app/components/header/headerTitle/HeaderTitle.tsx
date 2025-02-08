@@ -3,9 +3,9 @@ import React from 'react';
 
 const HeaderTitle = () => {
     return (
-        <section className="flex flex-col h-full justify-center items-center basis-2/5 bg-[#B1454A]">
+        <section className="section-left-red border-b-2 border-[#fff0de]">
             <h1 className="secondary-title">{stringHeader.title}</h1>
-            <p className="text-xs font-sans text-gray-300">
+            <p className="text-xs font-sans text-background">
                 {stringHeader.paragraph}
             </p>
         </section>
