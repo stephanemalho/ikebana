@@ -5,10 +5,16 @@
 :root {
     --background: #fff0de;
     --foreground: #171717;
+    --title: #fff;
 }
 
 body {
     color: var(--foreground);
     background: var(--background);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.secondary-title {
+    color: var(--title);
+    @apply font-semibold text-3xl;
 }

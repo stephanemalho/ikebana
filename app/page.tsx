@@ -1,7 +1,11 @@
+import Header from './components/header/Header';
+
 export default function Home() {
     return (
-        <main className="border-2 border-red-600 mx-6 flex">
-            <h1>IKEBANA OHARA</h1>
+        <main className="flex m-auto mx-6">
+            <div className="flex w-full h-screen max-w-[1460px] m-auto">
+                <Header />
+            </div>
         </main>
     );
 }
