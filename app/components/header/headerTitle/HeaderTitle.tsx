@@ -3,12 +3,12 @@ import React from 'react';
 
 const HeaderTitle = () => {
     return (
-        <section className="section-left-red border-b-2 border-[#fff0de]">
-            <h1 className="secondary-title">{stringHeader.title}</h1>
-            <p className="text-xs font-sans text-background">
+        <div className="header__logo flex flex-col align-center z-1">
+            <h4>{stringHeader.title}</h4>
+            <div data-aos="fade-down" className="text-pink-200">
                 {stringHeader.paragraph}
-            </p>
-        </section>
+            </div>
+        </div>
     );
 };
 

@@ -4,10 +4,7 @@ import React from 'react';
 const HeaderNav = () => {
     return (
         <nav className="flex flex-row w-full basis-3/5">
-            <ul className="flex flex-row justify-evenly items-center w-1/2 ml-auto">
-                <li>
-                    <a href="#discover">{stringHeader.nav.discover}</a>
-                </li>
+            <ul data-aos="fade-down" className="header__menu li flex flex-row justify-evenly items-center w-1/2 ml-auto ">
                 <li>
                     <a href="#course">{stringHeader.nav.course}</a>
                 </li>

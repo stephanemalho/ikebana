@@ -1,10 +1,12 @@
 import React from 'react';
+import Decoration from './left/Decoration';
+import Information from './right/Information';
 
 const Discover = () => {
     return (
-        <section className="flex flex-row w-full h-screen">
-            <article className="section-left-red ">prout</article>
-            <article className=""></article>
+        <section className="hero w-full">
+            <Decoration />
+            <Information />
         </section>
     );
 };

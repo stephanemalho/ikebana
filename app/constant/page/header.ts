@@ -4,6 +4,6 @@ export const stringHeader = {
     nav : {
         discover : "Découvrir",
         course : "Nos Cours",
-        contact : "Contacter IKUKO"
+        contact : "Me Contacter"
     }
 }
