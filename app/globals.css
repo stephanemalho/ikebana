@@ -4,13 +4,14 @@
 
 :root {
     --background: #fff0de;
-    --foreground: #672109;
+    --foreground: #4f0b06;
     --title: #fff;
     --playfair-display: 'Playfair Display', serif;
     --plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
 
-    --primary-color: #b1454a;
-    --secondary-color: #672109;
+    --primary-color: #ab060e;
+    --secondary-color: #4f0b06;
+    --tercary-color: #f0c8d9;
 
     --black-200: #020202;
     --black-300: #333333;
@@ -99,11 +100,10 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-
+    background-color: #fff;
     position: relative;
     z-index: 5;
 }
-
 
 .hero-image__overlay {
     position: absolute;
@@ -116,14 +116,20 @@ body {
 
 .hero-image h2 {
     position: absolute;
-    bottom: 0;
-    padding: 20px;
+    bottom: 20px;
+    padding: 40px 0 40px 20px;
 
     font-family: var(--playfair-display);
     font-weight: 700;
     font-size: 120px;
     line-height: 138px;
     color: #fff;
+}
+
+.hero-image img {
+    position: absolute;
+    top: -48px;
+    left: -10px;
 }
 
 .hero-content {
@@ -157,76 +163,94 @@ body {
     font-weight: 400;
 }
 
-.hero-content__buttons {
-    margin: 41px 0 0 41px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 36px;
-}
-
 .hero-content__order-button {
     padding: 20px;
+    margin-top: 50px;
     border-radius: 36px;
-    min-width: 212px;
+    min-width: 222px;
     outline: none;
     border: none;
-    background: var(--secondary-color);
-
-    cursor: pointer;
-
+    background: linear-gradient(
+        135deg,
+        var(--primary-color) 5%,
+        var(--secondary-color) 60%
+    );
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23px;
+    transition: all 0.2s ease-in-out;
+
+    /* Effet néomorphisme : relief subtil */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
+        /* Ombre externe */ -4px -4px 8px rgba(255, 255, 255, 0.5),
+        /* Lumière douce */ inset 2px 2px 4px rgba(0, 0, 0, 0.2),
+        /* Ombre interne pour volume */ inset -2px -2px 4px
+            rgba(255, 255, 255, 0.4);
+
+    /* Effet de lumière subtile */
+    position: relative;
+    overflow: hidden;
 }
 
-.hero-content__play-button {
-    border: none;
-    outline: none;
-    background: transparent;
-
-    display: flex;
-    align-items: center;
-
-    font-size: 16px;
-    line-height: 19px;
-    color: var(--black-200);
-    font-family: var(--plus-jakarta-sans);
-
-    cursor: pointer;
+.hero-content__order-button::before {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -30%;
+    width: 260%;
+    height: 160%;
+    background: radial-gradient(
+        circle,
+        rgba(240, 200, 217, 0.4) 0%,
+        rgba(240, 200, 217, 0) 80%
+    );
+    opacity: 0.8;
+    pointer-events: none;
+    border-radius: inherit;
+    animation: lightGlow 3s infinite linear;
 }
 
-.hero-content__play-button img {
-    margin-right: 12px;
+.hero-content__order-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.35),
+        -5px -5px 12px rgba(255, 255, 255, 0.6);
+}
 
-    width: 46px;
-    height: 46px;
-    object-fit: contain;
+/* Effet lors du clic (active) */
+.hero-content__order-button:active {
+    transform: scale(0.98); /* Équivalent à -1px environ */
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4),
+        -3px -3px 6px rgba(255, 255, 255, 0.5);
+    transition: transform 0.1s ease-out;
 }
 
 .hero-content__testimonial {
-    padding: 32px 64px;
+    padding: 30px;
 
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 
     background: var(--color-white);
 }
 
-.hero-content__customer {
-    flex: 1;
-    gap: 10px;
+.hero-content__experience {
+    flex-basis: 30%;
+    margin-left: 20px;
 }
 
-.hero-content__customer h4 {
+.hero-content__experience h4 {
     font-size: 62px;
     font-weight: 400;
     font-family: var(--playfair-display);
 }
 
-.hero-content__customer p {
+.hero-content__japanese-title {
+    text-shadow: 2px 2px 4px #4f0b06;
+}
+
+.hero-content__experience p {
     font-size: 16px;
     font-weight: 400;
     font-family: var(--plus-jakarta-sans);
@@ -234,24 +258,25 @@ body {
     opacity: 0.5;
 }
 
-.hero-content__review {
+.hero-content__customer {
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 20px;
 
     padding-left: 20px;
     border-left: 1px solid rgba(2, 2, 2, 0.1);
     min-width: 200px;
 }
 
-.hero-content__review img {
+.hero-content__customer img {
     width: 42px;
     height: 42px;
     object-fit: contain;
 }
 
-.hero-content__review p {
+.hero-content__customer p {
     font-size: 12px;
     font-weight: 400;
     line-height: 32px;
