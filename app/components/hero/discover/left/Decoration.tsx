@@ -12,14 +12,7 @@ const Decoration = () => {
                 width={700}
                 height={800}
             />
-            <h2 lang="ja" data-aos="fade-up" className="hero-content__japanese-title">
-                い <br />
-                け <br />
-                ば <br />
-                な <br />
-            </h2>
-
-            <div className="hero-image__overlay"></div>
+            <div className="hero-image__overlay"/>
         </div>
     );
 };

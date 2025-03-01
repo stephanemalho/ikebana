@@ -4,7 +4,7 @@ import Information from './right/Information';
 
 const Discover = () => {
     return (
-        <section className="hero w-full">
+        <section className="hero">
             <Decoration />
             <Information />
         </section>

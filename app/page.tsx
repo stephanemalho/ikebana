@@ -1,6 +1,7 @@
-import Header from './components/header/Header';
-import Discover from './components/hero/discover/Discover';
-import Container from './components/ui/Container';
+import AboutIkebana from "./components/aboutIkebana/AboutIkebana";
+import Header from "./components/header/Header";
+import Discover from "./components/hero/discover/Discover";
+import Container from "./components/ui/Container";
 
 export default function Home() {
     return (
@@ -10,6 +11,9 @@ export default function Home() {
             </Container>
             <Container>
                 <Discover />
+            </Container>
+            <Container>
+                <AboutIkebana />
             </Container>
         </main>
     );
