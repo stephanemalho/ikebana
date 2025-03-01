@@ -3,7 +3,7 @@ export const stringHeader = {
     paragraph : "Par Ikuko Kurenai KATO Sensei",
     nav : {
         discover : "Découvrir",
-        course : "Nos Cours",
+        course : "Créations",
         contact : "Me Contacter"
     }
 }

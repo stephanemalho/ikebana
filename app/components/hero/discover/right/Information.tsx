@@ -34,7 +34,7 @@ const Information = () => {
                         className="rounded-full"
                     />
                     <p>
-                        "J'ai redécouvert le style d'ikebana que l'on m'avait
+                        "Grâce à Kato Sensei, j'ai redécouvert le style d'ikebana que l'on m'avait
                         appris pendant ma vie au Japon"
                     </p>
                 </div>

@@ -6,7 +6,7 @@ const HeaderNav = () => {
         <nav className="flex flex-row w-full basis-3/5">
             <ul data-aos="fade-down" className="header__menu li flex flex-row justify-evenly items-center w-1/2 ml-auto ">
                 <li>
-                    <a href="#course">{stringHeader.nav.course}</a>
+                    <a href="#about-ikebana">{stringHeader.nav.course}</a>
                 </li>
                 <li>
                     <a href="#contact">{stringHeader.nav.contact}</a>
