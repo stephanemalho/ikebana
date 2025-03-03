@@ -5,10 +5,10 @@ const HeaderNav = () => {
     return (
         <nav className="flex flex-row w-full basis-3/5">
             <ul data-aos="fade-down" className="header__menu li flex flex-row justify-evenly items-center w-1/2 ml-auto ">
-                <li>
+                <li className="text-[--secondary-color] hover:text-white">
                     <a href="#about-ikebana">{stringHeader.nav.course}</a>
                 </li>
-                <li>
+                <li className="text-[--secondary-color] hover:text-white">
                     <a href="#contact">{stringHeader.nav.contact}</a>
                 </li>
             </ul>

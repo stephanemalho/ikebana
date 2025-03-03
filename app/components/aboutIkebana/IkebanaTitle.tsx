@@ -3,7 +3,7 @@ import React from "react";
 function IkebanaTitle() {
     return (
         <>
-            <h1 data-aos="fade" className="text-2xl text-white mb-5">
+            <h1 data-aos="fade" className="text-2xl text-[--secondary-color] mb-5">
                 Évadez-vous avec vos propres créations florales et révélez votre
                 talent
             </h1>

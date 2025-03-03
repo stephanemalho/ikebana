@@ -26,7 +26,7 @@ function IkebanaCarousel() {
                             className="w-full h-auto object-cover"
                             loading="lazy"
                         />
-                        <figcaption className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/50 text-white px-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <figcaption className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/50 text-white px-4 hover:opacity-0 opacity-100 hover:transition-opacity duration-300">
                             <h3 className="text-xl font-bold">{item.title}</h3>
                             <p className="text-sm mt-2">{item.description}</p>
                         </figcaption>

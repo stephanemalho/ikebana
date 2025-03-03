@@ -5,7 +5,7 @@ const HeaderTitle = () => {
     return (
         <div className="header__logo flex flex-col align-center z-1">
             <h4>{stringHeader.title}</h4>
-            <div data-aos="fade-down" className="text-[--tercary-color]">
+            <div data-aos="fade-down" className="text-[--title-color ]">
                 {stringHeader.paragraph}
             </div>
         </div>

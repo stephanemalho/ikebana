@@ -4,9 +4,9 @@ const Information = () => {
             <div className="hero-content-info" data-aos="fade-left">
                 <h1>
                     L'
-                    <span className="text-[--primary-color]">Ikebana</span> dans
-                    le style traditionel{' '}
-                    <span className="text-[--primary-color]">Ohara</span>
+                    <span className="text-[#b75d71]">Ikebana</span> dans
+                    le style traditionel{" "}
+                    <span className="text-[#b75d71]">Ohara</span>
                 </h1>
                 <p>
                     Plongez dans l’art raffiné de l’Ikebana, où chaque fleur
@@ -15,9 +15,11 @@ const Information = () => {
                 </p>
 
                 <div className="hero-content__buttons">
-                    <button className="hero-content__order-button">
-                        Découvrir les cours
-                    </button>
+                    <a href="#cours">
+                        <button className="hero-content__order-button">
+                            Découvrir les cours
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -34,8 +36,9 @@ const Information = () => {
                         className="rounded-full"
                     />
                     <p>
-                        "Grâce à Kato Sensei, j'ai redécouvert le style d'ikebana que l'on m'avait
-                        appris pendant ma vie au Japon"
+                        "Grâce à Kato Sensei, j'ai redécouvert le style
+                        d'ikebana que l'on m'avait appris pendant ma vie au
+                        Japon"
                     </p>
                 </div>
             </div>
