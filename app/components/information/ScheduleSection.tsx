@@ -10,10 +10,10 @@ export function ScheduleSection() {
         <div className="flex flex-col items-start gap-4 md:gap-8">
           <div className="grid gap-1">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[--secondary-color]">
-              Vos cours d&apos;Ikebana
+              Nos cours d&apos;Ikebana
             </h2>
             <p className="text-xl text-[--secondary-color] font-[var(--plus-jakarta-sans)]">
-              Découvrez nos horaires et dates pour l&apos;année 2024/2025
+              Découvrez les horaires et dates pour l&apos;année 2024/2025
             </p>
           </div>
 

@@ -10,7 +10,7 @@ export const carouselItems = [
         imageUrl: "/images/arranged-leaves-flowers-with-scissors.jpg",
         altText: "Ikebana arrangement",
         title: "Équilibre et simplicité",
-        description: "Découvrez la beauté des lignes et l’harmonie parfaite des formes.",
+        description: "Le matériel vous est fourni, venez comme vous êtes.",
     },
     {
         imageUrl: "/images/branches-plant-white-flowerpot-with-hanging-hearts.jpg",

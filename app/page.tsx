@@ -1,6 +1,7 @@
 import AboutIkebana from "./components/aboutIkebana/AboutIkebana";
 import Header from "./components/header/Header";
 import Discover from "./components/hero/discover/Discover";
+import { ContactForm } from "./components/information/ContactForm";
 import { PricingSection } from "./components/information/PricingSection";
 import { ScheduleSection } from "./components/information/ScheduleSection";
 import Container from "./components/ui/Container";
@@ -22,6 +23,9 @@ export default function Home() {
             </Container>
             <Container>
                 <PricingSection />
+            </Container>
+            <Container>
+                <ContactForm />
             </Container>
         </main>
     );

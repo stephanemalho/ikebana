@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-    --background: #fff0de;
+    --background: #f9f5f0;
     --foreground: #4f0b06;
 
     --title: #fff;
@@ -21,7 +21,7 @@
     --gray-100: #888888;
 
     --color-white: #fff;
-    --color-creamson: #fff0de;
+    --color-creamson: #f5f9f0;
 
     --card: 0 0% 100%;
         --card-foreground: 0 0% 3.9%;
@@ -197,15 +197,6 @@ body {
     font-size: 18px;
     line-height: 23px;
     transition: all 0.2s ease-in-out;
-
-    /* Effet néomorphisme : relief subtil */
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
-        /* Ombre externe */ -4px -4px 8px rgba(255, 255, 255, 0.5),
-        /* Lumière douce */ inset 2px 2px 4px rgba(0, 0, 0, 0.2),
-        /* Ombre interne pour volume */ inset -2px -2px 4px
-            rgba(255, 255, 255, 0.4);
-
-    /* Effet de lumière subtile */
     position: relative;
     overflow: hidden;
 }
@@ -217,11 +208,6 @@ body {
     left: -30%;
     width: 260%;
     height: 160%;
-    background: radial-gradient(
-        circle,
-        rgba(240, 200, 217, 0.4) 0%,
-        rgba(240, 200, 217, 0) 80%
-    );
     opacity: 0.8;
     pointer-events: none;
     border-radius: inherit;
@@ -230,15 +216,13 @@ body {
 
 .hero-content__order-button:hover {
     /* transform: translateY(1px); */
-    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.35),
-        -5px -5px 12px rgba(255, 255, 255, 0.6);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35),
+        -2px -2px 3px rgba(255, 255, 255, 0.6);
 }
 
 /* Effet lors du clic (active) */
 .hero-content__order-button:active {
     transform: scale(0.98); /* Équivalent à -1px environ */
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4),
-        -3px -3px 6px rgba(255, 255, 255, 0.5);
     transition: transform 0.1s ease-out;
 }
 
