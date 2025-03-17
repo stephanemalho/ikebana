@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Information = () => {
     return (
         <div className="hero-content">
@@ -30,15 +32,17 @@ const Information = () => {
                 </div>
 
                 <div className="hero-content__customer">
-                    <img
+                    <Image
                         src="/assets/user.jpg"
                         alt="user testimonial"
                         className="rounded-full"
+                        width={42}
+                        height={42}
                     />
                     <p>
-                        "Grâce à Kato Sensei, j&apos;ai redécouvert le style
+                        &quot;Grâce à Kato Sensei, j&apos;ai redécouvert le style
                         d&apos;ikebana que l&apos;on m&apos;avait appris pendant ma vie au
-                        Japon"
+                        Japon&quot;
                     </p>
                 </div>
             </div>
