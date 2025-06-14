@@ -12,7 +12,7 @@ const Information = () => {
                 <p>
                     L&apos;école Ohara (小原流, Ohara-ryū) est l&apos;une des principales écoles d&apos;Ikebana au Japon, fondée à la fin du XIXe siècle (vers 1895) par Unshin Ohara.
                 </p><p>
-                    Contrairement aux styles plus anciens et très codifiés (comme Ikenobō), l'école Ohara est moderne, naturaliste et expressive. Elle a révolutionné l'ikebana en introduisant une approche plus libre et inspirée de la nature.
+                    Contrairement aux styles plus anciens et très codifiés (comme Ikenobō), l&apos;école Ohara est moderne, naturaliste et expressive. Elle a révolutionné l&apos;ikebana en introduisant une approche plus libre et inspirée de la nature.
                 </p>
 
                 <div className="hero-content__buttons">

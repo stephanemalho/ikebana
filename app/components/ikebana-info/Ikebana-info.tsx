@@ -11,7 +11,7 @@ function IkebanaInfo() {
                             className="text-4xl md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
-                            Qu'est-ce que l'Ikebana ?
+                            Qu&apos;est-ce que l&apos;Ikebana ?
                         </h2>
                         <div className="w-24 h-1 bg-[var(--secondary-color)] mx-auto"></div>
                     </div>
@@ -35,14 +35,14 @@ function IkebanaInfo() {
                                 className="text-[var(--secondary-color)] leading-relaxed mb-4"
                                 style={{ fontFamily: "var(--plus-jakarta-sans)" }}
                             >
-                                L'Ikebana, l'un des arts traditionnels du Japon, se pratique depuis plus de <strong>600 ans</strong>. Il
+                                L&apos;Ikebana, l&apos;un des arts traditionnels du Japon, se pratique depuis plus de <strong>600 ans</strong>. Il
                                 tire son origine des premières offrandes de fleurs aux morts dans les rites bouddhistes.
                             </p>
                             <p
                                 className="text-[var(--secondary-color)] leading-relaxed"
                                 style={{ fontFamily: "var(--plus-jakarta-sans)" }}
                             >
-                                Vers le milieu du XVème siècle, l'Ikebana obtint son statut d'art à part entière, indépendant de ses
+                                Vers le milieu du XVème siècle, l&apos;Ikebana obtint son statut d&apos;art à part entière, indépendant de ses
                                 origines religieuses, tout en conservant ses nuances symboliques et philosophiques.
                             </p>
                         </div>
@@ -62,7 +62,7 @@ function IkebanaInfo() {
                                 className="text-[var(--secondary-color)] text-sm leading-relaxed"
                                 style={{ fontFamily: "var(--plus-jakarta-sans)" }}
                             >
-                                Créer une beauté qui n'existe pas dans la nature, en utilisant l'asymétrie et l'espace vide comme
+                                Créer une beauté qui n&apos;existe pas dans la nature, en utilisant l&apos;asymétrie et l&apos;espace vide comme
                                 éléments essentiels.
                             </p>
                         </div>
@@ -102,7 +102,7 @@ function IkebanaInfo() {
                                     className="text-2xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--playfair-display)" }}
                                 >
-                                    L'École Ohara
+                                    L&apos;École Ohara
                                 </h3>
                             </div>
                             <div className="grid md:grid-cols-2 gap-6">
@@ -138,7 +138,7 @@ function IkebanaInfo() {
                             className="text-3xl font-bold text-[var(--secondary-color)] mb-8 text-center"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
-                            Le Chemin de l'Apprentissage
+                            Le Chemin de l&apos;Apprentissage
                         </h3>
 
                         <div className="grid md:grid-cols-3 gap-8">
@@ -153,8 +153,8 @@ function IkebanaInfo() {
                                     Observation
                                 </h4>
                                 <p className="text-sm text-[var(--secondary-color)] leading-relaxed">
-                                    L'observation de la nature est essentielle : changements de saisons, croissance des plantes, beauté de
-                                    l'environnement.
+                                    L&apos;observation de la nature est essentielle : changements de saisons, croissance des plantes, beauté de
+                                    l&apos;environnement.
                                 </p>
                             </div>
 
@@ -198,8 +198,8 @@ function IkebanaInfo() {
                             className="text-xl md:text-2xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
-                            "Ce qui distingue l'Ikebana d'une simple décoration, c'est sa forme asymétrique et l'utilisation de
-                            l'espace vide comme donnée essentielle de la composition."
+                            "Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de
+                            l&apos;espace vide comme donnée essentielle de la composition."
                         </blockquote>
                     </div>
                 </div>
