@@ -1,20 +1,22 @@
 import Image from 'next/image';
 import React from 'react';
 
+import SakuraPetals from './SakuraPetals';
+
 const Decoration = () => {
     return (
-        <div className="hero-image">
+        <div className="hero-image relative">
             <Image
-                src="/assets/cherry.png"
-                alt="sushi"
-                data-aos="fade-up"
-                className="md:left-3"
+                src="/assets/sakura-hero-section.png"
+                alt="sakura branch"
                 width={700}
-                height={800}
+                height={100}
+                className=""
+                priority
             />
-            <div className="hero-image__overlay"/>
+            <SakuraPetals />
+            <div className="hero-image__overlay" />
         </div>
     );
 };
-
 export default Decoration;

@@ -1,12 +1,8 @@
-import Image from "next/image";
-import React from "react";
-
 function IkebanaTitle() {
     return (
         <>
-            <h1 data-aos="fade" className="text-2xl text-[--secondary-color] mb-5">
-                Évadez-vous avec vos propres créations florales et révélez votre
-                talent
+            <h1 data-aos="fade" className="text-2xl text-[--secondary-color] mb-5 text-center">
+                L'ikebana symbolise geste de concentration et de pleine conscience, une offrande au moment présent
             </h1>
             {/* <div data-aos="fade-right" className="absolute bottom-6 left-7">
                 <h2 lang="ja" className="text-white text-5xl">
@@ -14,7 +10,7 @@ function IkebanaTitle() {
                 </h2>
             </div> */}
         </>
-    );
+    )
 }
 
-export default IkebanaTitle;
+export default IkebanaTitle
