@@ -198,8 +198,8 @@ function IkebanaInfo() {
                             className="text-xl md:text-2xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
-                            "Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de
-                            l&apos;espace vide comme donnée essentielle de la composition."
+                            &quot;Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de
+                            l&apos;espace vide comme donnée essentielle de la composition.&quot;
                         </blockquote>
                     </div>
                 </div>
