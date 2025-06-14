@@ -9,7 +9,7 @@ function AboutIkebana() {
             id="about-ikebana"
         >
             <IkebanaTitle />
-            <figure className="w-full max-w-[90%] md:max-w-[60%]">
+            <figure className="w-full max-w-[100%]">
                 <IkebanaCarousel />
             </figure>
         </section>
