@@ -58,11 +58,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header__nav {
-    background-color: var(--background);
+/* .header__nav {
     display: flex;
     overflow: hidden;
-}
+} */
 
 .header__logo h4 {
     font-weight: 700;
@@ -153,7 +152,6 @@ body {
 }
 
 .hero-content-info {
-    padding: 64px;
     flex: 1;
     display: flex;
     justify-content: top;
@@ -161,7 +159,6 @@ body {
 }
 
 .hero-content-info h1 {
-    font-size: 80px;
     font-weight: 600px;
     font-family: var(--playfair-display);
     color: var(--secondary-color);

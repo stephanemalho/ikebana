@@ -1,34 +1,24 @@
-import AboutIkebana from "./components/aboutIkebana/AboutIkebana";
+import ImageIkebana from "./components/imageIkebana/ImageIkebana";
 import Header from "./components/header/Header";
 import Discover from "./components/hero/discover/Discover";
 import IkebanaInfo from "./components/ikebana-info/Ikebana-info";
 import { ContactForm } from "./components/information/ContactForm";
-import { PricingSection } from "./components/information/PricingSection";
 import { ScheduleSection } from "./components/information/ScheduleSection";
 import Container from "./components/ui/Container";
 
 export default function Home() {
     return (
         <main>
-            <Container>
-                <Header />
-            </Container>
+            <Header />
             <Container>
                 <Discover />
             </Container>
             <Container>
-                <AboutIkebana />
+                <ImageIkebana />
             </Container>
             <IkebanaInfo />
-            <Container>
-                <ScheduleSection />
-            </Container>
-            <Container>
-                <PricingSection />
-            </Container>
-            <Container>
-                <ContactForm />
-            </Container>
+            <ScheduleSection />
+            <ContactForm />
         </main>
     );
 }

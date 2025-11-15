@@ -4,7 +4,7 @@ import type React from "react";
 
 import { useState } from "react";
 import Image from "next/image";
-import { Send, MapPin } from "lucide-react";
+import { Send } from "lucide-react";
 import {
     Card,
     CardContent,
@@ -16,13 +16,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
+import Container from "../ui/Container"
+
 
 export function ContactForm() {
     const [formData, setFormData] = useState({
         email: "",
-        location: "paris",
         message: ""
     });
 
@@ -39,71 +39,67 @@ export function ContactForm() {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleRadioChange = (value: string) => {
-        setFormData((prev) => ({ ...prev, location: value }));
-    };
-
     return (
         <section id="contact" className="w-full py-12 bg-[#f7e5e6]">
-            <div className="container px-4 md:px-6">
-                <div className="flex flex-col items-start gap-4 md:gap-8 mb-10">
-                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold  text-[#4f0b06]">
-                        En savoir plus
-                    </h2>
-                </div>
+            <Container>
+                <div className="container px-4 md:px-6 m-auto">
+                    <div className="flex flex-col items-start gap-4 md:gap-8 mb-10">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold  text-[#4f0b06]">
+                            En savoir plus
+                        </h2>
+                    </div>
 
-                <Card className="overflow-hidden border-none shadow-lg">
-                    <div className="flex flex-col md:flex-row">
-                        {/* Image section - 1/3 width on desktop */}
-                        <div className="w-full md:w-1/3 relative min-h-[400px] md:min-h-full flex items-center justify-center p-6">
-                            <div className="relative w-full h-full">
-                                <Image
-                                    src="/assets/7797779.jpg"
-                                    alt="Arrangement Ikebana avec vase vert et fleurs blanches"
-                                    fill
-                                    style={{ objectFit: "contain" }}
-                                    className="rounded-lg"
-                                />
+                    <Card className="overflow-hidden border-none shadow-lg">
+                        <div className="flex flex-col md:flex-row">
+                            {/* Image section - 1/3 width on desktop */}
+                            <div className="hidden md:flex w-full md:w-1/3 relative min-h-[400px] md:min-h-full items-center justify-center p-6">
+                                <div className="relative w-full h-full">
+                                    <Image
+                                        src="/assets/7797779.jpg"
+                                        alt="Arrangement Ikebana avec vase vert et fleurs blanches"
+                                        fill
+                                        style={{ objectFit: "contain" }}
+                                        className="rounded-lg"
+                                    />
+                                </div>
                             </div>
-                        </div>
 
-                        {/* Form section - 2/3 width on desktop */}
-                        <div className="w-full md:w-2/3 bg-white">
-                            <CardHeader className="bg-white">
-                                <CardTitle className="text-2xl font-[var(--playfair-display)] text-[#4f0b06]">
-                                    Echangeons ensemble
-                                </CardTitle>
-                                <CardDescription className="text-[#4f0b06]/70">
-                                    Ce formulaire vous permet de contacter
-                                    l&apos;école tenri de Paris 1er concernant les
-                                    cours d&apos;Ikebana.
-                                </CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <form
-                                    onSubmit={handleSubmit}
-                                    className="space-y-6"
-                                >
-                                    <div className="space-y-2">
-                                        <Label
-                                            htmlFor="email"
-                                            className="text-[#4f0b06]"
-                                        >
-                                            Email
-                                        </Label>
-                                        <Input
-                                            id="email"
-                                            name="email"
-                                            type="email"
-                                            placeholder="votre@email.com"
-                                            required
-                                            className="border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
-                                            value={formData.email}
-                                            onChange={handleChange}
-                                        />
-                                    </div>
+                            {/* Form section - 2/3 width on desktop */}
+                            <div className="w-full md:w-2/3 bg-white">
+                                <CardHeader className="bg-white">
+                                    <CardTitle className="text-2xl font-[var(--playfair-display)] text-[#4f0b06]">
+                                        Echangeons ensemble
+                                    </CardTitle>
+                                    <CardDescription className="text-[#4f0b06]/70">
+                                        Ce formulaire vous permet de contacter Ikuko Kato concernant les
+                                        cours d&apos;Ikebana.
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    <form
+                                        onSubmit={handleSubmit}
+                                        className="space-y-6"
+                                    >
+                                        <div className="space-y-2">
+                                            <Label
+                                                htmlFor="email"
+                                                className="text-[#4f0b06]"
+                                            >
+                                                Email
+                                            </Label>
+                                            <Input
+                                                id="email"
+                                                name="email"
+                                                type="email"
+                                                placeholder="votre@email.com"
+                                                required
+                                                className="border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
+                                                value={formData.email}
+                                                onChange={handleChange}
+                                            />
+                                        </div>
 
-                                    <div className="space-y-3">
+                                        {/* <div className="space-y-3">
                                         <Label className="text-[#4f0b06] block mb-2">
                                             Pour quelle cours souhaitez-vous
                                             vous rensigner ?
@@ -143,58 +139,44 @@ export function ContactForm() {
                                                 </Label>
                                             </div>
                                         </RadioGroup>
-                                    </div>
+                                    </div> */}
 
-                                    <div className="space-y-2">
-                                        <Label
-                                            htmlFor="message"
-                                            className="text-[#4f0b06]"
-                                        >
-                                            Message (optionnel)
-                                        </Label>
-                                        <Textarea
-                                            id="message"
-                                            name="message"
-                                            placeholder="Votre message ou question..."
-                                            className="min-h-[120px] border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
-                                            value={formData.message}
-                                            onChange={handleChange}
-                                        />
+                                        <div className="space-y-2">
+                                            <Label
+                                                htmlFor="message"
+                                                className="text-[#4f0b06]"
+                                            >
+                                                Message (optionnel)
+                                            </Label>
+                                            <Textarea
+                                                id="message"
+                                                name="message"
+                                                placeholder="Votre message ou question..."
+                                                className="min-h-[120px] border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
+                                                value={formData.message}
+                                                onChange={handleChange}
+                                            />
+                                        </div>
+                                    </form>
+                                </CardContent>
+                                <CardFooter className="flex justify-between border-t border-[#f0c8d9]/30 pt-6">
+                                    <div className="text-sm text-[#4f0b06]/70 font-[var(--plus-jakarta-sans)]">
+                                        <span className="text-red-500">* </span>{" "}
+                                        Tous les champs sont obligatoires sauf
+                                        indication contraire
                                     </div>
-                                </form>
-                            </CardContent>
-                            <CardFooter className="flex justify-between border-t border-[#f0c8d9]/30 pt-6">
-                                <div className="text-sm text-[#4f0b06]/70 font-[var(--plus-jakarta-sans)]">
-                                    <span className="text-red-500">* </span>{" "}
-                                    Tous les champs sont obligatoires sauf
-                                    indication contraire
-                                </div>
-                                <Button
-                                    onClick={handleSubmit}
-                                    className="hero-content__order-button bg-gradient-to-r from-[#b75d71] to-[#b75d71] text-white"
-                                >
-                                    <Send className="mr-2 h-4 w-4" /> Envoyer
-                                </Button>
-                            </CardFooter>
+                                    <Button
+                                        onClick={handleSubmit}
+                                        className="hero-content__order-button bg-gradient-to-r from-[#b75d71] to-[#b75d71] text-white"
+                                    >
+                                        <Send className="mr-2 h-4 w-4" /> Envoyer
+                                    </Button>
+                                </CardFooter>
+                            </div>
                         </div>
-                    </div>
-                </Card>
-
-                <div className="mt-10 text-center text-[#4f0b06]/80 font-[var(--plus-jakarta-sans)]">
-                    <p>
-                        Vous pouvez également me contacter directement par email
-                        à{" "}
-                        <span className="font-semibold">
-                            <a
-                                className="hover:underline"
-                                href="mailto:ikuko.kato@free.fr"
-                            >
-                                ikuko.kato@free.fr
-                            </a>
-                        </span>
-                    </p>
+                    </Card>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 }

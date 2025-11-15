@@ -3,8 +3,8 @@ import Image from "next/image";
 const Information = () => {
     return (
         <div className="hero-content">
-            <div className="hero-content-info" data-aos="fade-left">
-                <h1>
+            <div className="hero-content-info p-4 lg:p-16" data-aos="fade-left">
+                <h1 className="text-4xl lg:text-8xl">
                     École
                     <span className="text-[#b75d71]"> Ohara</span> chapitre{" "}
                     <span className="text-[#b75d71]">Yvelines Paris</span>
@@ -13,6 +13,9 @@ const Information = () => {
                     L&apos;école Ohara (小原流, Ohara-ryū) est l&apos;une des principales écoles d&apos;Ikebana au Japon, fondée à la fin du XIXe siècle (vers 1895) par Unshin Ohara.
                 </p><p>
                     Contrairement aux styles plus anciens et très codifiés (comme Ikenobō), l&apos;école Ohara est moderne, naturaliste et expressive. Elle a révolutionné l&apos;ikebana en introduisant une approche plus libre et inspirée de la nature.
+                </p>
+                <p>
+                    Nous proposons des cours d&apos;ikebana adaptés à tous les niveaux, du débutant au confirmé.
                 </p>
 
                 <div className="hero-content__buttons">
@@ -24,7 +27,7 @@ const Information = () => {
                 </div>
             </div>
 
-            <div className="hero-content__testimonial" data-aos="fade-up">
+            {/* <div className="hero-content__testimonial" data-aos="fade-up">
                 <div className="hero-content__experience flex-center">
                     <h4>+24</h4>
                     <p>Ans d&apos;expérience</p>
@@ -44,7 +47,7 @@ const Information = () => {
                         Japon&quot;
                     </p>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 };
