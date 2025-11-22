@@ -16,7 +16,7 @@ export type carouselMetadataType = {
 export const carouselIkebanaData: carouselMetadataType = {
     title: "Créations Ikebana - École Ohara",
     description:
-        "Retrouvez ici un catalogue des principales compositions d'ikebana réalisées par Ikuko Kato, instructrice certifiée de l'école Ohara. Chaque arrangement floral illustre l'harmonie entre la nature et l'art, mettant en valeur la beauté éphémère des fleurs et des plantes.",
+        "Retrouvez ici les principales compositions d'ikebana réalisées par Ikuko Kato, instructrice certifiée de l'école Ohara. Chaque arrangement floral illustre l'harmonie entre la nature et l'art, mettant en valeur la beauté éphémère des fleurs et des plantes.",
     items: [
         {
             imageUrl: "/images/ikebana-creation/heika-4-saisons.webp",
