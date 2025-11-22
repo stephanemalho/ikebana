@@ -2,17 +2,22 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { carouselItems } from "./carouselConfig"
+import { carouselItemType } from "./carouselConfig"
 
-function IkebanaCarousel() {
+type IkebanaCarouselProps = {
+    imagesToDisplay : carouselItemType[]
+}
+
+function IkebanaCarousel({ imagesToDisplay } : IkebanaCarouselProps ) {
     const [activeIndex, setActiveIndex] = useState(0)
     const [previousIndex, setPreviousIndex] = useState<number | null>(null)
+    const displayImages = imagesToDisplay;
 
     // Animation automatique toutes les 2 secondes
     useEffect(() => {
         const interval = setInterval(() => {
             setPreviousIndex(activeIndex)
-            setActiveIndex((prev) => (prev + 1) % carouselItems.length)
+            setActiveIndex((prev) => (prev + 1) % displayImages.length)
         }, 10000)
         return () => clearInterval(interval)
     }, [activeIndex])
@@ -29,8 +34,8 @@ function IkebanaCarousel() {
                 {/* Image actuelle */}
                 <Image
                     key={activeIndex}
-                    src={carouselItems[activeIndex].imageUrl || "/placeholder.svg"}
-                    alt={carouselItems[activeIndex].altText}
+                    src={displayImages[activeIndex].imageUrl || "/placeholder.svg"}
+                    alt={displayImages[activeIndex].altText}
                     fill
                     className="object-cover absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-20"
                     priority
@@ -40,8 +45,8 @@ function IkebanaCarousel() {
                 {previousIndex !== null && (
                     <Image
                         key={`prev-${previousIndex}`}
-                        src={carouselItems[previousIndex].imageUrl || "/placeholder.svg"}
-                        alt={carouselItems[previousIndex].altText}
+                        src={displayImages[previousIndex].imageUrl || "/placeholder.svg"}
+                        alt={displayImages[previousIndex].altText}
                         fill
                         className="object-cover absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-10"
                     />
@@ -49,15 +54,15 @@ function IkebanaCarousel() {
 
                 {/* Overlay texte toujours au-dessus */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/40 text-white px-4 transition-opacity duration-300 hover:bg-black/60 z-30">
-                    <h3 className="text-2xl md:text-3xl font-bold mb-2">{carouselItems[activeIndex].title}</h3>
-                    <p className="text-sm md:text-base max-w-md">{carouselItems[activeIndex].description}</p>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-2">{displayImages[activeIndex].title}</h3>
+                    <p className="text-sm md:text-base max-w-md">{displayImages[activeIndex].description}</p>
                 </div>
             </div>
 
 
             {/* Miniatures */}
             <div className="flex gap-3 justify-center overflow-x-auto pb-2">
-                {carouselItems.map((item, index) => (
+                {displayImages.map((item, index) => (
                     <button
                         key={index}
                         onClick={() => handleThumbnailClick(index)}
@@ -81,7 +86,7 @@ function IkebanaCarousel() {
 
             {/* Indicateurs de progression */}
             <div className="flex justify-center mt-4 gap-2">
-                {carouselItems.map((_, index) => (
+                {displayImages.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => handleThumbnailClick(index)}
