@@ -2,16 +2,18 @@
 
 import { useState, useEffect } from "react"
 import Image from "next/image"
-import { carouselItemType } from "./carouselConfig"
+import { carouselMetadataType } from "./carouselConfig"
+import CarouselMainTitle from "./IkebanaTitle"
 
 type IkebanaCarouselProps = {
-    imagesToDisplay : carouselItemType[]
+    carouselData: carouselMetadataType
+    height?: number
 }
 
-function IkebanaCarousel({ imagesToDisplay } : IkebanaCarouselProps ) {
+function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
     const [activeIndex, setActiveIndex] = useState(0)
     const [previousIndex, setPreviousIndex] = useState<number | null>(null)
-    const displayImages = imagesToDisplay;
+    const displayImages = carouselData.items;
 
     // Animation automatique toutes les 2 secondes
     useEffect(() => {
@@ -30,7 +32,8 @@ function IkebanaCarousel({ imagesToDisplay } : IkebanaCarouselProps ) {
     return (
         <div className="w-full max-w-[100%] mx-auto">
             {/* Image principale */}
-            <div className="relative h-[400px] md:h-[700px]">
+            <CarouselMainTitle title={carouselData.title} description={carouselData.description} />
+            <div className="relative h-[400px]" style={{ height: `${height}px` }}>
                 {/* Image actuelle */}
                 <Image
                     key={activeIndex}
@@ -39,6 +42,7 @@ function IkebanaCarousel({ imagesToDisplay } : IkebanaCarouselProps ) {
                     fill
                     className="object-cover absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-20"
                     priority
+                    objectFit="cover"
                 />
 
                 {/* Image précédente pour fade-out */}
@@ -53,7 +57,7 @@ function IkebanaCarousel({ imagesToDisplay } : IkebanaCarouselProps ) {
                 )}
 
                 {/* Overlay texte toujours au-dessus */}
-                <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black/40 text-white px-4 transition-opacity duration-300 hover:bg-black/60 z-30">
+                <div className="absolute inset-0 flex flex-col justify-start items-start bg-black/40 text-white p-4 transition-opacity duration-300 hover:bg-transparent hover:text-black z-30">
                     <h3 className="text-2xl md:text-3xl font-bold mb-2">{displayImages[activeIndex].title}</h3>
                     <p className="text-sm md:text-base max-w-md">{displayImages[activeIndex].description}</p>
                 </div>
