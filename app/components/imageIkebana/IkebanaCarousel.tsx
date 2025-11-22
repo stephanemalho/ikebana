@@ -22,7 +22,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
             setActiveIndex((prev) => (prev + 1) % displayImages.length)
         }, 10000)
         return () => clearInterval(interval)
-    }, [activeIndex])
+    }, [activeIndex, displayImages.length])
 
 
     const handleThumbnailClick = (index: number) => {

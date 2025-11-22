@@ -17,7 +17,7 @@ export function ScheduleSection() {
               <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
                 Découvrez les horaires et dates pour l&apos;année 2024/2025
               </p>
-              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d'Ikebana style Ohara ont lieu à <a href="https://www.tenri-paris.com/cultures/ikebana/">l'Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
+              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d&apos;Ikebana style Ohara ont lieu à <a href="https://www.tenri-paris.com/cultures/ikebana/">l&apos;Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
               </p>
               <p className="text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]">Contactez Ikuko Kato si vous souhaitez des cours dans les Yvelines (78).
                 par mail <a href="mailto:ikuko.kato@free.fr" className="underline hover:text-black">mail de Ikuko Kato</a> ou par téléphone au <a href="tel:+33610366745" className="underline hover:text-black">06 10 36 67 45</a>.
