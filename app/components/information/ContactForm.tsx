@@ -44,7 +44,7 @@ export function ContactForm() {
             <Container>
                 <div className="container px-4 md:px-6 m-auto">
                     <div className="flex flex-col items-start gap-4 md:gap-8 mb-10">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold  text-[#4f0b06]">
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4f0b06]" style={{ fontFamily: "var(--playfair-display)" }}>
                             En savoir plus
                         </h2>
                     </div>
@@ -67,7 +67,7 @@ export function ContactForm() {
                             {/* Form section - 2/3 width on desktop */}
                             <div className="w-full md:w-2/3 bg-white">
                                 <CardHeader className="bg-white">
-                                    <CardTitle className="text-2xl font-[var(--playfair-display)] text-[#4f0b06]">
+                                    <CardTitle className="text-2xl font-[var(--inter-ikebana)] text-[#4f0b06]">
                                         Echangeons ensemble
                                     </CardTitle>
                                     <CardDescription className="text-[#4f0b06]/70">
@@ -160,7 +160,7 @@ export function ContactForm() {
                                     </form>
                                 </CardContent>
                                 <CardFooter className="flex justify-between border-t border-[#f0c8d9]/30 pt-6">
-                                    <div className="text-sm text-[#4f0b06]/70 font-[var(--plus-jakarta-sans)]">
+                                    <div className="text-sm text-[#4f0b06]/70 font-[var(--inter-ikebana)]">
                                         <span className="text-red-500">* </span>{" "}
                                         Tous les champs sont obligatoires sauf
                                         indication contraire

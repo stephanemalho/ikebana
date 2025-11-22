@@ -26,21 +26,21 @@ function IkebanaInfo() {
                                 </div>
                                 <h3
                                     className="text-2xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--playfair-display)" }}
+                                    style={{ fontFamily: "var(--Plus_Jakarta_Sans)" }}
                                 >
                                     Une Tradition Millénaire
                                 </h3>
                             </div>
                             <p
                                 className="text-[var(--secondary-color)] leading-relaxed mb-4"
-                                style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                style={{ fontFamily: "var(--inter-ikebana)" }}
                             >
                                 L&apos;Ikebana, l&apos;un des arts traditionnels du Japon, se pratique depuis plus de <strong>600 ans</strong>. Il
                                 tire son origine des premières offrandes de fleurs aux morts dans les rites bouddhistes.
                             </p>
                             <p
                                 className="text-[var(--secondary-color)] leading-relaxed"
-                                style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                style={{ fontFamily: "var(--inter-ikebana)" }}
                             >
                                 Vers le milieu du XVème siècle, l&apos;Ikebana obtint son statut d&apos;art à part entière, indépendant de ses
                                 origines religieuses, tout en conservant ses nuances symboliques et philosophiques.
@@ -53,14 +53,14 @@ function IkebanaInfo() {
                                 <span className="text-4xl mb-4 block">🌸</span>
                                 <h3
                                     className="text-xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--playfair-display)" }}
+                                    style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     Philosophie
                                 </h3>
                             </div>
                             <p
                                 className="text-[var(--secondary-color)] text-sm leading-relaxed"
-                                style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                style={{ fontFamily: "var(--inter-ikebana)" }}
                             >
                                 Créer une beauté qui n&apos;existe pas dans la nature, en utilisant l&apos;asymétrie et l&apos;espace vide comme
                                 éléments essentiels.
@@ -73,14 +73,14 @@ function IkebanaInfo() {
                                 <span className="text-3xl mr-3">🍃</span>
                                 <h3
                                     className="text-xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--playfair-display)" }}
+                                    style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     Matériaux
                                 </h3>
                             </div>
                             <ul
                                 className="text-[var(--secondary-color)] text-sm space-y-2"
-                                style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                style={{ fontFamily: "var(--inter-ikebana)" }}
                             >
                                 <li>• Branches et feuilles</li>
                                 <li>• Herbes et mousses</li>
@@ -100,7 +100,7 @@ function IkebanaInfo() {
                                 </div>
                                 <h3
                                     className="text-2xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--playfair-display)" }}
+                                    style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     L&apos;École Ohara
                                 </h3>
@@ -109,7 +109,7 @@ function IkebanaInfo() {
                                 <div>
                                     <h4
                                         className="font-semibold text-[var(--secondary-color)] mb-2"
-                                        style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                        style={{ fontFamily: "var(--inter-ikebana)" }}
                                     >
                                         Style Moribana
                                     </h4>
@@ -120,7 +120,7 @@ function IkebanaInfo() {
                                 <div>
                                     <h4
                                         className="font-semibold text-[var(--secondary-color)] mb-2"
-                                        style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                        style={{ fontFamily: "var(--inter-ikebana)" }}
                                     >
                                         Style Heika
                                     </h4>
@@ -136,7 +136,7 @@ function IkebanaInfo() {
                     <div className="bg-white rounded-2xl p-8 shadow-lg">
                         <h3
                             className="text-3xl font-bold text-[var(--secondary-color)] mb-8 text-center"
-                            style={{ fontFamily: "var(--playfair-display)" }}
+                            style={{ fontFamily: "var(--inter-ikebana)" }}
                         >
                             Le Chemin de l&apos;Apprentissage
                         </h3>
@@ -148,7 +148,7 @@ function IkebanaInfo() {
                                 </div>
                                 <h4
                                     className="font-semibold text-[var(--secondary-color)] mb-3"
-                                    style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                    style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     Observation
                                 </h4>
@@ -164,7 +164,7 @@ function IkebanaInfo() {
                                 </div>
                                 <h4
                                     className="font-semibold text-[var(--secondary-color)] mb-3"
-                                    style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                    style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     Pratique
                                 </h4>
@@ -180,7 +180,7 @@ function IkebanaInfo() {
                                 </div>
                                 <h4
                                     className="font-semibold text-[var(--secondary-color)] mb-3"
-                                    style={{ fontFamily: "var(--plus-jakarta-sans)" }}
+                                    style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     Évolution
                                 </h4>
@@ -196,7 +196,7 @@ function IkebanaInfo() {
                     <div className="mt-12 text-center">
                         <blockquote
                             className="text-xl md:text-2xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
-                            style={{ fontFamily: "var(--playfair-display)" }}
+                            style={{ fontFamily: "var(--inter-ikebana)" }}
                         >
                             &quot;Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de
                             l&apos;espace vide comme donnée essentielle de la composition.&quot;

@@ -10,7 +10,7 @@
     --playfair-display: "Playfair Display", serif;
     --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
-    --primary-color: #e5c6c1;
+    --primary-color: #dfd6d5;
     --secondary-color: #410602;
     --tercary-color: #e5c6c1;
 
@@ -183,11 +183,11 @@ body {
 
     background: linear-gradient(
         135deg,
-        var(--primary-color),
-        #d9b1ac
+        var(--secondary-color),
+        #783833
     );
 
-    color: var(--secondary-color);
+    color: white;
     font-family: var(--plus-jakarta-sans);
     font-weight: 600;
     font-size: 16px;
@@ -199,12 +199,12 @@ body {
         color 0.25s ease,
         transform 0.25s ease,
         box-shadow 0.25s ease,
-        background 0.3s ease;
+        background 0.25s ease;
 }
 
 /* Hover premium */
 .hero-content__cta-button:hover {
-  color : white;
+    text-decoration: underline;
     box-shadow:
         0 2px 6px rgba(65, 6, 2, 0.1);
 }

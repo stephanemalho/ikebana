@@ -8,38 +8,38 @@ const SchoolInfo = () => {
                 <div className="mx-auto space-y-12 bg-white p-8 md:rounded-lg">
                     {/* Nos Activités */}
                     <div data-aos="fade-up" className="text-center mb-24">
-                        <h2  className="text-4xl text-center md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
+                        <h2 className="text-4xl text-center md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}>
                             Nos Activités
                         </h2>
-                        <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--plus-jakarta-sans)' }}>
+                        <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                             Nous organisons une exposition florale annuelle, des ateliers saisonniers, des ateliers avec des maîtres déplacés de l'École Ohara au Japon, des voyages au Japon.
                         </p>
                     </div>
 
                     {/* L'Ikebana */}
                     <div data-aos="fade-up" data-aos-delay="100">
-                        <h2  className="text-4xl md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
+                        <h2 className="text-4xl text-center md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}>
                             L'Ikebana
                         </h2>
-                        <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--plus-jakarta-sans)' }}>
+                        <p className="text-lg text-center text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                             Ce qui distingue l'Ikebana d'une simple décoration, c'est sa forme asymétrique et l'utilisation de l'espace vide comme donnée essentielle de la composition. Autre donnée importante, l'harmonie parmi les matériaux utilisés, le vase et l'emplacement. On retrouve toutes ces caractéristiques dans d'autres formes d'esthétique japonaise, à savoir, la peinture traditionnelle, l'art des jardins, l'architecture ou le design.
                         </p>
                     </div>
 
                     {/* École Ohara */}
-                    <div data-aos="fade-up" data-aos-delay="200" className="bg-[--primary-color] p-8 rounded-lg">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[--secondary-color] mb-8 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
+                    <div data-aos="fade-up" data-aos-delay="200" className="bg-[--tercary-color] p-8 rounded-lg">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[--secondary-color] mb-8 text-center" style={{ fontFamily: "var(--playfair-display)" }}>
                             Présentation de l'École Ohara
                         </h2>
-                        
+
                         {/* Historique */}
                         <div className="mb-8">
-                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" style={{ fontFamily: 'var(--playfair-display)' }}>
+                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4">
                                 Historique
                             </h3>
-                            <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--plus-jakarta-sans)' }}>
+                            <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                                 <p className="leading-relaxed">
                                     Unshin Ohara a fondé l'école qui porte son nom en 1895, au moment où le Japon s'ouvrait à l'Occident. Il a fondé le style Moribana, lequel débouchera plus tard sur l'arrangement paysagiste. C'est aussi lui qui dessinait et produisait les vases larges et peu profonds qui conviennent parfaitement à l'Ikebana du style Moribana.
                                 </p>
@@ -54,10 +54,10 @@ const SchoolInfo = () => {
 
                         {/* Aujourd'hui */}
                         <div className="mb-8">
-                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" style={{ fontFamily: 'var(--playfair-display)' }}>
+                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" >
                                 Aujourd'hui
                             </h3>
-                            <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--plus-jakarta-sans)' }}>
+                            <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                                 <p className="leading-relaxed">
                                     Aujourd'hui, l'école continue de prospérer sous la direction d'<strong>Hiroki Ohara</strong>, actuel et cinquième Iemoto. En 2011, Hiroki Ohara a créé le style <strong>Hana-kanade</strong>, une nouvelle expression soulignant la beauté des lignes croisées des tiges principales, en harmonie avec le style de vie contemporain.
                                 </p>
@@ -68,11 +68,11 @@ const SchoolInfo = () => {
                         </div>
 
                         {/* Chapitre Yvelines-Paris */}
-                        <div className="border-t border-[--secondary-color]/20 pt-6">
-                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" style={{ fontFamily: 'var(--playfair-display)' }}>
+                        <div className="border-t border-dashed border-[--secondary-color]/20 pt-6">
+                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" >
                                 École Ohara Chapitre Yvelines-Paris
                             </h3>
-                            <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--plus-jakarta-sans)' }}>
+                            <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                                 <p className="leading-relaxed">
                                     L'École Ohara chapitre Yvelines-Paris a été créée en 2019 avec l'approbation du Iemoto Hiroki Ohara. Nous sommes actifs et impliqués depuis.
                                 </p>
@@ -84,7 +84,7 @@ const SchoolInfo = () => {
                                 </p>
                                 <div className="text-center mt-6 pt-4 border-t border-[--secondary-color]/20">
                                     <p className="font-semibold text-lg">
-                                        Présidente KATO Kurenaï 加藤　紅
+                                        Présidente KATO Kurenaï <span className="font-medium">加藤 紅</span>
                                     </p>
                                 </div>
                             </div>

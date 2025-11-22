@@ -11,15 +11,15 @@ export function ScheduleSection() {
         <div className="px-4 md:px-6 w-full m-auto">
           <div className="flex flex-col items-start gap-4 md:gap-8">
             <div className="grid gap-1">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[--secondary-color]">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                 Nos cours d&apos;Ikebana
               </h2>
-              <p className="text-xl text-[--secondary-color] font-[var(--plus-jakarta-sans)]">
+              <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
                 Découvrez les horaires et dates pour l&apos;année 2024/2025
               </p>
-              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--plus-jakarta-sans)]"> Tout nos cours d'Ikebana style Ohara ont lieu à <a href="https://www.tenri-paris.com/cultures/ikebana/">l'Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
+              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d'Ikebana style Ohara ont lieu à <a href="https://www.tenri-paris.com/cultures/ikebana/">l'Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
               </p>
-              <p className="text-md italic text-[--secondary-color] font-[var(--plus-jakarta-sans)]">Contactez Ikuko Kato si vous souhaitez des cours dans les Yvelines (78). 
+              <p className="text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]">Contactez Ikuko Kato si vous souhaitez des cours dans les Yvelines (78).
                 par mail <a href="mailto:ikuko.kato@free.fr" className="underline hover:text-black">mail de Ikuko Kato</a> ou par téléphone au <a href="tel:+33610366745" className="underline hover:text-black">06 10 36 67 45</a>.
               </p>
             </div>
@@ -46,7 +46,7 @@ export function ScheduleSection() {
                     <CardTitle className="text-2xl text-[--secondary-color]">
                       <Calendar className="inline-block mr-2 h-6 w-6" /> Cours du Lundi
                     </CardTitle>
-                    <CardDescription className="text-[--secondary-color]/80 font-[var(--plus-jakarta-sans)]">
+                    <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
                       Horaires et dates pour les cours du lundi
                     </CardDescription>
                   </CardHeader>
@@ -99,7 +99,7 @@ export function ScheduleSection() {
                     <CardTitle className="text-2xl text-[--secondary-color]">
                       <Calendar className="inline-block mr-2 h-6 w-6" /> Cours du Samedi
                     </CardTitle>
-                    <CardDescription className="text-[--secondary-color]/80 font-[var(--plus-jakarta-sans)]">
+                    <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
                       Vous pouvez participer à la réalisation d&apos;une ou de deux compositions selon votre choix.
                     </CardDescription>
                   </CardHeader>
