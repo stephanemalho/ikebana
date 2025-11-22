@@ -57,7 +57,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                 )}
 
                 {/* Overlay texte toujours au-dessus */}
-                <div className="absolute inset-0 flex flex-col justify-start items-start bg-black/40 text-white p-4 transition-opacity duration-300 hover:bg-transparent hover:text-black z-30">
+                <div className="absolute inset-0 flex flex-col justify-start items-start hover:bg-black/40 hover:text-white p-4 transition-opacity duration-300 bg-transparent text-black z-30">
                     <h3 className="text-2xl md:text-3xl font-bold mb-2">{displayImages[activeIndex].title}</h3>
                     <p className="text-sm md:text-base max-w-md">{displayImages[activeIndex].description}</p>
                 </div>

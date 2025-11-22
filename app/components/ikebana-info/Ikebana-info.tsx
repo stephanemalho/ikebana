@@ -4,7 +4,7 @@ function IkebanaInfo() {
     return (
         <section className="py-16 bg-gradient-to-b from-[var(--background)] to-[var(--primary-color)]">
             <Container>
-                <div className="max-w-7xl mx-auto">
+                <div className="mx-auto p-2">
                     {/* Titre principal */}
                     <div className="text-center mb-16">
                         <h2

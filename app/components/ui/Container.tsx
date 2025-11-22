@@ -6,7 +6,7 @@ type ContainerProps = {
 
 const Container = ({ children }: ContainerProps) => {
     return (
-        <article className="flex w-full max-w-[1460px] m-auto">
+        <article className="flex w-full max-w-7xl m-auto">
             {children}
         </article>
     );
