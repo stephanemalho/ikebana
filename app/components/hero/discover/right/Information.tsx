@@ -20,7 +20,7 @@ const Information = () => {
 
                 <div className="hero-content__buttons">
                     <a href="#cours">
-                        <button className="hero-content__order-button">
+                        <button className="hero-content__cta-button">
                             Découvrir les cours
                         </button>
                     </a>

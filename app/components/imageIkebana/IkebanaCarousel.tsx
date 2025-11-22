@@ -94,7 +94,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                     <button
                         key={index}
                         onClick={() => handleThumbnailClick(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-[--secondary-color] w-6" : "bg-gray-300 hover:bg-gray-400"
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-[--secondary-color] w-6" : "bg-[--background] hover:bg-[--primary-color]"
                             }`}
                     />
                 ))}

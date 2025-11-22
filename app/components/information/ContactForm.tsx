@@ -40,7 +40,7 @@ export function ContactForm() {
     };
 
     return (
-        <section id="contact" className="w-full py-12 bg-[#f7e5e6]">
+        <section id="contact" className="w-full py-12 bg-[--primary-color]">
             <Container>
                 <div className="container px-4 md:px-6 m-auto">
                     <div className="flex flex-col items-start gap-4 md:gap-8 mb-10">

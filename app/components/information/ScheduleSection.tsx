@@ -6,7 +6,7 @@ import Container from "../ui/Container"
 
 export function ScheduleSection() {
   return (
-    <section id="cours" className="w-full py-12 lg:min-h-[700px] bg-[#F7E5E6]">
+    <section id="cours" className="w-full py-12 lg:min-h-[700px] bg-[--primary-color]">
       <Container>
         <div className="px-4 md:px-6 w-full m-auto">
           <div className="flex flex-col items-start gap-4 md:gap-8">
