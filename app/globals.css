@@ -298,6 +298,27 @@ body {
     color: #fff;
 }
 
+.image-soft-filter {
+    filter: blur(0) saturate(0.7) contrast(1.3);
+    transform: scale(1.02); /* évite le bord flou visible */
+}
+
+.image-overlay {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(249, 240, 240, 0),
+            rgba(249, 245, 240, 0.785)
+        ),
+        radial-gradient(
+            circle at center,
+            rgba(222, 219, 8, 0.001),
+            transparent 70%
+        );
+    pointer-events: none;
+}
+
+
 @keyframes fall {
   0% {
     transform: translateY(0);

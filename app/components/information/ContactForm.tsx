@@ -53,16 +53,19 @@ export function ContactForm() {
                         <div className="flex flex-col md:flex-row">
                             {/* Image section - 1/3 width on desktop */}
                             <div className="hidden md:flex w-full md:w-1/3 relative min-h-[400px] md:min-h-full items-center justify-center p-6">
-                                <div className="relative w-full h-full">
+                                <div className="relative w-full h-full overflow-hidden rounded-lg">
                                     <Image
-                                        src="/assets/7797779.jpg"
+                                        src="/images/ikuko/ikuko-kato-sama.webp"
                                         alt="Arrangement Ikebana avec vase vert et fleurs blanches"
                                         fill
-                                        style={{ objectFit: "contain" }}
-                                        className="rounded-lg"
+                                        className="object-contain image-soft-filter"
                                     />
+
+                                    {/* Overlay doux pour masquer la pixelisation */}
+                                    <div className="absolute inset-0 image-overlay" />
                                 </div>
                             </div>
+
 
                             {/* Form section - 2/3 width on desktop */}
                             <div className="w-full md:w-2/3 bg-white">
