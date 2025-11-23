@@ -1,6 +1,6 @@
 export const stringHeader = {
     title : "Ikebana - Ohara",
-    paragraph : "Par Ikuko Kurenai KATO Sensei",
+    paragraph : "Par Ikuko Kurenai Kato",
     nav : {
         discover : "Découvrir",
         course : "Créations",
