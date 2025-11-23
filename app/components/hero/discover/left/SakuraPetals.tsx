@@ -16,11 +16,16 @@ type Petal = {
 };
 
 const SakuraPetals = () => {
+    const startFalling = useRef(false);
     const canvasRef = useRef<HTMLCanvasElement | null>(null);
     const petalsRef = useRef<Petal[]>([]);
     const scrollBoost = useRef(0);
     const isVisible = useRef(true);
     const mousePos = useRef<{ x: number; y: number } | null>(null);
+
+    setTimeout(() => {
+        startFalling.current = true;
+    }, 2500);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -50,12 +55,12 @@ const SakuraPetals = () => {
         // Generate petals
         petalsRef.current = Array.from({ length: NUM_PETALS }, () => ({
             x: Math.random() * parent.clientWidth,
-            y: Math.random() * parent.clientHeight,
+            y: -Math.random() * parent.clientHeight,
             size: 12 + Math.random() * 14,
-            speedY: 0.8 + Math.random() * 1.6,
-            speedX: Math.random() * 0.7 - 0.35,
+            speedY: 0.8 + Math.random() * 0.6,
+            speedX: Math.random() * 0.4 - 0.35,
             rotation: Math.random() * Math.PI * 2,
-            rotationSpeed: Math.random() * 0.025 - 0.013,
+            rotationSpeed: Math.random() * 0.01 - 0.005,
             blur: Math.random() * 1.2,
         }));
 
@@ -108,7 +113,7 @@ const SakuraPetals = () => {
 
                     // Natural fall + scroll boost
                     p.y += p.speedY + boost;
-                    p.x += p.speedX * (1 + boost * 0.3);
+                    p.x += p.speedX * (1 + boost * 0.5);
                     p.rotation += p.rotationSpeed;
 
                     // --- NEW: Repulsion from mouse cursor ---
@@ -165,7 +170,9 @@ const SakuraPetals = () => {
                 });
             }
 
+
             requestAnimationFrame(animate);
+
         };
 
         animate();
@@ -182,7 +189,7 @@ const SakuraPetals = () => {
     return (
         <canvas
             ref={canvasRef}
-            className="absolute top-20 left-10 pointer-events-none z-10"
+            className="absolute top-20 left-0 pointer-events-none z-10"
         />
     );
 };
