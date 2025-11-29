@@ -2,7 +2,7 @@ import Container from "../ui/Container"
 
 function IkebanaInfo() {
     return (
-        <section className="py-16 bg-gradient-to-b from-[var(--background)] to-[var(--primary-color)]">
+        <section className="py-16 px-4 bg-gradient-to-b from-[var(--background)] to-[var(--primary-color)]">
             <Container>
                 <div className="mx-auto p-2">
                     {/* Titre principal */}

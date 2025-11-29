@@ -10,6 +10,7 @@ function ImageIkebana() {
                 <figure className="w-full max-w-[100%] mb-12">
                     <IkebanaCarousel carouselData={carouselIkebanaData} height={1000} />
                 </figure>
+                <div className="w-24 h-1 my-12 bg-[var(--secondary-color)] mx-auto"/>
                 <figure className="w-full max-w-[100%]">
                     <IkebanaCarousel carouselData={carouselInspirationData} />
                 </figure>

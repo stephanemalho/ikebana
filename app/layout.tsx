@@ -33,7 +33,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang={metaDataString.lang.en}>
+        <html lang={metaDataString.lang.fr} >
             <body className={`${notoSansJP.variable} ${playfair.variable} ${jakarta.variable}`}>
                 <AOSProvider>{children}</AOSProvider>
             </body>

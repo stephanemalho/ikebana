@@ -41,7 +41,7 @@ export function ScheduleSection() {
               </TabsList>
 
               <TabsContent value="monday" className="mt-6">
-                <Card data-aos="fade-left" className="border-[--secondary-color]/20">
+                <Card className="border-[--secondary-color]/20">
                   <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
                     <CardTitle className="text-2xl text-[--secondary-color]">
                       <Calendar className="inline-block mr-2 h-6 w-6" /> Cours du Lundi
@@ -94,7 +94,7 @@ export function ScheduleSection() {
               </TabsContent>
 
               <TabsContent value="saturday" className="mt-6">
-                <Card data-aos="fade-right" className="border-[--secondary-color]/20">
+                <Card className="border-[--secondary-color]/20">
                   <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
                     <CardTitle className="text-2xl text-[--secondary-color]">
                       <Calendar className="inline-block mr-2 h-6 w-6" /> Cours du Samedi
