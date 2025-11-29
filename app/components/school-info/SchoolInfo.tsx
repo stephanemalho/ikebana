@@ -41,13 +41,13 @@ const SchoolInfo = () => {
                             </h3>
                             <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                                 <p className="leading-relaxed">
-                                    Unshin Ohara a fondé l&apos;écol&apos; qui porte son nom en 1895, au moment où le Japon s&apos;ouvrai&apos; à l&apos;Occiden&apos;. Il a fondé le style Moribana, lequel débouchera plus tard sur l&apos;arrangemen&apos; paysagiste. C&apos;es&apos; aussi lui qui dessinait et produisait les vases larges et peu profonds qui conviennent parfaitement à l&apos;Ikeban&apos; du style Moribana.
+                                    Unshin Ohara a fondé l&apos;école qui porte son nom en 1895, au moment où le Japon s&apos;ouvrait à l&apos;Occident. Il a fondé le style Moribana, lequel débouchera plus tard sur l&apos;arrangement paysagiste. C&apos;est aussi lui qui dessinait et produisait les vases larges et peu profonds qui conviennent parfaitement à l&apos;Ikebana du style Moribana.
                                 </p>
                                 <p className="leading-relaxed">
                                     Il y a deux formes d&apos;Ikebana dans l&apos;école Ohara : le style <strong>Moribana</strong> qui utilise ces vases plats et peu profonds, et le style <strong>Héika</strong> qui utilise de hauts vases cylindriques. Les débutants doivent apprendre à maîtriser un certain nombre d&apos;arrangements de base dans ces deux styles en composant des matériaux toujours différents.
                                 </p>
                                 <p className="leading-relaxed">
-                                    En 1995, l&apos;école Ohara a fêté son centenaire. Le premier maître fondateur, Unshin Ohara a créé le style Moribana. Son successeur, Koun Ohara a défini les règles du style Moribana. Le troisième grand maître, Houn Ohara a enrichi les motifs grâce aux références à la littérature, créant ainsi les styles Bunjin et Rinpa. Le quatrième grand maître Natsuki Ohara a développé de nouvelles formes modernes, Hana-mai et Hana-isho.
+                                    En 1995, l&apos;école Ohara a fêté son centenaire. Le premier maître fondateur, <strong>Unshin Ohara</strong> a créé le style <strong>Moribana</strong>. Son successeur, <strong>Koun Ohara</strong> a défini les règles du style <strong>Moribana</strong>. Le troisième grand maître, <strong>Houn Ohara</strong> a enrichi les motifs grâce aux références à la littérature, créant ainsi les styles <strong>Bunjin</strong> et <strong>Rinpa</strong>. Le quatrième grand maître <strong>Natsuki Ohara</strong> a développé de nouvelles formes modernes, <strong>Hana-mai</strong> et <strong>Hana-isho</strong>.
                                 </p>
                             </div>
                         </div>
@@ -59,10 +59,10 @@ const SchoolInfo = () => {
                             </h3>
                             <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                                 <p className="leading-relaxed">
-                                    Aujourd&apos;hui, l&apos;école continue de prospérer sous la direction d&apos;<strong>Hiroki Ohara</strong>, actuel et cinquième Iemoto. En 2011, Hiroki Ohara a créé le style <strong>Hana-kanade</strong>, une nouvelle expression soulignant la beauté des lignes croisées des tiges principales, en harmonie avec le style de vie contemporain.
+                                    Aujourd&apos;hui, l&apos;école continue de prospérer sous la direction d&apos;<strong>Hiroki Ohara</strong>, actuel et cinquième Iemoto. En 2011, <strong>Hiroki Ohara</strong> a créé le style <strong>Hana-kanade</strong>, une nouvelle expression soulignant la beauté des lignes croisées des tiges principales, en harmonie avec le style de vie contemporain.
                                 </p>
                                 <p className="leading-relaxed">
-                                    L&apos;école Ohara possède des bureaux à Tokyo et à Osaka avec 146 chapitres au Japon et plus de 100 chapitres internationaux avec un total de plus de <strong>300 000 membres dans le monde</strong>.
+                                    L&apos;école Ohara possède des bureaux à Tokyo et à Osaka avec 146 chapitres au Japon et plus de 100 chapitres internationaux avec un total de plus de <strong>300 000 membres</strong> dans le monde.
                                 </p>
                             </div>
                         </div>
@@ -74,7 +74,7 @@ const SchoolInfo = () => {
                             </h3>
                             <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                                 <p className="leading-relaxed">
-                                    L&apos;École Ohara chapitre Yvelines-Paris a été créée en 2019 avec l&apos;approbation du Iemoto Hiroki Ohara. Nous sommes actifs et impliqués depuis.
+                                    <strong>L&apos;École Ohara chapitre Yvelines-Paris</strong> a été créée en 2019 avec l&apos;approbation du Iemoto <strong>Hiroki Ohara</strong>. Nous sommes actifs et impliqués depuis.
                                 </p>
                                 <p className="leading-relaxed">
                                     Grâce à l&apos;Ikebana, nous souhaitons étudier la culture, les coutumes, les habitudes et l&apos;histoire japonaise, nous souhaitons ressentir le lien entre l&apos;homme et la nature.
