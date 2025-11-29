@@ -69,7 +69,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                     <CarouselMainTitle title={carouselData.title} description={carouselData.description} />
                     <span
                         aria-hidden
-                        className={`ml-4 transition-transform duration-300 ${isOpen ? "rotate-180" : "rotate-0"}`}
+                        className={`ml-4 transition-transform duration-500 ${isOpen ? "rotate-180" : "rotate-0"}`}
                     >
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -79,7 +79,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
             </div>
             {/* Collapsible content — hide when closed */}
             <div ref={containerRef}
-                className={`w-full overflow-hidden transition-[max-height,opacity] duration-500 ${isOpen ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}`}
+                className={`w-full overflow-hidden transition-[max-height,opacity] duration-1000 ${isOpen ? "max-h-[5000px] opacity-100" : "max-h-0 opacity-0"}`}
                 id={`${panelId}-panel`}
                 role="region"
                 aria-labelledby={`${panelId}-button`}
@@ -92,7 +92,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                         src={displayImages[activeIndex].imageUrl || "/placeholder.svg"}
                         alt={displayImages[activeIndex].altText}
                         fill
-                        className="object-cover absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-100 z-20"
+                        className="object-cover absolute inset-0 transition-opacity duration-1500 ease-in-out opacity-100 z-20"
                         loading={isOpen ? "eager" : "lazy"}
                         priority={isOpen}
                         objectFit="cover"
@@ -105,13 +105,13 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                             src={displayImages[previousIndex].imageUrl || "/placeholder.svg"}
                             alt={displayImages[previousIndex].altText}
                             fill
-                            className="object-cover absolute inset-0 transition-opacity duration-1000 ease-in-out opacity-0 z-10"
+                            className="object-cover absolute inset-0 transition-opacity duration-1500 ease-in-out opacity-0 z-10"
                             loading="lazy"
                         />
                     )}
 
                     {/* Overlay texte toujours au-dessus */}
-                    <div className="absolute inset-0 flex flex-col justify-start items-start hover:text-white p-4 transition-opacity duration-300 bg-transparent text-black z-30">
+                    <div className="absolute inset-0 flex flex-col justify-start items-start hover:text-white p-4 transition-opacity duration-500 bg-transparent text-black z-30">
                         <div className="bg-black/30 p-4 rounded-md max-w-lg">
                             <h3 className="text-2xl md:text-3xl font-bold mb-2">{displayImages[activeIndex].title}</h3>
                             <p className="text-sm md:text-base max-w-md">{displayImages[activeIndex].description}</p>
@@ -125,7 +125,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                         <button
                             key={index}
                             onClick={() => handleThumbnailClick(index)}
-                            className={`relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden transition-all duration-300 my-6 ${index === activeIndex
+                            className={`relative flex-shrink-0 w-20 h-20 md:w-24 md:h-24 rounded-lg overflow-hidden transition-all duration-500 my-6 ${index === activeIndex
                                 ? "ring-4 ring-[--secondary-color] scale-105 shadow-lg"
                                 : "hover:scale-105 hover:shadow-md opacity-70 hover:opacity-100"
                                 }`}
@@ -147,7 +147,7 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                         <button
                             key={index}
                             onClick={() => handleThumbnailClick(index)}
-                            className={`w-2 h-2 rounded-full transition-all duration-300 ${index === activeIndex ? "bg-[--secondary-color] w-6" : "bg-[--background] hover:bg-[--primary-color]"
+                            className={`w-2 h-2 rounded-full transition-all duration-500 ${index === activeIndex ? "bg-[--secondary-color] w-6" : "bg-[--background] hover:bg-[--primary-color]"
                                 }`}
                         />
                     ))}

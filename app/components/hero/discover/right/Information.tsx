@@ -8,14 +8,14 @@ const Information = () => {
                     <span className="text-[#b75d71]">Yvelines Paris</span>
                 </h1>
                 <p>
-                    L&apos;école Ohara (小原流, Ohara-ryū) est l&apos;une des grandes écoles d&apos;Ikebana au Japon.
-                    Elle a été fondée à la fin du XIXᵉ siècle (vers 1895), durant l&apos;époque Meiji (明治時代,Meiji jidai), par Unshin Ohara.
+                    L&apos;école Ohara <strong>(小原流, Ohara-ryū)</strong> est l&apos;une des grandes écoles d&apos;Ikebana au Japon.
+                    Elle a été fondée à la fin du XIXᵉ siècle (vers 1895), durant l&apos;époque Meiji <strong>(明治時代,Meiji jidai)</strong>, par <strong>Unshin Ohara</strong>.
                 </p><p>
                     Contrairement aux écoles plus anciennes comme Ikenobō, dont la pratique est très codifiée et cérémoniale, l&apos;école Ohara propose une approche naturaliste, expressive et contemporaine.
                     Elle a joué un rôle essentiel dans l&apos;évolution de l&apos;Ikebana en introduisant de nouvelles formes, comme le moribana, inspirées des paysages naturels.
                 </p>
                 <p>
-                    Nous proposons des cours d&apos;ikebana style Ohara en France, adaptés à tous les niveaux, du débutant au confirmé.
+                    Nous proposons des <strong>cours d&apos;ikebana style Ohara en France</strong>, adaptés à tous les niveaux, du débutant au confirmé.
                 </p>
 
                 <div className="hero-content__buttons">

@@ -17,7 +17,7 @@ export function ScheduleSection() {
               <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
                 Découvrez les horaires et dates pour l&apos;année 2024/2025
               </p>
-              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d&apos;Ikebana style Ohara ont lieu à <a href="https://www.tenri-paris.com/cultures/ikebana/">l&apos;Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
+              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d&apos;Ikebana style Ohara ont lieu à <a className="underline hover:text-black" href="https://www.tenri-paris.com/cultures/ikebana/">l&apos;Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
               </p>
               <p className="text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]">Contactez Ikuko Kato si vous souhaitez des cours dans les Yvelines (78).
                 par mail <a href="mailto:ikuko.kato@free.fr" className="underline hover:text-black">mail de Ikuko Kato</a> ou par téléphone au <a href="tel:+33610366745" className="underline hover:text-black">06 10 36 67 45</a>.
@@ -67,7 +67,10 @@ export function ScheduleSection() {
                           </li>
                           <li className="flex items-center gap-2">
                             <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">non débutant</Badge>
-                            <span className="text-[--secondary-color]">16h45</span>
+                            <div className="flex flex-col">
+                              <span className="text-[--secondary-color]">16h45*</span>
+                              <i className="text-xs">Ce cours sera ouvert uniquement lorsque cela sera nécessaire.</i>
+                            </div>
                           </li>
                           <li className="flex items-center gap-2">
                             <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">tous niveaux</Badge>
@@ -78,14 +81,17 @@ export function ScheduleSection() {
 
                       <div>
                         <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Dates 2024/2025
+                          Dates 2025/2026
                           <span className="text-sm font-normal ml-2 text-black">(Susceptible de modifications)</span>
                         </h3>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[--secondary-color]">
-                          <li>17 mars 2025</li>
-                          <li>14 et 28 avril 2025</li>
-                          <li>12 et 26 mai 2025</li>
-                          <li>16 et 30 juin 2025</li>
+                          <li>12 et 26 janvier 2026</li>
+                          <li>9 février 2026</li>
+                          <li>30 mars  2026</li>
+                          <li>13 avril  2026</li>
+                          <li>13 et 27 avril  2026</li>
+                          <li>18 mai 2026</li>
+                          <li>8 et 22 juin 2026</li>
                         </ul>
                       </div>
                     </div>
@@ -131,10 +137,11 @@ export function ScheduleSection() {
                           <span className="text-sm font-normal ml-2 text-black">(Susceptible de modifications)</span>
                         </h3>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[--secondary-color]">
-                          <li>15 mars 2025</li>
-                          <li>12 avril 2025</li>
-                          <li>10 mai 2025</li>
-                          <li>14 juin 2025</li>
+                          <li>10 janvier 2026</li>
+                          <li>7 et 28 février 2026</li>
+                          <li>11 avril 2026</li>
+                          <li>16 mai 2026</li>
+                          <li>6 juin 2026</li>
                         </ul>
                       </div>
                     </div>
