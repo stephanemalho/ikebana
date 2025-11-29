@@ -22,6 +22,7 @@ import Container from "../ui/Container"
 
 export function ContactForm() {
     const [formData, setFormData] = useState({
+        name: "",
         email: "",
         message: ""
     });
@@ -83,6 +84,24 @@ export function ContactForm() {
                                         onSubmit={handleSubmit}
                                         className="space-y-6"
                                     >
+                                        <div className="space-y-2">
+                                            <Label
+                                                htmlFor="name"
+                                                className="text-[#4f0b06]"
+                                            >
+                                                Votre nom
+                                            </Label>
+                                            <Input
+                                                id="name"
+                                                name="name"
+                                                type="name"
+                                                placeholder="votre nom ici..."
+                                                required
+                                                className="border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
+                                                value={formData.name}
+                                                onChange={handleChange}
+                                            />
+                                        </div>
                                         <div className="space-y-2">
                                             <Label
                                                 htmlFor="email"

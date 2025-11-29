@@ -29,7 +29,7 @@ const SchoolInfo = () => {
                     </div>
 
                     {/* École Ohara */}
-                    <div data-aos="fade-up" data-aos-delay="200" className="bg-[#e6dcdb] py-8 px-4 md:rounded-lg">
+                    <div data-aos="fade-up" data-aos-delay="200" className="bg-[#e6dcdb] md:mx-6 py-8 px-4 md:rounded-lg">
                         <h2 className="text-3xl md:text-4xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
                             Présentation de l&apos;École Ohara
                         </h2>
