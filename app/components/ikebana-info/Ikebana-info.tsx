@@ -1,4 +1,5 @@
 import Container from "../ui/Container"
+import { BookOpen, Flower, Leaf, Trees, Eye, Palette, Sprout } from "lucide-react"
 
 function IkebanaInfo() {
     return (
@@ -22,7 +23,7 @@ function IkebanaInfo() {
                         <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mr-4">
-                                    <span className="text-2xl">🏛️</span>
+                                    <BookOpen size={22} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h3
                                     className="text-2xl font-bold text-[var(--secondary-color)]"
@@ -50,7 +51,7 @@ function IkebanaInfo() {
                         {/* Philosophie */}
                         <div className="bg-[var(--tercary-color)] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div className="text-center mb-4">
-                                <span className="text-4xl mb-4 block">🌸</span>
+                                <Flower size={36} className="mx-auto mb-4 text-[var(--secondary-color)]" aria-hidden />
                                 <h3
                                     className="text-xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--inter-ikebana)" }}
@@ -70,7 +71,7 @@ function IkebanaInfo() {
                         {/* Matériaux */}
                         <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-4">
-                                <span className="text-3xl mr-3">🍃</span>
+                                <Leaf size={28} className="mr-3 text-[var(--secondary-color)]" aria-hidden />
                                 <h3
                                     className="text-xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--inter-ikebana)" }}
@@ -96,7 +97,7 @@ function IkebanaInfo() {
                         <div className="lg:col-span-2 bg-gradient-to-r from-[var(--primary-color)] to-[var(--tercary-color)] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div className="flex items-center mb-6">
                                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
-                                    <span className="text-2xl">🎋</span>
+                                    <Trees size={22} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h3
                                     className="text-2xl font-bold text-[var(--secondary-color)]"
@@ -144,7 +145,7 @@ function IkebanaInfo() {
                         <div className="grid md:grid-cols-3 gap-8">
                             <div className="text-center">
                                 <div className="w-16 h-16 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-2xl">👁️</span>
+                                    <Eye size={26} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h4
                                     className="font-semibold text-[var(--secondary-color)] mb-3"
@@ -160,7 +161,7 @@ function IkebanaInfo() {
 
                             <div className="text-center">
                                 <div className="w-16 h-16 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-2xl">🎨</span>
+                                    <Palette size={26} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h4
                                     className="font-semibold text-[var(--secondary-color)] mb-3"
@@ -176,7 +177,7 @@ function IkebanaInfo() {
 
                             <div className="text-center">
                                 <div className="w-16 h-16 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <span className="text-2xl">🌱</span>
+                                    <Sprout size={26} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h4
                                     className="font-semibold text-[var(--secondary-color)] mb-3"
