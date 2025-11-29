@@ -3,7 +3,7 @@ import { BookOpen, Flower, Leaf, Trees, Eye, Palette, Sprout } from "lucide-reac
 
 function IkebanaInfo() {
     return (
-        <section className="py-16 px-4 bg-gradient-to-b from-[var(--background)] to-[var(--primary-color)]">
+        <section className="py-16 px-2 bg-gradient-to-b from-[var(--background)] to-[var(--primary-color)]">
             <Container>
                 <div className="mx-auto p-2">
                     {/* Titre principal */}

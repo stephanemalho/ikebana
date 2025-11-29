@@ -311,3 +311,33 @@ body {
         );
     pointer-events: none;
 }
+
+/* Modern thin scrollbar utility - uses color from :root (secondary color) */
+.modern-scrollbar {
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-color) transparent;
+}
+
+/* Webkit browsers */
+.modern-scrollbar::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+.modern-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.modern-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+    border-radius: 9999px;
+    border: 2px solid transparent; /* provides extra 'breathing' / contrast */
+    background-clip: padding-box;
+}
+.modern-scrollbar::-webkit-scrollbar-thumb:hover {
+    filter: brightness(0.9);
+}
+
+/* Focus-safe : slightly visible on keyboard focus */
+.modern-scrollbar:focus-visible::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 0 3px rgba(65, 6, 2, 0.12);
+}

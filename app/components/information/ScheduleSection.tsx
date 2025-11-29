@@ -15,9 +15,9 @@ export function ScheduleSection() {
                 Nos cours d&apos;Ikebana
               </h2>
               <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
-                Découvrez les horaires et dates pour l&apos;année 2024/2025
+                Découvrez les horaires et dates pour l&apos;année 2026
               </p>
-              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d&apos;Ikebana style Ohara ont lieu à <a className="underline hover:text-black" href="https://www.tenri-paris.com/cultures/ikebana/">l&apos;Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
+              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d&apos;Ikebana style Ohara ont lieu à <a target="_blank" className="underline hover:text-black" href="https://www.tenri-paris.com/cultures/ikebana/">l&apos;Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
               </p>
               <p className="text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]">Contactez Ikuko Kato si vous souhaitez des cours dans les Yvelines (78).
                 par mail <a href="mailto:ikuko.kato@free.fr" className="underline hover:text-black">mail de Ikuko Kato</a> ou par téléphone au <a href="tel:+33610366745" className="underline hover:text-black">06 10 36 67 45</a>.
@@ -81,7 +81,7 @@ export function ScheduleSection() {
 
                       <div>
                         <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Dates 2025/2026
+                          Dates 2026
                           <span className="text-sm font-normal ml-2 text-black">(Susceptible de modifications)</span>
                         </h3>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[--secondary-color]">
@@ -133,7 +133,7 @@ export function ScheduleSection() {
 
                       <div>
                         <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Dates 2024/2025
+                          Dates 2026
                           <span className="text-sm font-normal ml-2 text-black">(Susceptible de modifications)</span>
                         </h3>
                         <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[--secondary-color]">

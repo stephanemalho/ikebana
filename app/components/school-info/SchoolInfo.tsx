@@ -5,9 +5,9 @@ const SchoolInfo = () => {
     return (
         <section className="py-16 bg-[--primary-color]">
             <Container>
-                <div className="mx-auto space-y-12 bg-white p-8 md:rounded-lg">
+                <div className="mx-auto space-y-12 bg-white py-8  md:rounded-lg">
                     {/* Nos Activités */}
-                    <div data-aos="fade-up" className="text-center mb-24">
+                    <div data-aos="fade-up" className="text-center mb-4 p-6">
                         <h2 className="text-4xl text-center md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: 'var(--playfair-display)' }}>
                             Nos Activités
@@ -18,7 +18,7 @@ const SchoolInfo = () => {
                     </div>
 
                     {/* L&apos;Ikebana */}
-                    <div data-aos="fade-up" data-aos-delay="100">
+                    <div data-aos="fade-up" data-aos-delay="100" className="text-center mb-4 p-6">
                         <h2 className="text-4xl text-center md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: 'var(--playfair-display)' }}>
                             L&apos;Ikebana
@@ -29,14 +29,14 @@ const SchoolInfo = () => {
                     </div>
 
                     {/* École Ohara */}
-                    <div data-aos="fade-up" data-aos-delay="200" className="bg-[#e6dcdb] p-8 rounded-lg">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[--secondary-color] mb-8 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
+                    <div data-aos="fade-up" data-aos-delay="200" className="bg-[#e6dcdb] py-8 px-4 md:rounded-lg">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
                             Présentation de l&apos;École Ohara
                         </h2>
 
                         {/* Historique */}
                         <div className="mb-8">
-                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4">
+                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                                 Historique
                             </h3>
                             <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
@@ -54,7 +54,7 @@ const SchoolInfo = () => {
 
                         {/* Aujourd&apos;hui */}
                         <div className="mb-8">
-                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" >
+                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                                 Aujourd&apos;hui
                             </h3>
                             <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
@@ -69,7 +69,7 @@ const SchoolInfo = () => {
 
                         {/* Chapitre Yvelines-Paris */}
                         <div className="border-t border-dashed border-[--secondary-color]/20 pt-6">
-                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4" >
+                            <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                                 École Ohara Chapitre Yvelines-Paris
                             </h3>
                             <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
