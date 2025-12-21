@@ -5,7 +5,7 @@ import LazySakuraPetals from './LazySakuraPetals';
 
 const Decoration = () => {
     return (
-        <div  id="sakura-zone" className="relative w-full max-w-[600px] mx-auto">
+        <div  id="sakura-zone" className="relative mx-auto">
             <Image
                 src="/assets/sakura-hero-section.png"
                 alt="sakura branch"
