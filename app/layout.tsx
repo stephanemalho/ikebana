@@ -3,6 +3,8 @@ import { Noto_Sans_JP, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/goo
 import './globals.css';
 import { metaDataString } from './constant/metadata/head';
 import AOSProvider from './components/wrapper/AOSProvider';
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 const notoSansJP = Noto_Sans_JP({
     variable: '--font-noto-sans-jp',
@@ -35,7 +37,11 @@ export default function RootLayout({
     return (
         <html lang={metaDataString.lang.fr} >
             <body className={`${notoSansJP.variable} ${playfair.variable} ${jakarta.variable}`}>
-                <AOSProvider>{children}</AOSProvider>
+                <AOSProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                </AOSProvider>
             </body>
         </html>
     );

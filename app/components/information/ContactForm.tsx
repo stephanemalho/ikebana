@@ -41,7 +41,7 @@ export function ContactForm() {
 
         } catch (error) {
             console.error(error);
-            alert("Erreur lors de l’envoi.");
+            alert("Erreur lors de l'envoi.");
         }
     };
 

@@ -2,9 +2,12 @@ export const stringHeader = {
     title : "Ikebana - Ohara",
     paragraph : "Par Ikuko Kurenai Kato",
     nav : {
-        discover : "Découvrir",
-        course : "Créations",
-        contact : "Me Contacter"
+        discover : "Decouvrir",
+        school : "Ecole",
+        courses : "Cours",
+        gallery : "Galerie",
+        faq : "FAQ",
+        contact : "Contact"
     }
 }
 

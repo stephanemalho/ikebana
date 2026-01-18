@@ -18,9 +18,9 @@ function ImageIkebana() {
 
             {/* Mobile/Tablet - Une seule image */}
             <div className="lg:hidden w-full flex flex-col items-center">
-                <h1 className="text-2xl text-[--secondary-color] mb-5 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
+                <h2 className="text-2xl text-[--secondary-color] mb-5 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
                     {carouselIkebanaData.title}
-                </h1>
+                </h2>
                 <p className="text-md text-[--secondary-color] mb-8 text-center px-4" style={{ fontFamily: 'var(--plus-jakarta-sans)' }}>
                     {carouselIkebanaData.description}
                 </p>
