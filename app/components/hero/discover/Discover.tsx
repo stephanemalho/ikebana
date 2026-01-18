@@ -1,4 +1,3 @@
-import React from 'react';
 import Decoration from './left/Decoration';
 import Information from './right/Information';
 import { headers } from 'next/headers';
