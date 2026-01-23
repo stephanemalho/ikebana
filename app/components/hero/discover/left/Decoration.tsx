@@ -10,7 +10,6 @@ const Decoration = () => {
                 alt="sakura branch"
                 width={700}
                 height={100}
-                className=""
                 priority
                 data-aos="fade-down"
             />

@@ -3,7 +3,7 @@ import Link from "next/link";
 const Information = () => {
     return (
         <div className="hero-content">
-            <div className="hero-content-info p-4 lg:p-16">
+            <div className="hero-content-info p-4 lg:py-16">
                 <h1 className="text-4xl">
                     École d'Ikebana
                     <span className="text-[#b75d71]"> Ohara</span> - Cours et enseignement floral à {" "}

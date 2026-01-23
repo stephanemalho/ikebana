@@ -15,7 +15,7 @@ export function ScheduleSection() {
                 Nos cours d&apos;Ikebana
               </h2>
               <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
-                Retrouvez les lieux de cours et les contacts pour s&apos;inscrire aux ateliers d&apos;Ikebana.
+                Retrouvez les lieux de cours et les contacts pour s&apos;inscrire aux ateliers d&apos;Ikebana à l'adresse de votre choix.
               </p>
             </div>
 
