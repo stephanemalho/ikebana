@@ -3,12 +3,15 @@ import Container from "../ui/Container"
 
 export function ScheduleSection() {
   return (
-    <section id="cours" className="w-full py-12 lg:min-h-[700px] bg-[--primary-color]">
+    <section id="cours" className="w-full py-12 lg:min-h-[700px] bg-gradient-to-t
+    from-[--primary-color]
+    via-[--primary-color]/60
+    to-transparent">
       <Container>
         <div className="px-4 md:px-6 w-full m-auto">
           <div className="flex flex-col items-start gap-4 md:gap-8">
             <div className="grid gap-1">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
+              <h2 className="text-4xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                 Nos cours d&apos;Ikebana
               </h2>
               <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">

@@ -50,7 +50,7 @@ export function ContactForm() {
             <Container>
                 <div className="container px-4 md:px-6 m-auto">
                     <div className="flex flex-col items-start gap-4 md:gap-8 mb-10">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4f0b06]" style={{ fontFamily: "var(--playfair-display)" }}>
+                        <h2 className="text-4xl font-bold text-[#4f0b06]" style={{ fontFamily: "var(--playfair-display)" }}>
                             En savoir plus
                         </h2>
                     </div>

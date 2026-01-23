@@ -88,7 +88,6 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                 <div className="relative h-[400px]" style={{ height: `${height}px` }}>
                     {/* Image actuelle */}
                     <Image
-                        data-aos="fade"
                         key={activeIndex}
                         src={displayImages[activeIndex].imageUrl || "/placeholder.svg"}
                         alt={displayImages[activeIndex].altText}
@@ -102,7 +101,6 @@ function IkebanaCarousel({ carouselData, height = 700 }: IkebanaCarouselProps) {
                     {/* Image précédente pour fade-out */}
                     {previousIndex !== null && (
                         <Image
-                            data-aos="fade"
                             key={`prev-${previousIndex}`}
                             src={displayImages[previousIndex].imageUrl || "/placeholder.svg"}
                             alt={displayImages[previousIndex].altText}

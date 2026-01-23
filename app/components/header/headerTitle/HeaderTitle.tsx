@@ -1,6 +1,5 @@
 import { stringHeader } from '@/app/constant/page/header';
 import Image from 'next/image';
-import React from 'react';
 
 const HeaderTitle = () => {
     return (

@@ -9,7 +9,7 @@ function IkebanaInfo() {
                     {/* Titre principal */}
                     <div className="text-center mb-16">
                         <h2
-                            className="text-4xl md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
+                            className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
                             Qu&apos;est-ce que l&apos;Ikebana ?

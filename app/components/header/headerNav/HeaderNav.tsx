@@ -1,5 +1,4 @@
 import { stringHeader } from '@/app/constant/page/header';
-import React from 'react';
 
 const HeaderNav = () => {
     return (

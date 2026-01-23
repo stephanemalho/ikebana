@@ -283,16 +283,6 @@ body {
     scroll-margin-top: 80px;
 }
 
-.about-ikebana h2 {
-    padding: 40px 0 40px 20px;
-
-    font-family: var(--playfair-display);
-    font-weight: 700;
-    font-size: 120px;
-    line-height: 138px;
-    color: #fff;
-}
-
 .image-soft-filter {
     filter: blur(0) saturate(0.7) contrast(1.3);
     transform: scale(1.02); /* évite le bord flou visible */

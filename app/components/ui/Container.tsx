@@ -6,9 +6,9 @@ type ContainerProps = {
 
 const Container = ({ children }: ContainerProps) => {
     return (
-        <article className="flex w-full max-w-7xl m-auto">
+        <div className="flex w-full max-w-7xl m-auto">
             {children}
-        </article>
+        </div>
     );
 };
 
