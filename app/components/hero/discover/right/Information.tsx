@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Information = () => {
     return (
         <div className="hero-content">
@@ -8,9 +10,12 @@ const Information = () => {
                     <span className="text-[#b75d71]">Yvelines Paris</span>
                 </h1>
                 <p>
-                    Nous proposons des <strong>cours d&apos;ikebana style Ohara en France</strong>, adaptés à tous les niveaux, du débutant au confirmé.
+                    L'École Ohara - Chapitre Yvelines Paris transmet l'art japonais de l'ikebana selon l'enseignement officiel de l'École Ohara sur <Link 
+                        href="#nos-sites" className="underline"
+                    ><strong>trois sites à Paris et en Iles-de-france</strong></Link>.
+                    À travers des cours réguliers, des ateliers et des événements culturels, nous accompagnons débutants et pratiquants avancés dans l'apprentissage d'un art floral vivant, enraciné dans la tradition japonaise et ouvert sur la création contemporaine.
                 </p>
-              
+
                 <div className="hero-content__buttons">
                     <a href="#cours">
                         <button className="hero-content__cta-button">

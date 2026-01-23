@@ -14,10 +14,10 @@ export default function Home() {
             <Container>
                 <Discover />
             </Container>
+            <IkebanaInfo />
             <Container>
                 <ImageIkebana />
             </Container>
-            <IkebanaInfo />
             <SchoolInfo />
             <ScheduleSection />
             <ContactForm />
