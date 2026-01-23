@@ -5,7 +5,7 @@ const SchoolInfo = () => {
         <section
             id="nos-sites"
             className="
-    py-16 px-2
+    pb-16 
     bg-gradient-to-b
     from-[--primary-color]
     via-[--primary-color]/60
@@ -14,39 +14,13 @@ const SchoolInfo = () => {
         >
 
             <div className="mx-auto space-y-12  bg-gradient-to-b
-    from-white
-    via-[--primary-color]/60
+    from-[#675247]
     to-transparent py-8 md:rounded-lg">
-                {/* Nos Activités */}
-                <div className="text-center mb-4 p-6">
-                    <h2 className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
-                        style={{ fontFamily: 'var(--playfair-display)' }}>
-                        Nos Activités
-                    </h2>
-                    <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
-                        Nous organisons une exposition florale annuelle, des ateliers saisonniers, des ateliers avec des maîtres déplacés de l&apos;École Ohara au Japon, des voyages au Japon.
-                    </p>
-                </div>
-
-                {/* L&apos;Ikebana */}
-                <div className="text-center mb-4 p-6">
-                    <h2 className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
-                        style={{ fontFamily: 'var(--playfair-display)' }}>
-                        L&apos;Ikebana
-                    </h2>
-                    <p className="text-lg text-center text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
-                        Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de l&apos;espace vide comme donnée essentielle de la composition. Autre donnée importante, l&apos;harmonie parmi les matériaux utilisés, le vase et l&apos;emplacement. On retrouve toutes ces caractéristiques dans d&apos;autres formes d&apos;esthétique japonaise, à savoir, la peinture traditionnelle, l&apos;art des jardins, l&apos;architecture ou le design.
-                    </p>
-                </div>
-
                 {/* École Ohara */}
-                <div className="bg-[#e6dcdb] md:mx-2 py-8 px-6 md:rounded-lg">
+                <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
                     <h2 className="text-3xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
                         Présentation de l&apos;École Ohara
                     </h2>
-
-
-
                     <div className="mb-8">
                         <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                             Présentation Générale
@@ -118,6 +92,28 @@ const SchoolInfo = () => {
                         </div>
                     </div>
                 </div>
+                {/* Nos Activités */}
+                <div className="text-center mb-4 p-6">
+                    <h2 className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
+                        style={{ fontFamily: 'var(--playfair-display)' }}>
+                        Nos Activités
+                    </h2>
+                    <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
+                        Nous organisons une exposition florale annuelle, des ateliers saisonniers, des ateliers avec des maîtres déplacés de l&apos;École Ohara au Japon, des voyages au Japon.
+                    </p>
+                </div>
+
+                {/* L&apos;Ikebana */}
+                <div className="text-center mb-4 p-6">
+                    <h2 className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
+                        style={{ fontFamily: 'var(--playfair-display)' }}>
+                        L&apos;Ikebana
+                    </h2>
+                    <p className="text-lg text-center text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
+                        Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de l&apos;espace vide comme donnée essentielle de la composition. Autre donnée importante, l&apos;harmonie parmi les matériaux utilisés, le vase et l&apos;emplacement. On retrouve toutes ces caractéristiques dans d&apos;autres formes d&apos;esthétique japonaise, à savoir, la peinture traditionnelle, l&apos;art des jardins, l&apos;architecture ou le design.
+                    </p>
+                </div>
+
             </div>
         </section>
     );

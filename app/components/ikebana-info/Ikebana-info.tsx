@@ -7,7 +7,7 @@ function IkebanaInfo() {
             <Container>
                 <div className="mx-auto p-2">
                     {/* Titre principal */}
-                    <div className="text-center mb-16">
+                    <div id="le-style-ohara" className="text-center mb-16">
                         <h2
                             className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}

@@ -19,8 +19,8 @@ const Discover = async () => {
 
     return (
         <section className="hero mx-auto max-w-7xl lg:grid lg:grid-cols-2 mt-[60px]">
-            {isDesktop ? <Decoration /> : null}
             <Information />
+            {isDesktop ? <Decoration /> : null}
         </section>
     );
 };
