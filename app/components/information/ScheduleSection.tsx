@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Container from "../ui/Container"
+import Image from "next/image"
 
 export function ScheduleSection() {
   return (
@@ -20,14 +21,27 @@ export function ScheduleSection() {
             </div>
 
             <div className="grid w-full gap-6 md:grid-cols-3">
-              <Card className="border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
+              <Card id="tenri" className="border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
                 <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
-                  <CardTitle className="text-2xl text-[--secondary-color]" itemProp="name">
-                    Association Tenri
-                  </CardTitle>
-                  <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
-                    Cours le lundi et le samedi
-                  </CardDescription>
+                  <div className="flex items-center gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
+                      <Image
+                        src="/assets/logo_ecole_japonaise_tenri_paris.jpg"
+                        alt="Association culturelle Tenri Paris"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+
+                    <div>
+                      <CardTitle className="text-2xl text-[--secondary-color]" itemProp="name">
+                        Association Tenri
+                      </CardTitle>
+                      <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
+                        Cours le lundi et le samedi
+                      </CardDescription>
+                    </div>
+                  </div>
                 </CardHeader>
                 <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)]">
                   <div>
@@ -97,13 +111,27 @@ export function ScheduleSection() {
 
               <Card className="border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
                 <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
-                  <CardTitle className="text-2xl text-[--secondary-color]" itemProp="name">
-                    Centre culturel de Courbevoie
-                  </CardTitle>
-                  <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
-                    Cours au centre culturel
-                  </CardDescription>
+                  <div className="flex items-center gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
+                      <Image
+                        src="/assets/logo_centre_culturel_courbevoie.jpg"
+                        alt="Centre culturel de Courbevoie"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+
+                    <div>
+                      <CardTitle className="text-2xl text-[--secondary-color]" itemProp="name">
+                        Centre culturel de Courbevoie
+                      </CardTitle>
+                      <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
+                        Cours au centre culturel
+                      </CardDescription>
+                    </div>
+                  </div>
                 </CardHeader>
+
                 <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)]">
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
@@ -157,13 +185,27 @@ export function ScheduleSection() {
 
               <Card className="border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
                 <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
-                  <CardTitle className="text-2xl text-[--secondary-color]" itemProp="name">
-                    Association Fleurs &amp; Japon
-                  </CardTitle>
-                  <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
-                    Cours à Gif-sur-Yvette
-                  </CardDescription>
+                  <div className="flex items-center gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
+                      <Image
+                        src="/assets/logo_parc_vallee_de_chevreuse.svg"
+                        alt="Parc naturel régional de la Vallée de Chevreuse"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+
+                    <div>
+                      <CardTitle className="text-2xl text-[--secondary-color]" itemProp="name">
+                        Association Fleurs &amp; Japon
+                      </CardTitle>
+                      <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
+                        Cours à Gif-sur-Yvette
+                      </CardDescription>
+                    </div>
+                  </div>
                 </CardHeader>
+
                 <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)]">
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
@@ -190,10 +232,10 @@ export function ScheduleSection() {
                       <li>
                         <a
                           className="underline hover:text-black"
-                          href="mailto:ikuko.kato@free.fr"
+                          href="mailto:ikebana.ybs@gmail.com"
                           itemProp="email"
                         >
-                          ikuko.kato@free.fr
+                          ikebana.ybs@gmail.com
                         </a>
                       </li>
                     </ul>

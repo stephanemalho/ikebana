@@ -54,7 +54,7 @@ export function ContactForm() {
                                 <div className="flex justify-between items-center flex-col lg:flex-row gap-3">
                                     <div className="relative w-40 aspect-square my-4">
                                         <Image
-                                            src="/assets/adobe-express-qr-code.svg"
+                                            src="/assets/qr_code_to_google_contact_form.svg"
                                             alt="QR code pour contacter Exotic Perle Teckel"
                                             fill
                                             className="object-cover"

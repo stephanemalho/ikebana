@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../ui/Container";
 
 const SchoolInfo = () => {
@@ -19,7 +20,7 @@ const SchoolInfo = () => {
                 {/* École Ohara */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
                     <h2 className="text-3xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
-                        Présentation de l&apos;École Ohara
+                        Qu'est ce que de l&apos;École Ohara
                     </h2>
                     <div className="mb-8">
                         <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
@@ -27,7 +28,7 @@ const SchoolInfo = () => {
                         </h3>
                         <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                             <p>
-                                L&apos;école Ohara <strong>(小原流, Ohara-ryū)</strong> est l&apos;une des grandes écoles d&apos;Ikebana au Japon.
+                                L&apos;école Ohara <strong>(小原流, Ohara-ryū)</strong> est l&apos;une des plus grandes écoles d&apos;Ikebana au Japon.
                                 Elle a été fondée à la fin du XIXᵉ siècle (vers 1895), durant l&apos;époque Meiji <strong>(明治時代,Meiji jidai)</strong>, par <strong>Unshin Ohara</strong>.
                             </p><p>
                                 Contrairement aux écoles plus anciennes comme Ikenobō, dont la pratique est très codifiée et cérémoniale, l&apos;école Ohara propose une approche naturaliste, expressive et contemporaine.
@@ -66,6 +67,11 @@ const SchoolInfo = () => {
                             <p className="leading-relaxed">
                                 L&apos;école Ohara possède des bureaux à Tokyo et à Osaka avec 146 chapitres au Japon et plus de 100 chapitres internationaux avec un total de plus de <strong>300 000 membres</strong> dans le monde.
                             </p>
+                            <div className="text-center mt-6 pt-4 border-t border-[--secondary-color]/20">
+                                <Link href="#tenri" className="font-semibold text-lg hover:underline">
+                                    Inscrivez vous pour devenir membre de l&apos;École Ohara
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
@@ -93,25 +99,61 @@ const SchoolInfo = () => {
                     </div>
                 </div>
                 {/* Nos Activités */}
-                <div className="text-center mb-4 p-6">
-                    <h2 className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
+                <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
+                    <h2 className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
                         style={{ fontFamily: 'var(--playfair-display)' }}>
                         Nos Activités
                     </h2>
-                    <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
-                        Nous organisons une exposition florale annuelle, des ateliers saisonniers, des ateliers avec des maîtres déplacés de l&apos;École Ohara au Japon, des voyages au Japon.
-                    </p>
+                    <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
+                        <p
+                            className="text-lg text-[--secondary-color] leading-relaxed"
+                            style={{ fontFamily: 'var(--inter-ikebana)' }}
+                        >
+                            L'École Ikebana Ohara chapitre Yvelines - Paris, propose des activités culturelles et pédagogiques autour de l'art floral japonais,
+                            accessibles aux débutants comme aux pratiquants plus avancés.
+                            <br /><br />
+                            Nos actions s'articulent autour de cours réguliers, d'ateliers thématiques et de temps de transmission
+                            dédiés à la découverte de l'Ikebana dans le respect de la tradition Ohara.
+                            <br /><br />
+                            L'association organise également des rencontres culturelles, des démonstrations publiques
+                            et des projets collectifs visant à faire connaître l'esthétique japonaise,
+                            sa philosophie et son lien étroit avec la nature et les saisons.
+                        </p>
+
+                        <p className="text-lg text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
+                            Nous organisons une exposition florale annuelle, des ateliers saisonniers, des ateliers avec des maîtres déplacés de l&apos;École Ohara au Japon, des voyages au Japon.
+                        </p>
+                    </div>
                 </div>
 
                 {/* L&apos;Ikebana */}
-                <div className="text-center mb-4 p-6">
-                    <h2 className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
+                <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
+                    <h2 className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
                         style={{ fontFamily: 'var(--playfair-display)' }}>
                         L&apos;Ikebana
                     </h2>
-                    <p className="text-lg text-center text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
-                        Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de l&apos;espace vide comme donnée essentielle de la composition. Autre donnée importante, l&apos;harmonie parmi les matériaux utilisés, le vase et l&apos;emplacement. On retrouve toutes ces caractéristiques dans d&apos;autres formes d&apos;esthétique japonaise, à savoir, la peinture traditionnelle, l&apos;art des jardins, l&apos;architecture ou le design.
-                    </p>
+                    <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
+                        <p
+                            className="text-lg text-center text-[--secondary-color] leading-relaxed"
+                            style={{ fontFamily: 'var(--inter-ikebana)' }}
+                        >
+                            L'Ikebana est l'art floral traditionnel japonais. Bien plus qu'une composition décorative,
+                            il s'agit d'une discipline artistique et spirituelle fondée sur l'équilibre,
+                            l'asymétrie et l'harmonie entre les éléments naturels, le contenant et l'espace environnant.
+                            <br /><br />
+                            La pratique de l'Ikebana accorde une importance essentielle au vide,
+                            au rythme des lignes et à la relation entre les végétaux,
+                            en tenant compte des saisons, des formes et des matériaux utilisés.
+                            <br /><br />
+                            Cette approche se retrouve dans l'ensemble des arts japonais,
+                            tels que l'architecture, les jardins, la peinture ou le design,
+                            et invite à une observation attentive de la nature
+                            ainsi qu'à une pratique empreinte de calme et de concentration.
+                        </p>
+                        <p className="text-lg text-center text-[--secondary-color] leading-relaxed" style={{ fontFamily: 'var(--inter-ikebana)' }}>
+                            Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de l&apos;espace vide comme donnée essentielle de la composition. Autre donnée importante, l&apos;harmonie parmi les matériaux utilisés, le vase et l&apos;emplacement. On retrouve toutes ces caractéristiques dans d&apos;autres formes d&apos;esthétique japonaise, à savoir, la peinture traditionnelle, l&apos;art des jardins, l&apos;architecture ou le design.
+                        </p>
+                    </div>
                 </div>
 
             </div>
