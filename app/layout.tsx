@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
     title: metaDataString.title,
     description: metaDataString.description,
-    verification: {
-        google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
-    },
     alternates: {
         canonical: siteUrl
     },
