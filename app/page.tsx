@@ -7,14 +7,12 @@ import Container from "./components/ui/Container";
 import SchoolInfo from "./components/school-info/SchoolInfo";
 
 import StructuredData from "./components/seo/StructuredData";
-import SectionBreadcrumb from "./components/seo/SectionBreadcrumb";
 import FaqSection from "./components/seo/FaqSection";
 
 export default function Home() {
     return (
         <main id="top">
             <StructuredData />
-            <SectionBreadcrumb />
             <Container>
                 <Discover />
             </Container>
