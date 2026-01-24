@@ -6,13 +6,14 @@ import { ContactForm } from "./components/information/ContactForm";
 import { ScheduleSection } from "./components/information/ScheduleSection";
 import Container from "./components/ui/Container";
 import SchoolInfo from "./components/school-info/SchoolInfo";
-import Link from "next/link";
-import { Instagram } from "lucide-react";
+
 import Footer from "./components/footer/Footer";
+import StructuredData from "./components/seo/StructuredData";
 
 export default function Home() {
     return (
         <main>
+            <StructuredData />
             <Header />
             <Container>
                 <Discover />
