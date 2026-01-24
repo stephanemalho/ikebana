@@ -1,4 +1,4 @@
-// 📌 src/config/carouselConfig.ts
+// src/config/carouselConfig.ts
 
 export type carouselItemType = {
     imageUrl: string;
@@ -8,12 +8,14 @@ export type carouselItemType = {
 };
 
 export type carouselMetadataType = {
+    id: string;
     title: string;
     description: string;
     items: carouselItemType[];
 };
 
 export const carouselIkebanaData: carouselMetadataType = {
+    id: "creations-ikebana",
     title: "Créations Ikebana École Ohara",
     description:
         "Plongez dans l'esthétique de l'école Ohara, reconnue pour son approche naturaliste et son attention profonde aux saisons (四季,shiki). Les formes Moribana, Heika ou Rinpa expriment chacune un rapport unique au paysage, à la lumière et au cycle naturel. Ces créations illustrent l'essence même de l'ikebana : saisir l'instant présent à travers les fleurs.",
@@ -137,6 +139,7 @@ export const carouselIkebanaData: carouselMetadataType = {
 };
 
 export const carouselInspirationData: carouselMetadataType = {
+    id: "inspirations-ikebana",
     title: "Sources d'Inspiration pour l'Ikebana",
     description:
         "Découvrez une collection d'inspirations florales qui nourrissent l'âme créatrice. Initiez-vous à l'art de l'ikebana et apprenez à transformer l'inspiration naturelle en compositions raffinées, porteuses de sens et d'émotion..",

@@ -1,3 +1,6 @@
+import { faqItems } from "@/app/constant/seo/faq";
+import { sectionLinks } from "@/app/constant/seo/sections";
+
 const siteUrl = "https://ohara-chapitre-yvelines-paris.fr";
 
 const structuredData = {
@@ -17,15 +20,14 @@ const structuredData = {
                 streetAddress: "26 44 RUE DU PLATEAU DU MOULIN",
                 postalCode: "78700",
                 addressLocality: "Conflans-Sainte-Honorine",
-                addressRegion: "Ile-de-France",
+                addressRegion: "Île-de-France",
                 addressCountry: "FR"
             },
             areaServed: [
-                { "@type": "AdministrativeArea", "name": "Paris" },
-                { "@type": "AdministrativeArea", "name": "Yvelines" },
-                { "@type": "AdministrativeArea", "name": "Hauts-de-Seine" },
-                { "@type": "AdministrativeArea", "name": "Essonne" },
-                { "@type": "AdministrativeArea", "name": "Île-de-France" }
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Île-de-France"
+                }
             ]
             ,
             sameAs: [
@@ -70,7 +72,7 @@ const structuredData = {
                     streetAddress: "26 44 RUE DU PLATEAU DU MOULIN",
                     postalCode: "78700",
                     addressLocality: "Conflans-Sainte-Honorine",
-                    addressRegion: "Ile-de-France",
+                    addressRegion: "Île-de-France",
                     addressCountry: "FR"
                 }
             }
@@ -102,6 +104,9 @@ const structuredData = {
             primaryImageOfPage: {
                 "@type": "ImageObject",
                 url: `${siteUrl}/images/logo-ohara-yvelines-paris.png`
+            },
+            breadcrumb: {
+                "@id": `${siteUrl}#breadcrumb`
             }
         },
         {
@@ -119,44 +124,24 @@ const structuredData = {
         {
             "@type": "BreadcrumbList",
             "@id": `${siteUrl}#breadcrumb`,
-            itemListElement: [
-                {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Accueil",
-                    item: siteUrl
-                },
-                {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "École Ohara",
-                    item: `${siteUrl}#nos-sites`
-                },
-                {
-                    "@type": "ListItem",
-                    position: 3,
-                    name: "Ikebana",
-                    item: `${siteUrl}#le-style-ohara`
-                },
-                {
-                    "@type": "ListItem",
-                    position: 4,
-                    name: "Créations",
-                    item: `${siteUrl}#about-ikebana`
-                },
-                {
-                    "@type": "ListItem",
-                    position: 5,
-                    name: "Cours",
-                    item: `${siteUrl}#cours`
-                },
-                {
-                    "@type": "ListItem",
-                    position: 6,
-                    name: "Contact",
-                    item: `${siteUrl}#contact`
+            itemListElement: sectionLinks.map((section, index) => ({
+                "@type": "ListItem",
+                position: index + 1,
+                name: section.label,
+                item: section.id === "top" ? siteUrl : `${siteUrl}#${section.id}`
+            }))
+        },
+        {
+            "@type": "FAQPage",
+            "@id": `${siteUrl}#faq`,
+            mainEntity: faqItems.map((item) => ({
+                "@type": "Question",
+                name: item.question,
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: item.answer
                 }
-            ]
+            }))
         },
         {
             "@type": "EventSeries",

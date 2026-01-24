@@ -1,14 +1,17 @@
 import { carouselMetadataType } from "./carouselConfig";
 
 type CarouselMainTitleProps = {
+    id: carouselMetadataType["id"];
     title: carouselMetadataType["title"];
     description: carouselMetadataType["description"];
 };
 
-function CarouselMainTitle({ title, description }: CarouselMainTitleProps) {
+function CarouselMainTitle({ id, title, description }: CarouselMainTitleProps) {
     return (
         <>
-            <h2 className="text-4xl text-center font-semibold text-[var(--secondary-color)] mb-6"
+            <h2
+                id={id}
+                className="text-4xl text-center font-semibold text-[var(--secondary-color)] mb-6"
                 style={{ fontFamily: "var(--playfair-display)" }}>
                 {title}
             </h2>

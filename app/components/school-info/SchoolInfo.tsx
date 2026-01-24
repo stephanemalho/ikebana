@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Container from "../ui/Container";
 
 const SchoolInfo = () => {
     return (
@@ -19,7 +18,7 @@ const SchoolInfo = () => {
     to-transparent py-8 md:rounded-lg">
                 {/* École Ohara */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 className="text-3xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
+                    <h2 id="ecole-ohara" className="text-3xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
                         Qu'est ce que de l&apos;École Ohara
                     </h2>
                     <div className="mb-8">
@@ -100,7 +99,7 @@ const SchoolInfo = () => {
                 </div>
                 {/* Nos Activités */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
+                    <h2 id="nos-activites" className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
                         style={{ fontFamily: 'var(--playfair-display)' }}>
                         Nos Activités
                     </h2>
@@ -128,7 +127,7 @@ const SchoolInfo = () => {
 
                 {/* L&apos;Ikebana */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
+                    <h2 id="ikebana" className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
                         style={{ fontFamily: 'var(--playfair-display)' }}>
                         L&apos;Ikebana
                     </h2>

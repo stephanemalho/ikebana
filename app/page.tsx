@@ -9,12 +9,15 @@ import SchoolInfo from "./components/school-info/SchoolInfo";
 
 import Footer from "./components/footer/Footer";
 import StructuredData from "./components/seo/StructuredData";
+import SectionBreadcrumb from "./components/seo/SectionBreadcrumb";
+import FaqSection from "./components/seo/FaqSection";
 
 export default function Home() {
     return (
-        <main>
+        <main id="top">
             <StructuredData />
             <Header />
+            <SectionBreadcrumb />
             <Container>
                 <Discover />
             </Container>
@@ -27,6 +30,7 @@ export default function Home() {
             </Container>
             <ScheduleSection />
             <ContactForm />
+            <FaqSection />
             <Footer />
         </main>
     );

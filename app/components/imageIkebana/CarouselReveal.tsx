@@ -34,7 +34,7 @@ function CarouselReveal({ carouselData, height, mobileMaxItems = 5 }: CarouselRe
 
     return (
         <div className="w-full">
-            <CarouselMainTitle title={carouselData.title} description={carouselData.description} />
+            <CarouselMainTitle id={carouselData.id} title={carouselData.title} description={carouselData.description} />
 
             {!showCarousel ? (
                 <div className="w-full flex flex-col items-center">

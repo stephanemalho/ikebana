@@ -3,7 +3,6 @@ import { ListChecks, ShieldCheck, Clock } from "lucide-react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "../ui/Container";
-import Link from "next/link";
 
 export function ContactForm() {
     return (
@@ -20,7 +19,7 @@ export function ContactForm() {
                         </div>
                         <Card className="bg-muted m-auto">
                             <CardContent className="p-6 space-y-4">
-                                <h2 className="text-xl md:text-2xl font-semibold">Échangeons ensemble avant de prendre rendez-vous</h2>
+                                <h3 className="text-xl md:text-2xl font-semibold">Échangeons ensemble avant de prendre rendez-vous</h3>
                                 <p className="text-muted-foreground">
                                     Ce formulaire permet de prendre un premier contact et de préciser votre besoin.
                                     <br />
