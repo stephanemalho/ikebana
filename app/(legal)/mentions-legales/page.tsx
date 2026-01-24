@@ -6,6 +6,9 @@ export default function MentionsLegalesPage() {
             <Container>
                 <div className="px-4 md:px-6 space-y-8 text-[--secondary-color]">
                     <header className="space-y-2">
+                        <a className="text-sm underline" href="/">
+                            Retour à l’accueil
+                        </a>
                         <h1 className="text-4xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                             Mentions légales
                         </h1>
