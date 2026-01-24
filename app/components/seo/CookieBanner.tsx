@@ -29,10 +29,23 @@ export default function CookieBanner() {
                 title="Gérer les cookies"
                 type="button"
                 onClick={() => setIsOpen(true)}
-                className="fixed h-12 w-12 bottom-4 left-4 z-50 rounded-full border border-[--secondary-color]/30 bg-white text-xs text-[--secondary-color] shadow"
+                className="
+        fixed bottom-4 left-4 z-50
+        flex items-center justify-center
+        h-12 w-12
+        rounded-full
+        border border-[--secondary-color]/30
+        bg-white/70 backdrop-blur-md
+        text-[--secondary-color]
+        shadow-lg
+        transition
+        hover:bg-white/90 hover:shadow-xl
+        focus:outline-none focus-visible:ring-2 focus-visible:ring-[--secondary-color]/40
+    "
             >
-                <Cookie className="inline-block mr-1 h-8 w-8" />
+                <Cookie className="h-5 w-5" />
             </button>
+
         );
     }
 
