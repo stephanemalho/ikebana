@@ -18,7 +18,7 @@ const Discover = async () => {
     const isDesktop = isDesktopFromUA(ua);
 
     return (
-        <section className="hero mx-auto max-w-7xl lg:grid lg:grid-cols-2 mt-[60px]">
+        <section className="mx-auto max-w-7xl lg:grid lg:grid-cols-2 mt-[126px]">
             <Information />
             {isDesktop ? <Decoration /> : null}
         </section>
