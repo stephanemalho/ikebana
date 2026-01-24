@@ -46,33 +46,48 @@ export function ScheduleSection() {
                 <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)] flex-1 h-[360px]">
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
+
                     <address
                       className="not-italic"
                       itemProp="address"
                       itemScope
                       itemType="https://schema.org/PostalAddress"
                     >
-                      <span itemProp="streetAddress">8-12 Rue Bertin Poirée</span>
-                      <br />
-                      <span itemProp="postalCode">75001</span>{" "}
-                      <span itemProp="addressLocality">Paris</span>
+                      <a
+                        href="https://www.google.com/maps/place/8-12+Rue+Bertin+Poir%C3%A9e,+75001+Paris,+France"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-black"
+                      >
+                        <span itemProp="streetAddress">8-12 Rue Bertin Poirée</span>
+                        <br />
+                        <span itemProp="postalCode">75001</span>{" "}
+                        <span itemProp="addressLocality">Paris</span>
+                        <br />
+                        <span itemProp="addressCountry">FR</span>
+                      </a>
                     </address>
                   </div>
+
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Contact</h3>
                     <ul className="space-y-2">
                       <li>
-                        <a className="underline hover:text-black" href="tel:+33144760606" itemProp="telephone">
+                        <a
+                          href="tel:+33144760606"
+                          className="underline hover:text-black"
+                          itemProp="telephone"
+                        >
                           01 44 76 06 06
                         </a>
                       </li>
                       <li>
                         <a
-                          className="underline hover:text-black"
                           href="https://www.tenri-paris.com/contact/"
-                          itemProp="url"
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="url"
                         >
                           Page de contact
                         </a>
@@ -109,7 +124,11 @@ export function ScheduleSection() {
                 </CardContent>
               </Card>
 
-              <Card className="flex flex-col h-full border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
+              <Card
+                className="flex flex-col h-full border-[--secondary-color]/20"
+                itemScope
+                itemType="https://schema.org/Place"
+              >
                 <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg h-[140px]">
                   <div className="grid grid-cols-[48px_1fr] items-start gap-4">
                     <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
@@ -122,9 +141,13 @@ export function ScheduleSection() {
                     </div>
 
                     <div className="grid gap-1">
-                      <CardTitle className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]" itemProp="name">
+                      <CardTitle
+                        className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]"
+                        itemProp="name"
+                      >
                         Centre culturel de Courbevoie
                       </CardTitle>
+
                       <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
                         Cours au centre culturel
                       </CardDescription>
@@ -133,57 +156,83 @@ export function ScheduleSection() {
                 </CardHeader>
 
                 <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)] flex-1 h-[360px]">
+                  {/* Adresse */}
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
+
                     <address
                       className="not-italic"
                       itemProp="address"
                       itemScope
                       itemType="https://schema.org/PostalAddress"
                     >
-                      <span itemProp="streetAddress">14bis square de l&apos;Hôtel de ville</span>
-                      <br />
-                      <span itemProp="postalCode">92400</span>{" "}
-                      <span itemProp="addressLocality">Courbevoie</span>
+                      <a
+                        href="https://www.google.com/maps/place/14bis+Square+de+l'H%C3%B4tel+de+Ville,+92400+Courbevoie,+France"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-black"
+                      >
+                        <span itemProp="streetAddress">
+                          14bis square de l'Hôtel de ville
+                        </span>
+                        <br />
+                        <span itemProp="postalCode">92400</span>{" "}
+                        <span itemProp="addressLocality">Courbevoie</span>
+                        <br />
+                        <span itemProp="addressCountry">FR</span>
+                      </a>
                     </address>
                   </div>
+
+                  {/* Contact */}
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Contact</h3>
                     <ul className="space-y-2">
                       <li>
-                        <a className="underline hover:text-black" href="tel:+33171057949" itemProp="telephone">
+                        <a
+                          href="tel:+33171057949"
+                          className="underline hover:text-black"
+                          itemProp="telephone"
+                        >
                           01 71 05 79 49
                         </a>
                       </li>
                       <li>
                         <a
-                          className="underline hover:text-black"
                           href="https://www.ville-courbevoie.fr/2801/culture-loisirs/centres-culturels.htm"
-                          itemProp="url"
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="url"
                         >
                           Informations et contact
                         </a>
                       </li>
                     </ul>
                   </div>
+
+                  {/* Localisation */}
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Localisation</h3>
                     <a
-                      className="underline hover:text-black"
-                      href="https://share.google/0i7nt448AZ2B7bZeg"
-                      itemProp="hasMap"
+                      href="https://www.google.com/maps/place/Centre+Culturel+de+Courbevoie"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-black"
+                      itemProp="hasMap"
                     >
-                      Voir sur Google
+                      Voir sur Google Maps
                     </a>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="flex flex-col h-full border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
+
+              <Card
+                className="flex flex-col h-full border-[--secondary-color]/20"
+                itemScope
+                itemType="https://schema.org/Place"
+              >
                 <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg h-[140px]">
                   <div className="grid grid-cols-[48px_1fr] items-start gap-4">
                     <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
@@ -196,9 +245,13 @@ export function ScheduleSection() {
                     </div>
 
                     <div className="grid gap-1">
-                      <CardTitle className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]" itemProp="name">
+                      <CardTitle
+                        className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]"
+                        itemProp="name"
+                      >
                         Association Fleurs &amp; Japon
                       </CardTitle>
+
                       <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
                         Cours à Gif-sur-Yvette
                       </CardDescription>
@@ -207,73 +260,92 @@ export function ScheduleSection() {
                 </CardHeader>
 
                 <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)] flex-1 h-[360px]">
+                  {/* Adresse */}
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
+
                     <address
                       className="not-italic"
                       itemProp="address"
                       itemScope
                       itemType="https://schema.org/PostalAddress"
                     >
-                      <span itemProp="streetAddress">3 All. de l&apos;Étang</span>
-                      <br />
-                      <span itemProp="postalCode">91190</span>{" "}
-                      <span itemProp="addressLocality">Gif-sur-Yvette</span>
+                      <a
+                        href="https://www.google.com/maps/place/3+Allée+de+l'Étang,+91190+Gif-sur-Yvette,+France"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-black"
+                      >
+                        <span itemProp="streetAddress">3 Allée de l'Étang</span>
+                        <br />
+                        <span itemProp="postalCode">91190</span>{" "}
+                        <span itemProp="addressLocality">Gif-sur-Yvette</span>
+                        <br />
+                        <span itemProp="addressCountry">FR</span>
+                      </a>
                     </address>
                   </div>
+
+                  {/* Contact */}
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Contact</h3>
                     <ul className="space-y-2">
                       <li>
-                        <a className="underline hover:text-black" href="tel:+33632569075" itemProp="telephone">
+                        <a
+                          href="tel:+33632569075"
+                          className="underline hover:text-black"
+                          itemProp="telephone"
+                        >
                           06 32 56 90 75
                         </a>
                       </li>
                       <li>
                         <a
+                          href="https://www.parc-naturel-chevreuse.fr/node/12583"
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="underline hover:text-black"
-                          href="mailto:ikebana.ybs@gmail.com"
-                          itemProp="email"
                         >
-                          ikebana.ybs@gmail.com
+                          Contact
                         </a>
                       </li>
                     </ul>
                   </div>
+
+                  {/* Liens utiles */}
                   <div>
                     <h3 className="text-lg font-semibold text-[--secondary-color]">Liens utiles</h3>
                     <ul className="space-y-2">
                       <li>
                         <a
-                          className="underline hover:text-black"
                           href="https://www.parc-naturel-chevreuse.fr/fleurs-et-japon"
-                          itemProp="url"
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="url"
                         >
                           Présentation de l&apos;association
                         </a>
                       </li>
                       <li>
                         <a
-                          className="underline hover:text-black"
                           href="https://annuaire-entreprises.data.gouv.fr/etablissement/87765186900019"
-                          itemProp="url"
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
                         >
                           Fiche annuaire
                         </a>
                       </li>
                       <li>
                         <a
-                          className="underline hover:text-black"
-                          href="https://www.google.com/maps/place/3+All.+de+l'%C3%89tang,+91190+Gif-sur-Yvette/@48.7018837,2.1374972,17z/data=!3m1!4b1!4m6!3m5!1s0x47e67f7ce2bb20d9:0x53641636c83643b!8m2!3d48.7018837!4d2.1400721!16s%2Fg%2F11cpgzx9wj?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
-                          itemProp="hasMap"
+                          href="https://www.google.com/maps/place/3+Allée+de+l'Étang,+91190+Gif-sur-Yvette,+France"
                           target="_blank"
-                          rel="noreferrer"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="hasMap"
                         >
-                          Localisation Google
+                          Localisation Google Maps
                         </a>
                       </li>
                     </ul>
@@ -284,6 +356,6 @@ export function ScheduleSection() {
           </div>
         </div>
       </Container>
-    </section>
+    </section >
   )
 }

@@ -61,8 +61,8 @@ export function ContactForm() {
                                         />
                                     </div>
                                     <div className="flex flex-col items-center space-y-2">
-                                        <Link target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdJZ1_8UeepUOleWFVa6K1RBoogx_8LcJKMNNQfjs5DG-KnkQ/viewform?usp=header" className="hero-content__cta-button">Accéder au formulaire
-                                        </Link>
+                                        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdJZ1_8UeepUOleWFVa6K1RBoogx_8LcJKMNNQfjs5DG-KnkQ/viewform?usp=header" className="hero-content__cta-button">Accéder au formulaire
+                                        </a>
                                         <span className="text-sm italic text-muted-foreground/80">Vous recevrez un exemplaire par mail</span>
                                     </div>
                                 </div>

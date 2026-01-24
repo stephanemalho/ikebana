@@ -28,8 +28,8 @@ const SchoolInfo = () => {
                         </h3>
                         <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                             <p>
-                                L&apos;école Ohara <strong>(小原流, Ohara-ryū)</strong> est l&apos;une des plus grandes écoles d&apos;Ikebana au Japon.
-                                Elle a été fondée à la fin du XIXᵉ siècle (vers 1895), durant l&apos;époque Meiji <strong>(明治時代,Meiji jidai)</strong>, par <strong>Unshin Ohara</strong>.
+                                L&apos;école Ohara <Link className="hover:underline" href="https://www.ohararyu.or.jp/" target="_blank" ><strong>(小原流, Ohara-ryū)</strong></Link> est l&apos;une des plus grandes écoles d&apos;Ikebana au Japon.
+                                Elle a été fondée à Tokyo à la fin du XIXᵉ siècle (vers 1895), durant l&apos;époque Meiji <strong>(明治時代,Meiji jidai)</strong>, par <strong>Unshin Ohara</strong>.
                             </p><p>
                                 Contrairement aux écoles plus anciennes comme Ikenobō, dont la pratique est très codifiée et cérémoniale, l&apos;école Ohara propose une approche naturaliste, expressive et contemporaine.
                                 Elle a joué un rôle essentiel dans l&apos;évolution de l&apos;Ikebana en introduisant de nouvelles formes, comme le moribana, inspirées des paysages naturels.
