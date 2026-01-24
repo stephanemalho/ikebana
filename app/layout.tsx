@@ -3,6 +3,10 @@ import { Noto_Sans_JP, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/goo
 import './globals.css';
 import { metaDataString } from './constant/metadata/head';
 import AOSProvider from './components/wrapper/AOSProvider';
+import CookieBanner from "./components/seo/CookieBanner";
+import ConsentScripts from "./components/seo/ConsentScripts";
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 const siteUrl = "https://ohara-chapitre-yvelines-paris.fr";
 
@@ -28,6 +32,9 @@ export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
     title: metaDataString.title,
     description: metaDataString.description,
+    verification: {
+        google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    },
     alternates: {
         canonical: siteUrl
     },
@@ -75,7 +82,13 @@ export default function RootLayout({
     return (
         <html lang="fr">
             <body className={`${notoSansJP.variable} ${playfair.variable} ${jakarta.variable}`}>
-                <AOSProvider>{children}</AOSProvider>
+                <AOSProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                </AOSProvider>
+                <ConsentScripts />
+                <CookieBanner />
             </body>
         </html>
     );
