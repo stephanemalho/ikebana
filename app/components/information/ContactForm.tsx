@@ -9,12 +9,12 @@ export function ContactForm() {
         <section id="contact" className="w-full py-12 bg-[--primary-color]">
             <Container>
                 <div className="container px-4 md:px-6 m-auto">
-                    <div className="flex flex-col items-start  md:gap-8 mb-10">
-                        <div className="grid gap-1">
+                    <div className="flex flex-col items-start gap-8 mb-10">
+                        <div className="grid gap-6">
                             <h2 className="text-2xl font-bold text-[#4f0b06]" style={{ fontFamily: "var(--playfair-display)" }}>
                                 Formulaire de contact direct avec Ikuko Kato
                             </h2>
-                            <p className="text-base text-[--secondary-color] font-[var(--inter-ikebana)]">Quelques questions pour mieux comprendre votre demande avant de vous répondre.
+                            <p className="text-sm md:text-base text-[--secondary-color] font-[var(--inter-ikebana)]">Quelques questions pour mieux comprendre votre demande avant de vous répondre.
                             </p>
                         </div>
                         <Card className="bg-muted m-auto">

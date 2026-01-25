@@ -11,7 +11,7 @@ const Footer = () => {
                     <HeaderTitle />
                 </div>
             <Container>
-                <div className="flex flex-col items-center w-full justify-center md:flex-row">
+                <div className="flex flex-col items-center w-full justify-center md:flex-row gap-12 md:justify-between py-6">
                     <a
                         href="https://www.instagram.com/ikebanaparis/"
                         target="_blank"
@@ -22,7 +22,7 @@ const Footer = () => {
                         <Instagram className="h-6 w-6" aria-hidden="true" />
                         <span className="text-sm font-medium">Suivez-nous sur Instagram</span>
                     </a>
-                    <div className="flex m-auto items-center gap-4">
+                    <div className="flex flex-col md:flex-row m-auto items-center gap-4 px-4">
                         <Link className="text-sm text-[--secondary-color] underline hover:text-black" href="/mentions-legales">
                             Mentions légales
                         </Link>

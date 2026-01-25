@@ -57,7 +57,7 @@ function CarouselReveal({ carouselData, height, mobileMaxItems = 5 }: CarouselRe
                         className="mt-6 underline text-[--secondary-color] hover:text-black"
                         onClick={() => setShowCarousel(true)}
                     >
-                        Voir plus d&apos;images
+                        {carouselData.seeMoreUrl || "Voir le carrousel complet"}
                     </button>
                 </div>
             ) : (

@@ -197,7 +197,7 @@ function IkebanaInfo() {
                     {/* Citation finale */}
                     <div className="mt-12 text-center">
                         <blockquote
-                            className="text-xl md:text-2xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
+                            className="text-sm md:text-xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
                             style={{ fontFamily: "var(--inter-ikebana)" }}
                         >
                             &quot;Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de

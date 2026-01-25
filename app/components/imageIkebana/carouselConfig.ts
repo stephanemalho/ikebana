@@ -11,6 +11,7 @@ export type carouselMetadataType = {
     id: string;
     title: string;
     description: string;
+    seeMoreUrl?: string;
     items: carouselItemType[];
 };
 
@@ -19,6 +20,7 @@ export const carouselIkebanaData: carouselMetadataType = {
     title: "Créations Ikebana École Ohara",
     description:
         "Plongez dans l'esthétique de l'école Ohara, reconnue pour son approche naturaliste et son attention profonde aux saisons (四季,shiki). Les formes Moribana, Heika ou Rinpa expriment chacune un rapport unique au paysage, à la lumière et au cycle naturel. Ces créations illustrent l'essence même de l'ikebana : saisir l'instant présent à travers les fleurs.",
+    seeMoreUrl: "Voir plus de créations pour chaques saisons",
     items: [
         {
             imageUrl: "/images/ikebana-creation/heika-4-saisons.webp",
@@ -143,6 +145,7 @@ export const carouselInspirationData: carouselMetadataType = {
     title: "Sources d'Inspiration pour l'Ikebana",
     description:
         "Découvrez une collection d'inspirations florales qui nourrissent l'âme créatrice. Initiez-vous à l'art de l'ikebana et apprenez à transformer l'inspiration naturelle en compositions raffinées, porteuses de sens et d'émotion..",
+    seeMoreUrl: "Voir plus d'inspirations pour l'ikebana",
     items: [
         {
             imageUrl:
@@ -167,7 +170,7 @@ export const carouselInspirationData: carouselMetadataType = {
                 "La beauté éphémère des cerisiers en fleurs, symbole du renouveau."
         },
         {
-            imageUrl: "/images/inspiration-for-ikebana/night-sakure.JPEG",
+            imageUrl: "/images/inspiration-for-ikebana/night-sakure.webp",
             altText: "Sakura nocturne",
             title: "Mystère Nocturne",
             description:
@@ -210,7 +213,7 @@ export const carouselInspirationData: carouselMetadataType = {
                 "Les sakura roses célèbrent l'amour naissant et les nouveaux commencements."
         },
         {
-            imageUrl: "/images/inspiration-for-ikebana/pink-sakura-tree.JPEG",
+            imageUrl: "/images/inspiration-for-ikebana/pink-sakura-tree.webp",
             altText: "Arbre de sakura rose",
             title: "Majesté Florale",
             description:
