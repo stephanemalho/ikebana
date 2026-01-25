@@ -6,8 +6,8 @@ import HeaderTitle from '../header/headerTitle/HeaderTitle'
 
 const Footer = () => {
     return (
-        <section className="flex flex-col justify-between w-full md:h-[220px]">
-            <div className="flex justify-center pt-4">
+        <section className="flex flex-col justify-between w-full h-auto">
+            <div className="flex justify-center bg-white w-fit mx-auto rounded-sm my-2 overflow-hidden">
                 <HeaderTitle />
             </div>
             <Container>

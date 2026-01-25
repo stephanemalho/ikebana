@@ -20,31 +20,31 @@ export function ContactForm() {
                         <Card className="bg-muted m-auto">
                             <CardContent className="p-6 space-y-4">
                                 <h3 className="text-xl md:text-2xl font-semibold">Échangeons ensemble avant de prendre rendez-vous</h3>
-                                <p className="text-muted-foreground">
+                                <p className="text-sm md:text-base text-[--secondary-color]">
                                     Ce formulaire permet de prendre un premier contact et de préciser votre besoin.
                                     <br />
-                                    <span className="text-sm italic text-muted-foreground/80">
+                                    <span className="text-sm italic text-[--secondary-color]">
                                         (réponse personnalisée, sans engagement)
                                     </span>
                                 </p>
                                 <div className="space-y-6">
                                     <div className="flex items-center space-x-2">
-                                        <ListChecks className="h-4 w-4 text-primary" aria-hidden="true" />
-                                        <span className="text-sm text-muted-foreground">
+                                        <ListChecks className="h-4 w-4 text-green-800" aria-hidden="true" />
+                                        <span className="text-sm text-[--secondary-color]">
                                             Formulaire simple à remplir (2-3 minutes)
                                         </span>
                                     </div>
 
                                     <div className="flex items-center space-x-2">
-                                        <ShieldCheck className="h-4 w-4 text-primary" aria-hidden="true" />
-                                        <span className="text-sm text-muted-foreground">
+                                        <ShieldCheck className="h-4 w-4 text-blue-500" aria-hidden="true" />
+                                        <span className="text-sm text-[--secondary-color]">
                                             Les informations restent strictement confidentielles
                                         </span>
                                     </div>
 
                                     <div className="flex items-center space-x-2">
-                                        <Clock className="h-4 w-4 text-primary" aria-hidden="true" />
-                                        <span className="text-sm text-muted-foreground">
+                                        <Clock className="h-4 w-4 text-yellow-800" aria-hidden="true" />
+                                        <span className="text-sm text-[--secondary-color]">
                                             Une réponse vous sera apportée dans les meilleurs délais
                                         </span>
                                     </div>
@@ -62,7 +62,7 @@ export function ContactForm() {
                                     <div className="flex flex-col items-center space-y-2">
                                         <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScZOzJG56HlUbwWEgHSKUgK6oPzi36LwUS4SQHhg_oC8kN-MA/viewform?usp=dialog" className="hero-content__cta-button">Accéder au formulaire
                                         </a>
-                                        <span className="text-sm italic text-muted-foreground/80">Vous recevrez un exemplaire par mail</span>
+                                        <span className="text-sm italic text-[--secondary-color]">Vous recevrez un exemplaire par mail</span>
                                     </div>
                                 </div>
                             </CardContent>
