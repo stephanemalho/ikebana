@@ -1,6 +1,6 @@
 export const stringHeader = {
-    title : "Ikebana - Ohara",
-    paragraph : "Par Ikuko Kurenai Kato",
+    title : "Ikebana école Ohara",
+    paragraph : "Chapitre Yvelines Paris",
     nav : {
         discover : "Découvrir",
         course : "Créations",
@@ -8,4 +8,4 @@ export const stringHeader = {
     }
 }
 
-// link to instagram https://www.instagram.com/ikebanaparis/
+// link to instagram https://www.instagram.com/ikebanaparis/  Ikebana école Ohara chapitre Yvelines Paris

@@ -18,11 +18,11 @@ const SchoolInfo = () => {
     to-transparent py-8 md:rounded-lg">
                 {/* École Ohara */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 id="ecole-ohara" className="text-3xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
+                    <h2 id="ecole-ohara" className="text-2xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
                         Qu'est ce que de l&apos;École Ohara
                     </h2>
                     <div className="mb-8">
-                        <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
+                        <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                             Présentation Générale
                         </h3>
                         <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
@@ -38,7 +38,7 @@ const SchoolInfo = () => {
 
                     {/* Historique */}
                     <div className="mb-8">
-                        <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
+                        <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                             Historique
                         </h3>
                         <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
@@ -56,7 +56,7 @@ const SchoolInfo = () => {
 
                     {/* Aujourd&apos;hui */}
                     <div className="mb-8">
-                        <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
+                        <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                             Aujourd&apos;hui
                         </h3>
                         <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
@@ -76,7 +76,7 @@ const SchoolInfo = () => {
 
                     {/* Chapitre Yvelines-Paris */}
                     <div className="border-t border-dashed border-[--secondary-color]/20 pt-6">
-                        <h3 className="text-2xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
+                        <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                             École Ohara Chapitre Yvelines-Paris
                         </h3>
                         <div className="space-y-4 text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
@@ -99,7 +99,7 @@ const SchoolInfo = () => {
                 </div>
                 {/* Nos Activités */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 id="nos-activites" className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
+                    <h2 id="nos-activites" className="text-2xl text-center font-bold text-[var(--secondary-color)] mb-6"
                         style={{ fontFamily: 'var(--playfair-display)' }}>
                         Nos Activités
                     </h2>
@@ -127,7 +127,7 @@ const SchoolInfo = () => {
 
                 {/* L&apos;Ikebana */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 id="ikebana" className="text-3xl text-center font-bold text-[var(--secondary-color)] mb-6"
+                    <h2 id="ikebana" className="text-2xl text-center font-bold text-[var(--secondary-color)] mb-6"
                         style={{ fontFamily: 'var(--playfair-display)' }}>
                         L&apos;Ikebana
                     </h2>

@@ -4,11 +4,15 @@ const Information = () => {
     return (
         <div className="hero-content">
             <div className="hero-content-info p-4 lg:py-16">
+                {/* Ikebana école Ohara chapitre Yvelines Paris */}
                 <h1 className="text-4xl">
-                    École d'Ikebana
-                    <span className="text-[#b75d71]"> Ohara</span> - Cours et enseignement floral à {" "}
-                    <span className="text-[#b75d71]">Paris et dans les Yvelines</span>
+                    Ikebana école
+                    <span className="text-[#b75d71]"> Ohara</span> - chapitre Yvelines Paris<br />
+                    <span className="text-[#b75d71]">
+                        cours et enseignement de l'ikebana, art floral japonais
+                    </span>
                 </h1>
+
                 <p>
                     L'École d'Ikebana Ohara - Chapitre Yvelines Paris transmet l'art japonais de l'ikebana selon l'enseignement officiel de l'École Ohara, à travers{" "}
                     <Link

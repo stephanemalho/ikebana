@@ -11,7 +11,7 @@ function CarouselMainTitle({ id, title, description }: CarouselMainTitleProps) {
         <>
             <h2
                 id={id}
-                className="text-4xl text-center font-semibold text-[var(--secondary-color)] mb-6"
+                className="text-2xl text-center font-semibold text-[var(--secondary-color)] mb-6"
                 style={{ fontFamily: "var(--playfair-display)" }}>
                 {title}
             </h2>

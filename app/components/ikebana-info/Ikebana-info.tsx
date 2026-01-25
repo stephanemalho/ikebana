@@ -9,7 +9,7 @@ function IkebanaInfo() {
                     {/* Titre principal */}
                     <div id="le-style-ohara" className="text-center mb-16">
                         <h2
-                            className="text-4xl font-bold text-[var(--secondary-color)] mb-6"
+                            className="text-2xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
                             Qu&apos;est-ce que l&apos;Ikebana ?
@@ -26,7 +26,7 @@ function IkebanaInfo() {
                                     <BookOpen size={22} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h3
-                                    className="text-2xl font-bold text-[var(--secondary-color)]"
+                                    className="text-xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--Plus_Jakarta_Sans)" }}
                                 >
                                     Une Tradition Millénaire
@@ -83,6 +83,7 @@ function IkebanaInfo() {
                                 className="text-[var(--secondary-color)] text-sm space-y-2"
                                 style={{ fontFamily: "var(--inter-ikebana)" }}
                             >
+                                <li>• Fleurs</li>
                                 <li>• Branches et feuilles</li>
                                 <li>• Herbes et mousses</li>
                                 <li>• Fruits et bourgeons</li>
@@ -100,7 +101,7 @@ function IkebanaInfo() {
                                     <Trees size={22} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h3
-                                    className="text-2xl font-bold text-[var(--secondary-color)]"
+                                    className="text-xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     L&apos;École Ohara
@@ -136,7 +137,7 @@ function IkebanaInfo() {
                     {/* Section Apprentissage */}
                     <div className="bg-white rounded-2xl p-8 shadow-lg">
                         <h3
-                            className="text-3xl font-bold text-[var(--secondary-color)] mb-8 text-center"
+                            className="text-xl font-bold text-[var(--secondary-color)] mb-8 text-center"
                             style={{ fontFamily: "var(--inter-ikebana)" }}
                         >
                             Le Chemin de l&apos;Apprentissage

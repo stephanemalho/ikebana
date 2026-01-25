@@ -12,10 +12,10 @@ export function ScheduleSection() {
         <div className="px-4 md:px-6 w-full m-auto">
           <div className="flex flex-col items-start gap-4 md:gap-8">
             <div className="grid gap-1">
-              <h2 className="text-4xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
+              <h2 className="text-2xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                 Nos cours d&apos;Ikebana
               </h2>
-              <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
+              <p className="text-base text-[--secondary-color] font-[var(--inter-ikebana)]">
                 Retrouvez les lieux de cours et les contacts pour s&apos;inscrire aux ateliers d&apos;Ikebana à l'adresse de votre choix.
               </p>
             </div>
@@ -34,8 +34,9 @@ export function ScheduleSection() {
                     </div>
 
                     <div className="grid gap-1">
-                      <CardTitle className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]" itemProp="name">
-                        Association Tenri
+                      <CardTitle className="text-xl text-[--secondary-color] leading-snug min-h-[56px]" itemProp="name">
+                        <span>Association IKEBANA PARIS</span><br />
+                        école Tenri Paris
                       </CardTitle>
                       <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
                         Cours le lundi et le samedi
@@ -119,6 +120,16 @@ export function ScheduleSection() {
                           Localisation Google
                         </a>
                       </li>
+                      {/* mailto:ikebanaparis@free.fr */}
+                      <li>
+                        <a
+                          className="underline hover:text-black"
+                          href="mailto:ikebanaparis@free.fr"
+                          itemProp="email"
+                        > 
+                          Email de la professeure
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </CardContent>
@@ -142,7 +153,7 @@ export function ScheduleSection() {
 
                     <div className="grid gap-1">
                       <CardTitle
-                        className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]"
+                        className="text-xl text-[--secondary-color] leading-snug min-h-[56px]"
                         itemProp="name"
                       >
                         Centre culturel de Courbevoie
@@ -246,7 +257,7 @@ export function ScheduleSection() {
 
                     <div className="grid gap-1">
                       <CardTitle
-                        className="text-2xl text-[--secondary-color] leading-snug min-h-[56px]"
+                        className="text-xl text-[--secondary-color] leading-snug min-h-[56px]"
                         itemProp="name"
                       >
                         Association Fleurs &amp; Japon

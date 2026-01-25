@@ -7,7 +7,7 @@ export default function FaqSection() {
             <Container>
                 <div className="px-4 md:px-6">
                     <div className="text-center mb-10">
-                        <h2 className="text-4xl font-bold text-[--secondary-color]" style={{ fontFamily: "var(--playfair-display)" }}>
+                        <h2 className="text-2xl font-bold text-[--secondary-color]" style={{ fontFamily: "var(--playfair-display)" }}>
                             FAQ - Ikebana & École Ohara
                         </h2>
                         <p className="text-lg text-[--secondary-color]/80 mt-3">
