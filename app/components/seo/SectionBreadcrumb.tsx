@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../ui/Container";
 import { sectionLinks } from "@/app/constant/seo/sections";
 
@@ -9,9 +10,9 @@ export default function SectionBreadcrumb() {
                     <ol className="flex flex-wrap gap-3 text-sm text-[--secondary-color] justify-center" >
                         {sectionLinks.map((section) => (
                             <li key={section.id}>
-                                <a className="hover:underline hover:text-black" href={`#${section.id}`}>
+                                <Link className="hover:underline hover:text-black" href={`#${section.id}`}>
                                     {section.label}
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ol>

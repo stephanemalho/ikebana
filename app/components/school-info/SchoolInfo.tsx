@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import Image from "next/image";
 import Link from "next/link";
 
 const SchoolInfo = () => {
@@ -19,9 +20,25 @@ const SchoolInfo = () => {
     to-transparent py-8 md:rounded-lg">
                 {/* École Ohara */}
                 <div className="bg-[--primary-color] md:mx-2 py-8 px-6 md:rounded-lg">
-                    <h2 id="ecole-ohara" className="text-2xl font-bold text-[--secondary-color] mb-16 text-center" style={{ fontFamily: 'var(--playfair-display)' }}>
-                        Qu'est ce que de l&apos;École Ohara
-                    </h2>
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <Image
+                            src="/images/ohara/logo-ohara-officiel.png"
+                            alt="Logo officiel de l'École Ohara au Japon"
+                            width={48}
+                            height={48}
+                            className="object-contain"
+                            priority
+                        />
+
+                        <h2
+                            id="ecole-ohara"
+                            className="text-2xl font-bold text-[--secondary-color] text-center"
+                            style={{ fontFamily: "var(--playfair-display)" }}
+                        >
+                            Qu'est-ce que l'École Ohara
+                        </h2>
+                    </div>
+
                     <div className="mb-8">
                         <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
                             Présentation Générale

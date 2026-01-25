@@ -6,13 +6,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: siteUrl,
-            lastModified: "2026-01-24",
+            lastModified: "2026-01-25",
             changeFrequency: "monthly",
             priority: 1.0
         },
         {
             url: `${siteUrl}/mentions-legales`,
-            lastModified: "2026-01-24",
+            lastModified: "2026-01-25",
             changeFrequency: "yearly",
             priority: 0.3
         },

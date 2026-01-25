@@ -26,11 +26,11 @@ const Information = () => {
                 <p>Rejoignez-nous pour découvrir la beauté de l'ikebana et développer votre sensibilité artistique au cœur de la tradition japonaise.
                 </p>
                 <div className="hero-content__buttons">
-                    <a href="#cours">
+                    <Link href="#cours">
                         <button className="hero-content__cta-button">
                             Découvrir les cours
                         </button>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

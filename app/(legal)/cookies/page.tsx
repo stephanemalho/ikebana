@@ -1,5 +1,6 @@
 import Container from "@/app/components/ui/Container";
 import CookiePreferencesButton from "@/app/components/seo/CookiePreferencesButton";
+import Link from "next/link";
 
 export default function CookiesPage() {
     return (
@@ -7,9 +8,9 @@ export default function CookiesPage() {
             <Container>
                 <div className="px-4 md:px-6 space-y-8 text-[--secondary-color]">
                     <header className="space-y-2">
-                        <a className="text-sm underline" href="/">
-                            Retour à l’accueil
-                        </a>
+                        <Link className="text-sm underline" href="/">
+                            Retour à l'accueil
+                        </Link>
                         <h1 className="text-4xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                             Politique de cookies
                         </h1>

@@ -6,11 +6,10 @@ import { carouselMetadataType } from "./carouselConfig"
 
 type IkebanaCarouselProps = {
     carouselData: carouselMetadataType
-    height?: number
     maxItems?: number
 }
 
-function IkebanaCarousel({ carouselData, height = 700, maxItems }: IkebanaCarouselProps) {
+function IkebanaCarousel({ carouselData, maxItems }: IkebanaCarouselProps) {
     const [activeIndex, setActiveIndex] = useState(0)
     const [previousIndex, setPreviousIndex] = useState<number | null>(null)
 
@@ -35,9 +34,8 @@ function IkebanaCarousel({ carouselData, height = 700, maxItems }: IkebanaCarous
 
     return (
         <div className="w-full max-w-[100%] mx-auto">
-            <div className="relative h-[400px]" style={{ height: `${height}px` }}>
+            <div className="relative min-h-[400px] max-h-[400px] md:min-h-[900px]" >
                 <Image
-                    data-aos="fade"
                     key={activeIndex}
                     src={displayImages[activeIndex]?.imageUrl || "/placeholder.svg"}
                     alt={displayImages[activeIndex]?.altText || "Ikebana"}
@@ -49,7 +47,6 @@ function IkebanaCarousel({ carouselData, height = 700, maxItems }: IkebanaCarous
 
                 {previousIndex !== null && previousIndex !== activeIndex && (
                     <Image
-                        data-aos="fade"
                         key={`prev-${previousIndex}`}
                         src={displayImages[previousIndex]?.imageUrl || "/placeholder.svg"}
                         alt={displayImages[previousIndex]?.altText || "Ikebana"}
@@ -95,7 +92,7 @@ function IkebanaCarousel({ carouselData, height = 700, maxItems }: IkebanaCarous
                     <button
                         key={index}
                         onClick={() => handleThumbnailClick(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-500 ${index === activeIndex ? "bg-[--secondary-color] w-6" : "bg-[--background] hover:bg-[--primary-color]"
+                        className={`w-2 h-2 rounded-full transition-all duration-500 ${index === activeIndex ? "bg-[--secondary-color] w-6" : "bg-[--primary-color] hover:bg-[--primary-color]"
                             }`}
                         aria-label={`Aller à l'image ${index + 1}`}
                     />

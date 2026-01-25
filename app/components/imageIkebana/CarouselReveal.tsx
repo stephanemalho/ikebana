@@ -10,13 +10,12 @@ const IkebanaCarousel = dynamic(() => import("./IkebanaCarousel"), { ssr: false 
 
 type CarouselRevealProps = {
     carouselData: carouselMetadataType;
-    height?: number;
     mobileMaxItems?: number;
 };
 
 const MOBILE_QUERY = "(max-width: 1023px)";
 
-function CarouselReveal({ carouselData, height, mobileMaxItems = 5 }: CarouselRevealProps) {
+function CarouselReveal({ carouselData, mobileMaxItems = 5 }: CarouselRevealProps) {
     const [showCarousel, setShowCarousel] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
 
@@ -61,7 +60,7 @@ function CarouselReveal({ carouselData, height, mobileMaxItems = 5 }: CarouselRe
                     </button>
                 </div>
             ) : (
-                <IkebanaCarousel carouselData={carouselData} height={height} maxItems={maxItems} />
+                <IkebanaCarousel carouselData={carouselData} maxItems={maxItems} />
             )}
         </div>
     );

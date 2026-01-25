@@ -11,7 +11,7 @@ const Footer = () => {
                     <HeaderTitle />
                 </div>
             <Container>
-                <div className="flex flex-col items-center w-full justify-center md:flex-row gap-12 md:justify-between py-6">
+                <div className="flex flex-col items-center w-full justify-center md:flex-row gap-12 md:justify-between p-6">
                     <a
                         href="https://www.instagram.com/ikebanaparis/"
                         target="_blank"

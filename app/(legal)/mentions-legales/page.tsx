@@ -1,4 +1,5 @@
 import Container from "@/app/components/ui/Container";
+import Link from "next/link";
 
 export default function MentionsLegalesPage() {
     return (
@@ -6,9 +7,9 @@ export default function MentionsLegalesPage() {
             <Container>
                 <div className="px-4 md:px-6 space-y-8 text-[--secondary-color]">
                     <header className="space-y-2">
-                        <a className="text-sm underline" href="/">
-                            Retour à l’accueil
-                        </a>
+                        <Link className="text-sm underline" href="/">
+                            Retour à l'accueil
+                        </Link>
                         <h1 className="text-4xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                             Mentions légales
                         </h1>
@@ -21,7 +22,6 @@ export default function MentionsLegalesPage() {
                         <p>Nom public : Ikebana Ohara - Chapitre Yvelines</p>
                         <p>Adresse : 26 44 RUE DU PLATEAU DU MOULIN, 78700 CONFLANS-SAINTE-HONORINE</p>
                         <p>Téléphone : 06 10 36 67 45</p>
-                        <p>Email : ikebana.ybs@gmail.com</p>
                         <p>SIREN : 852 927 151</p>
                         <p>SIRET : 852 927 151 00013</p>
                     </section>
@@ -44,6 +44,37 @@ export default function MentionsLegalesPage() {
                             d'auteur. Toute reproduction ou réutilisation sans autorisation écrite est interdite.
                         </p>
                     </section>
+                    <section className="space-y-2">
+                        <h2 className="text-2xl font-semibold">Crédits images</h2>
+
+                        <p>
+                            Les photographies d'arrangements floraux, de fleurs et d'ikebana présentées sur ce site
+                            sont la propriété de l'association <strong>Ikebana Ohara - Chapitre Yvelines Paris</strong>,
+                            sauf mention contraire.
+                        </p>
+
+                        <p>
+                            Les images, documents et visuels relatifs à l'histoire de l'École Ohara, à ses fondateurs,
+                            à ses maîtres (Iemoto) ou à ses archives historiques sont la propriété exclusive de
+                            l'<strong>École Ohara (小原流, Ohara-ryū)</strong>.
+                            Ils sont utilisés sur ce site à des fins d'information culturelle et pédagogique.
+                        </p>
+
+                        <p>
+                            Tous droits réservés à l'École Ohara.
+                            Site officiel de l'École Ohara :
+                            {" "}
+                            <Link
+                                href="https://www.ohararyu.or.jp/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline"
+                            >
+                                https://www.ohararyu.or.jp/
+                            </Link>
+                        </p>
+                    </section>
+
                 </div>
             </Container>
         </main>
