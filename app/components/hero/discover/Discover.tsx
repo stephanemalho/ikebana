@@ -1,4 +1,3 @@
-import React from 'react';
 import Decoration from './left/Decoration';
 import Information from './right/Information';
 import { headers } from 'next/headers';
@@ -19,9 +18,9 @@ const Discover = async () => {
     const isDesktop = isDesktopFromUA(ua);
 
     return (
-        <section className="hero mt-[60px]">
-            {isDesktop ? <Decoration /> : null}
+        <section className="mx-auto max-w-7xl lg:grid lg:grid-cols-2 mt-[66px]">
             <Information />
+            {isDesktop ? <Decoration /> : null}
         </section>
     );
 };

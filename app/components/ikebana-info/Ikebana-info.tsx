@@ -3,13 +3,13 @@ import { BookOpen, Flower, Leaf, Trees, Eye, Palette, Sprout } from "lucide-reac
 
 function IkebanaInfo() {
     return (
-        <section className="py-16 px-2 bg-gradient-to-b from-[var(--background)] to-[var(--primary-color)]">
+        <section className="py-16 px-2">
             <Container>
                 <div className="mx-auto p-2">
                     {/* Titre principal */}
-                    <div className="text-center mb-16">
+                    <div id="le-style-ohara" className="text-center mb-16">
                         <h2
-                            className="text-4xl md:text-6xl font-bold text-[var(--secondary-color)] mb-6"
+                            className="text-2xl font-bold text-[var(--secondary-color)] mb-6"
                             style={{ fontFamily: "var(--playfair-display)" }}
                         >
                             Qu&apos;est-ce que l&apos;Ikebana ?
@@ -26,7 +26,7 @@ function IkebanaInfo() {
                                     <BookOpen size={22} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h3
-                                    className="text-2xl font-bold text-[var(--secondary-color)]"
+                                    className="text-xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--Plus_Jakarta_Sans)" }}
                                 >
                                     Une Tradition Millénaire
@@ -83,6 +83,7 @@ function IkebanaInfo() {
                                 className="text-[var(--secondary-color)] text-sm space-y-2"
                                 style={{ fontFamily: "var(--inter-ikebana)" }}
                             >
+                                <li>• Fleurs</li>
                                 <li>• Branches et feuilles</li>
                                 <li>• Herbes et mousses</li>
                                 <li>• Fruits et bourgeons</li>
@@ -100,7 +101,7 @@ function IkebanaInfo() {
                                     <Trees size={22} className="text-[var(--secondary-color)]" aria-hidden />
                                 </div>
                                 <h3
-                                    className="text-2xl font-bold text-[var(--secondary-color)]"
+                                    className="text-xl font-bold text-[var(--secondary-color)]"
                                     style={{ fontFamily: "var(--inter-ikebana)" }}
                                 >
                                     L&apos;École Ohara
@@ -136,7 +137,7 @@ function IkebanaInfo() {
                     {/* Section Apprentissage */}
                     <div className="bg-white rounded-2xl p-8 shadow-lg">
                         <h3
-                            className="text-3xl font-bold text-[var(--secondary-color)] mb-8 text-center"
+                            className="text-xl font-bold text-[var(--secondary-color)] mb-8 text-center"
                             style={{ fontFamily: "var(--inter-ikebana)" }}
                         >
                             Le Chemin de l&apos;Apprentissage
@@ -196,7 +197,7 @@ function IkebanaInfo() {
                     {/* Citation finale */}
                     <div className="mt-12 text-center">
                         <blockquote
-                            className="text-xl md:text-2xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
+                            className="text-sm md:text-xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
                             style={{ fontFamily: "var(--inter-ikebana)" }}
                         >
                             &quot;Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de

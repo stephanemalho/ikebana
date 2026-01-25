@@ -3,6 +3,12 @@ import { Noto_Sans_JP, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/goo
 import './globals.css';
 import { metaDataString } from './constant/metadata/head';
 import AOSProvider from './components/wrapper/AOSProvider';
+import CookieBanner from "./components/seo/CookieBanner";
+import ConsentScripts from "./components/seo/ConsentScripts";
+import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+
+const siteUrl = "https://ohara-chapitre-yvelines-paris.fr";
 
 const notoSansJP = Noto_Sans_JP({
     variable: '--font-noto-sans-jp',
@@ -23,8 +29,46 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL(siteUrl),
     title: metaDataString.title,
-    description: metaDataString.description
+    description: metaDataString.description,
+    alternates: {
+        canonical: siteUrl
+    },
+    openGraph: {
+        type: "website",
+        url: siteUrl,
+        title: metaDataString.title,
+        description: metaDataString.description,
+        siteName: metaDataString.siteName,
+        locale: metaDataString.locale,
+        images: [
+            {
+                url: "/images/logo-ohara-removebg.png",
+                alt: metaDataString.siteName
+            }
+        ]
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: metaDataString.title,
+        description: metaDataString.description,
+        images: ["/images/logo-ohara-removebg.png"]
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-snippet": -1,
+            "max-image-preview": "large",
+            "max-video-preview": -1
+        }
+    },
+    icons: {
+        icon: "/favicon.ico"
+    }
 };
 
 export default function RootLayout({
@@ -33,9 +77,15 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang={metaDataString.lang.fr} >
+        <html lang="fr">
             <body className={`${notoSansJP.variable} ${playfair.variable} ${jakarta.variable}`}>
-                <AOSProvider>{children}</AOSProvider>
+                <AOSProvider>
+                    <Header />
+                    {children}
+                    <Footer />
+                </AOSProvider>
+                <ConsentScripts />
+                <CookieBanner />
             </body>
         </html>
     );

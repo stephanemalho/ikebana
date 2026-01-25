@@ -1,158 +1,371 @@
-import { Calendar } from "lucide-react"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import Container from "../ui/Container"
+import Image from "next/image"
 
 export function ScheduleSection() {
   return (
-    <section id="cours" className="w-full py-12 lg:min-h-[700px] bg-[--primary-color]">
+    <section id="cours" className="w-full py-12 lg:min-h-[700px] bg-gradient-to-t
+    from-[--primary-color]
+    via-[--primary-color]/60
+    to-transparent">
       <Container>
         <div className="px-4 md:px-6 w-full m-auto">
           <div className="flex flex-col items-start gap-4 md:gap-8">
             <div className="grid gap-1">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
+              <h2 className="text-2xl font-bold" style={{ fontFamily: "var(--playfair-display)" }}>
                 Nos cours d&apos;Ikebana
               </h2>
-              <p className="text-xl text-[--secondary-color] font-[var(--inter-ikebana)]">
-                Découvrez les horaires et dates pour l&apos;année 2026
-              </p>
-              <p className="mt-6 text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]"> Tout nos cours d&apos;Ikebana style Ohara ont lieu à <a target="_blank" className="underline hover:text-black" href="https://www.tenri-paris.com/cultures/ikebana/">l&apos;Association Culturelle Franco-Japonaise de TENRI</a> située au 8 - 12 Rue Bertin Poirée, 75001 Paris, métro Louvre-Rivoli.
-              </p>
-              <p className="text-md italic text-[--secondary-color] font-[var(--inter-ikebana)]">Contactez Ikuko Kato si vous souhaitez des cours dans les Yvelines (78).
-                par mail <a href="mailto:ikuko.kato@free.fr" className="underline hover:text-black">mail de Ikuko Kato</a> ou par téléphone au <a href="tel:+33610366745" className="underline hover:text-black">06 10 36 67 45</a>.
+              <p className="text-base text-[--secondary-color] font-[var(--inter-ikebana)]">
+                Retrouvez les lieux de cours et les contacts pour s&apos;inscrire aux ateliers d&apos;Ikebana à l'adresse de votre choix.
               </p>
             </div>
 
-            <Tabs defaultValue="monday" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 bg-white/70">
-                <TabsTrigger
-                  value="monday"
-                  className="text-[--secondary-color] data-[state=active]:bg-[--secondary-color] data-[state=active]:text-white"
-                >
-                  Cours du Lundi
-                </TabsTrigger>
-                <TabsTrigger
-                  value="saturday"
-                  className="text-[--secondary-color] data-[state=active]:bg-[--secondary-color] data-[state=active]:text-white"
-                >
-                  Cours du Samedi
-                </TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="monday" className="mt-6">
-                <Card className="border-[--secondary-color]/20">
-                  <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
-                    <CardTitle className="text-2xl text-[--secondary-color]">
-                      <Calendar className="inline-block mr-2 h-6 w-6" /> Cours du Lundi
-                    </CardTitle>
-                    <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
-                      Horaires et dates pour les cours du lundi
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-6">
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div>
-                        <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Horaires
-                        </h3>
-                        <ul className="space-y-3">
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">débutant</Badge>
-                            <span className="text-[--secondary-color]">12h30</span>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">non débutant</Badge>
-                            <span className="text-[--secondary-color]">14h30</span>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">non débutant</Badge>
-                            <div className="flex flex-col">
-                              <span className="text-[--secondary-color]">16h45*</span>
-                              <i className="text-xs">Ce cours sera ouvert uniquement lorsque cela sera nécessaire.</i>
-                            </div>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">tous niveaux</Badge>
-                            <span className="text-[--secondary-color]">18h30</span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Dates 2026
-                          <span className="text-sm font-normal ml-2 text-black">(Susceptible de modifications)</span>
-                        </h3>
-                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[--secondary-color]">
-                          <li>12 et 26 janvier 2026</li>
-                          <li>9 février 2026</li>
-                          <li>30 mars  2026</li>
-                          <li>13 avril  2026</li>
-                          <li>13 et 27 avril  2026</li>
-                          <li>18 mai 2026</li>
-                          <li>8 et 22 juin 2026</li>
-                        </ul>
-                      </div>
+            <div className="grid w-full gap-6 md:grid-cols-3 items-stretch">
+              <Card id="tenri" className="flex flex-col h-full border-[--secondary-color]/20" itemScope itemType="https://schema.org/Place">
+                <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg h-[140px]">
+                  <div className="grid grid-cols-[48px_1fr] items-start gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
+                      <Image
+                        src="/assets/logo_ecole_japonaise_tenri_paris.jpg"
+                        alt="Association culturelle Tenri Paris"
+                        fill
+                        className="object-contain"
+                      />
                     </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
 
-              <TabsContent value="saturday" className="mt-6">
-                <Card className="border-[--secondary-color]/20">
-                  <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg">
-                    <CardTitle className="text-2xl text-[--secondary-color]">
-                      <Calendar className="inline-block mr-2 h-6 w-6" /> Cours du Samedi
-                    </CardTitle>
-                    <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)]">
-                      Vous pouvez participer à la réalisation d&apos;une ou de deux compositions selon votre choix.
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="pt-6">
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div>
-                        <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Horaires
-                        </h3>
-                        <ul className="space-y-3">
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">débutant</Badge>
-                            <span className="text-[--secondary-color]">13h</span>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">débutant, non débutant</Badge>
-                            <span className="text-[--secondary-color]">14h30</span>
-                          </li>
-                          <li className="flex items-center gap-2">
-                            <Badge className="border-[--secondary-color] bg-white text-[--secondary-color]">débutant, non débutant</Badge>
-                            <span className="text-[--secondary-color]">16h30</span>
-                          </li>
-                        </ul>
-                      </div>
-
-                      <div>
-                        <h3 className="text-xl font-semibold mb-4 text-[--secondary-color]">
-                          Dates 2026
-                          <span className="text-sm font-normal ml-2 text-black">(Susceptible de modifications)</span>
-                        </h3>
-                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-[--secondary-color]">
-                          <li>10 janvier 2026</li>
-                          <li>7 et 28 février 2026</li>
-                          <li>11 avril 2026</li>
-                          <li>16 mai 2026</li>
-                          <li>6 juin 2026</li>
-                        </ul>
-                      </div>
+                    <div className="grid gap-1">
+                      <CardTitle className="text-xl text-[--secondary-color] leading-snug min-h-[56px]" itemProp="name">
+                        <span>Association Franco-Japonaise de Tenri</span>
+                      </CardTitle>
+                      <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
+                        Cours le lundi et le samedi
+                      </CardDescription>
                     </div>
-                  </CardContent>
-                </Card>
-              </TabsContent>
-            </Tabs>
+                  </div>
+                </CardHeader>
+                <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)] flex-1 h-[360px]">
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
+
+                    <address
+                      className="not-italic"
+                      itemProp="address"
+                      itemScope
+                      itemType="https://schema.org/PostalAddress"
+                    >
+                      <a
+                        href="https://www.google.com/maps/place/8-12+Rue+Bertin+Poir%C3%A9e,+75001+Paris,+France"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-black"
+                      >
+                        <span itemProp="streetAddress">8-12 Rue Bertin Poirée</span>
+                        <br />
+                        <span itemProp="postalCode">75001</span>{" "}
+                        <span itemProp="addressLocality">Paris</span>
+                        <br />
+                        <span itemProp="addressCountry">FR</span>
+                      </a>
+                    </address>
+                  </div>
+
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Contact</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <a
+                          href="tel:+33144760606"
+                          className="underline hover:text-black"
+                          itemProp="telephone"
+                        >
+                          01 44 76 06 06
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.tenri-paris.com/contact/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="url"
+                        >
+                          Page de contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Liens utiles</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <a
+                          className="underline hover:text-black"
+                          href="https://www.tenri-paris.com/cultures/ikebana/"
+                          itemProp="url"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Site de l&apos;association
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="underline hover:text-black"
+                          href="https://share.google/vGRB9D9d3TEmGp40n"
+                          itemProp="hasMap"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Localisation Google
+                        </a>
+                      </li>
+                      {/* mailto:ikebanaparis@free.fr */}
+                      <li>
+                        <a
+                          className="underline hover:text-black"
+                          href="mailto:ikebanaparis@free.fr"
+                          itemProp="email"
+                        > 
+                          Email de la professeure
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card
+                className="flex flex-col h-full border-[--secondary-color]/20"
+                itemScope
+                itemType="https://schema.org/Place"
+              >
+                <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg h-[140px]">
+                  <div className="grid grid-cols-[48px_1fr] items-start gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
+                      <Image
+                        src="/assets/logo_centre_culturel_courbevoie.jpg"
+                        alt="Centre culturel de Courbevoie"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+
+                    <div className="grid gap-1">
+                      <CardTitle
+                        className="text-xl text-[--secondary-color] leading-snug min-h-[56px]"
+                        itemProp="name"
+                      >
+                        Centre culturel de Courbevoie
+                      </CardTitle>
+
+                      <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
+                        Cours au centre culturel
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)] flex-1 h-[360px]">
+                  {/* Adresse */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
+
+                    <address
+                      className="not-italic"
+                      itemProp="address"
+                      itemScope
+                      itemType="https://schema.org/PostalAddress"
+                    >
+                      <a
+                        href="https://www.google.com/maps/place/14bis+Square+de+l'H%C3%B4tel+de+Ville,+92400+Courbevoie,+France"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-black"
+                      >
+                        <span itemProp="streetAddress">
+                          14bis square de l'Hôtel de ville
+                        </span>
+                        <br />
+                        <span itemProp="postalCode">92400</span>{" "}
+                        <span itemProp="addressLocality">Courbevoie</span>
+                        <br />
+                        <span itemProp="addressCountry">FR</span>
+                      </a>
+                    </address>
+                  </div>
+
+                  {/* Contact */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Contact</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <a
+                          href="tel:+33171057949"
+                          className="underline hover:text-black"
+                          itemProp="telephone"
+                        >
+                          01 71 05 79 49
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.ville-courbevoie.fr/2801/culture-loisirs/centres-culturels.htm"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="url"
+                        >
+                          Informations et contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Localisation */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Localisation</h3>
+                    <a
+                      href="https://www.google.com/maps/place/Centre+Culturel+de+Courbevoie"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline hover:text-black"
+                      itemProp="hasMap"
+                    >
+                      Voir sur Google Maps
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+
+              <Card
+                className="flex flex-col h-full border-[--secondary-color]/20"
+                itemScope
+                itemType="https://schema.org/Place"
+              >
+                <CardHeader className="bg-[--secondary-color]/10 rounded-t-lg h-[140px]">
+                  <div className="grid grid-cols-[48px_1fr] items-start gap-4">
+                    <div className="relative h-12 w-12 shrink-0 rounded-md bg-white p-1">
+                      <Image
+                        src="/assets/logo_parc_vallee_de_chevreuse.svg"
+                        alt="Parc naturel régional de la Vallée de Chevreuse"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+
+                    <div className="grid gap-1">
+                      <CardTitle
+                        className="text-xl text-[--secondary-color] leading-snug min-h-[56px]"
+                        itemProp="name"
+                      >
+                        Association Fleurs &amp; Japon
+                      </CardTitle>
+
+                      <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
+                        Cours à Gif-sur-Yvette
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+
+                <CardContent className="pt-6 space-y-4 text-[--secondary-color] font-[var(--inter-ikebana)] flex-1 h-[360px]">
+                  {/* Adresse */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Adresse</h3>
+
+                    <address
+                      className="not-italic"
+                      itemProp="address"
+                      itemScope
+                      itemType="https://schema.org/PostalAddress"
+                    >
+                      <a
+                        href="https://www.google.com/maps/place/3+Allée+de+l'Étang,+91190+Gif-sur-Yvette,+France"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline hover:text-black"
+                      >
+                        <span itemProp="streetAddress">3 Allée de l'Étang</span>
+                        <br />
+                        <span itemProp="postalCode">91190</span>{" "}
+                        <span itemProp="addressLocality">Gif-sur-Yvette</span>
+                        <br />
+                        <span itemProp="addressCountry">FR</span>
+                      </a>
+                    </address>
+                  </div>
+
+                  {/* Contact */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Contact</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <a
+                          href="tel:+33632569075"
+                          className="underline hover:text-black"
+                          itemProp="telephone"
+                        >
+                          06 32 56 90 75
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.parc-naturel-chevreuse.fr/node/12583"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                        >
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* Liens utiles */}
+                  <div>
+                    <h3 className="text-lg font-semibold text-[--secondary-color]">Liens utiles</h3>
+                    <ul className="space-y-2">
+                      <li>
+                        <a
+                          href="https://www.parc-naturel-chevreuse.fr/fleurs-et-japon"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="url"
+                        >
+                          Présentation de l&apos;association
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://annuaire-entreprises.data.gouv.fr/etablissement/87765186900019"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                        >
+                          Fiche annuaire
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.google.com/maps/place/3+Allée+de+l'Étang,+91190+Gif-sur-Yvette,+France"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-black"
+                          itemProp="hasMap"
+                        >
+                          Localisation Google Maps
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </Container>
-    </section>
+    </section >
   )
 }
-

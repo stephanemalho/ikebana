@@ -1,185 +1,76 @@
-"use client";
-
-import type React from "react";
-
-import { useState } from "react";
 import Image from "next/image";
-import { Send } from "lucide-react";
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import Container from "../ui/Container"
+import { ListChecks, ShieldCheck, Clock } from "lucide-react";
 
+import { Card, CardContent } from "@/components/ui/card";
+import Container from "../ui/Container";
 
 export function ContactForm() {
-    const [formData, setFormData] = useState({
-        email: "",
-        message: ""
-    });
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        // Ici vous pourriez ajouter la logique d&apos;envoi du formulaire
-        console.log("Form submitted:", formData);
-    };
-
-    const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        const { name, value } = e.target;
-        setFormData((prev) => ({ ...prev, [name]: value }));
-    };
-
     return (
         <section id="contact" className="w-full py-12 bg-[--primary-color]">
             <Container>
                 <div className="container px-4 md:px-6 m-auto">
-                    <div className="flex flex-col items-start gap-4 md:gap-8 mb-10">
-                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#4f0b06]" style={{ fontFamily: "var(--playfair-display)" }}>
-                            En savoir plus
-                        </h2>
+                    <div className="flex flex-col items-start gap-8 mb-10">
+                        <div className="grid gap-6">
+                            <h2 className="text-2xl font-bold text-[#4f0b06]" style={{ fontFamily: "var(--playfair-display)" }}>
+                                Formulaire de contact direct avec Ikuko Kato
+                            </h2>
+                            <p className="text-sm md:text-base text-[--secondary-color] font-[var(--inter-ikebana)]">Quelques questions pour mieux comprendre votre demande avant de vous répondre.
+                            </p>
+                        </div>
+                        <Card className="bg-muted m-auto">
+                            <CardContent className="p-6 space-y-4">
+                                <h3 className="text-xl md:text-2xl font-semibold">Échangeons ensemble avant de prendre rendez-vous</h3>
+                                <p className="text-muted-foreground">
+                                    Ce formulaire permet de prendre un premier contact et de préciser votre besoin.
+                                    <br />
+                                    <span className="text-sm italic text-muted-foreground/80">
+                                        (réponse personnalisée, sans engagement)
+                                    </span>
+                                </p>
+                                <div className="space-y-6">
+                                    <div className="flex items-center space-x-2">
+                                        <ListChecks className="h-4 w-4 text-primary" aria-hidden="true" />
+                                        <span className="text-sm text-muted-foreground">
+                                            Formulaire simple à remplir (2-3 minutes)
+                                        </span>
+                                    </div>
+
+                                    <div className="flex items-center space-x-2">
+                                        <ShieldCheck className="h-4 w-4 text-primary" aria-hidden="true" />
+                                        <span className="text-sm text-muted-foreground">
+                                            Les informations restent strictement confidentielles
+                                        </span>
+                                    </div>
+
+                                    <div className="flex items-center space-x-2">
+                                        <Clock className="h-4 w-4 text-primary" aria-hidden="true" />
+                                        <span className="text-sm text-muted-foreground">
+                                            Une réponse vous sera apportée dans les meilleurs délais
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="flex justify-between items-center flex-col lg:flex-row gap-3">
+                                    <div className="relative w-40 aspect-square my-4">
+                                        <Image
+                                            src="/assets/qr_code_to_google_contact_form.svg"
+                                            alt="QR code pour contacter Exotic Perle Teckel"
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <div className="flex flex-col items-center space-y-2">
+                                        <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScZOzJG56HlUbwWEgHSKUgK6oPzi36LwUS4SQHhg_oC8kN-MA/viewform?usp=dialog" className="hero-content__cta-button">Accéder au formulaire
+                                        </a>
+                                        <span className="text-sm italic text-muted-foreground/80">Vous recevrez un exemplaire par mail</span>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
                     </div>
 
-                    <Card className="overflow-hidden border-none shadow-lg">
-                        <div className="flex flex-col md:flex-row">
-                            {/* Image section - 1/3 width on desktop */}
-                            <div className="hidden md:flex w-full md:w-1/3 relative min-h-[400px] md:min-h-full items-center justify-center p-6">
-                                <div className="relative w-full h-full overflow-hidden rounded-lg">
-                                    <Image
-                                        src="/images/ikuko/ikuko-kato-sama.webp"
-                                        alt="Arrangement Ikebana avec vase vert et fleurs blanches"
-                                        fill
-                                        className="object-contain image-soft-filter"
-                                    />
-
-                                    {/* Overlay doux pour masquer la pixelisation */}
-                                    <div className="absolute inset-0 image-overlay" />
-                                </div>
-                            </div>
-
-
-                            {/* Form section - 2/3 width on desktop */}
-                            <div className="w-full md:w-2/3 bg-white">
-                                <CardHeader className="bg-white">
-                                    <CardTitle className="text-2xl font-[var(--inter-ikebana)] text-[#4f0b06]">
-                                        Echangeons ensemble
-                                    </CardTitle>
-                                    <CardDescription className="text-[#4f0b06]/70">
-                                        Ce formulaire vous permet de contacter Ikuko Kato concernant les
-                                        cours d&apos;Ikebana.
-                                    </CardDescription>
-                                </CardHeader>
-                                <CardContent>
-                                    <form
-                                        onSubmit={handleSubmit}
-                                        className="space-y-6"
-                                    >
-                                        <div className="space-y-2">
-                                            <Label
-                                                htmlFor="email"
-                                                className="text-[#4f0b06]"
-                                            >
-                                                Email
-                                            </Label>
-                                            <Input
-                                                id="email"
-                                                name="email"
-                                                type="email"
-                                                placeholder="votre@email.com"
-                                                required
-                                                className="border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
-                                                value={formData.email}
-                                                onChange={handleChange}
-                                            />
-                                        </div>
-
-                                        {/* <div className="space-y-3">
-                                        <Label className="text-[#4f0b06] block mb-2">
-                                            Pour quelle cours souhaitez-vous
-                                            vous rensigner ?
-                                        </Label>
-                                        <RadioGroup
-                                            defaultValue="paris"
-                                            className="flex flex-col space-y-3"
-                                            value={formData.location}
-                                            onValueChange={handleRadioChange}
-                                        >
-                                            <div className="flex items-center space-x-2">
-                                                <RadioGroupItem
-                                                    value="paris"
-                                                    id="paris"
-                                                    className="text-[#4f0b06]"
-                                                />
-                                                <Label
-                                                    htmlFor="paris"
-                                                    className="flex items-center gap-2"
-                                                >
-                                                    <MapPin className="h-4 w-4 text-[#4f0b06]" />
-                                                    Paris 1er
-                                                </Label>
-                                            </div>
-                                            <div className="flex items-center space-x-2">
-                                                <RadioGroupItem
-                                                    value="yvelines"
-                                                    id="yvelines"
-                                                    className="text-[#4f0b06]"
-                                                />
-                                                <Label
-                                                    htmlFor="yvelines"
-                                                    className="flex items-center gap-2"
-                                                >
-                                                    <MapPin className="h-4 w-4 text-[#4f0b06]" />
-                                                    Yvelines 78
-                                                </Label>
-                                            </div>
-                                        </RadioGroup>
-                                    </div> */}
-
-                                        <div className="space-y-2">
-                                            <Label
-                                                htmlFor="message"
-                                                className="text-[#4f0b06]"
-                                            >
-                                                Message (optionnel)
-                                            </Label>
-                                            <Textarea
-                                                id="message"
-                                                name="message"
-                                                placeholder="Votre message ou question..."
-                                                className="min-h-[120px] border-[#f0c8d9] focus:border-[#4f0b06] focus:ring-[#4f0b06]"
-                                                value={formData.message}
-                                                onChange={handleChange}
-                                            />
-                                        </div>
-                                    </form>
-                                </CardContent>
-                                <CardFooter className="flex justify-between border-t border-[#f0c8d9]/30 pt-6">
-                                    <div className="text-sm text-[#4f0b06]/70 font-[var(--inter-ikebana)]">
-                                        <span className="text-red-500">* </span>{" "}
-                                        Tous les champs sont obligatoires sauf
-                                        indication contraire
-                                    </div>
-                                    <Button
-                                        onClick={handleSubmit}
-                                        className="hero-content__order-button bg-gradient-to-r from-[#b75d71] to-[#b75d71] text-white"
-                                    >
-                                        <Send className="mr-2 h-4 w-4" /> Envoyer
-                                    </Button>
-                                </CardFooter>
-                            </div>
-                        </div>
-                    </Card>
                 </div>
             </Container>
-        </section>
+        </section >
     );
 }
