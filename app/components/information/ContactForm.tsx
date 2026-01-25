@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ListChecks, ShieldCheck, Clock } from "lucide-react";
+import { ListChecks, ShieldCheck, Clock, ScanQrCode } from "lucide-react";
 
 import { Card, CardContent } from "@/components/ui/card";
 import Container from "../ui/Container";
@@ -51,13 +51,20 @@ export function ContactForm() {
                                 </div>
 
                                 <div className="flex justify-between items-center flex-col lg:flex-row gap-3">
-                                    <div className="relative w-40 aspect-square my-4">
-                                        <Image
-                                            src="/assets/qr_code_to_google_contact_form.svg"
-                                            alt="QR code pour contacter Exotic Perle Teckel"
-                                            fill
-                                            className="object-cover"
-                                        />
+                                    <div className="flex flex-col items-center">
+                                        <div className="mt-2 flex items-center space-x-2">
+                                            <ScanQrCode className="h-4 w-4 text-yellow-800" aria-hidden="true" />
+                                            <h4 className="text-lg font-semibold">Scanner depuis un mobile ou cliquer sur le bouton</h4>
+                                        </div>
+                                        <figure className="relative w-40 aspect-square my-4">
+                                            <Image
+                                                src="/assets/qr_code_to_google_contact_form.svg"
+                                                alt="QR code pour contacter Exotic Perle Teckel"
+                                                fill
+                                                className="object-cover"
+                                            />
+                                            <figcaption className="sr-only">QR code pour accéder au formulaire de contact</figcaption>
+                                        </figure>
                                     </div>
                                     <div className="flex flex-col items-center space-y-2">
                                         <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLScZOzJG56HlUbwWEgHSKUgK6oPzi36LwUS4SQHhg_oC8kN-MA/viewform?usp=dialog" className="hero-content__cta-button">Accéder au formulaire
