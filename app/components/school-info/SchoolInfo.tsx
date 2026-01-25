@@ -119,7 +119,7 @@ const SchoolInfo = () => {
                                             className="w-full h-auto rounded-md object-cover"
                                         />
                                         <figcaption className="mt-2 text-xs md:text-sm text-black">
-                                            Une des compositions historiques de Unshin Ohara.<br />&copy; Ohararyu All rights reserved
+                                            Portrait de Unshin Ohara.<br />&copy; Ohararyu All rights reserved
                                         </figcaption>
                                     </figure>
                                 </a>

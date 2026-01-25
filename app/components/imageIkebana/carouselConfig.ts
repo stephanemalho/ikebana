@@ -20,7 +20,7 @@ export const carouselIkebanaData: carouselMetadataType = {
     title: "Créations Ikebana École Ohara",
     description:
         "Plongez dans l'esthétique de l'école Ohara, reconnue pour son approche naturaliste et son attention profonde aux saisons (四季,shiki). Les formes Moribana, Heika ou Rinpa expriment chacune un rapport unique au paysage, à la lumière et au cycle naturel. Ces créations illustrent l'essence même de l'ikebana : saisir l'instant présent à travers les fleurs.",
-    seeMoreUrl: "Voir plus de créations pour chaques saisons",
+    seeMoreUrl: "Voir plus de créations pour chaque saisons",
     items: [
         {
             imageUrl: "/images/ikebana-creation/heika-4-saisons.webp",
