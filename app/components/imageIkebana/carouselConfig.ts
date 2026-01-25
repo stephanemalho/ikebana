@@ -19,7 +19,7 @@ export const carouselIkebanaData: carouselMetadataType = {
     id: "creations-ikebana",
     title: "Créations Ikebana École Ohara",
     description:
-        "Plongez dans l'esthétique de l'école Ohara, reconnue pour son approche naturaliste et son attention profonde aux saisons (四季,shiki). Les formes Moribana, Heika ou Rinpa expriment chacune un rapport unique au paysage, à la lumière et au cycle naturel. Ces créations illustrent l'essence même de l'ikebana : saisir l'instant présent à travers les fleurs.",
+        "Plongez dans l'esthétique de l'école Ohara, reconnue pour son approche naturaliste et son attention profonde aux saisons (四季,shiki). Les formes Moribana, Heika ou Rimpa expriment chacune un rapport unique au paysage, à la lumière et au cycle naturel. Ces créations illustrent l'essence même de l'ikebana : saisir l'instant présent à travers les fleurs.",
     seeMoreUrl: "Voir plus de créations pour chaque saisons",
     items: [
         {
@@ -77,39 +77,39 @@ export const carouselIkebanaData: carouselMetadataType = {
                 "Forme alignée Ohara représentant l'harmonie et l'équilibre constant à travers toutes les saisons."
         },
         {
-            imageUrl: "/images/ikebana-creation/rinpa-cho-automne.webp",
-            altText: "Arrangement Rinpa Cho automne style Ohara",
-            title: "Rinpa Cho Automne",
+            imageUrl: "/images/ikebana-creation/rimpa-cho-automne.webp",
+            altText: "Arrangement Rimpa Cho automne style Ohara",
+            title: "Rimpa Cho Automne",
             description:
-                "Style Rinpa décoratif d'automne Ohara, évoquant la beauté mélancolique et les couleurs chaudes de la saison."
+                "Style Rimpa décoratif d'automne Ohara, évoquant la beauté mélancolique et les couleurs chaudes de la saison."
         },
         {
-            imageUrl: "/images/ikebana-creation/rinpa-cho-ete.webp",
-            altText: "Arrangement Rinpa Cho été variation style Ohara",
-            title: "Rinpa Cho Été Variation",
+            imageUrl: "/images/ikebana-creation/rimpa-cho-ete.webp",
+            altText: "Arrangement Rimpa Cho été variation style Ohara",
+            title: "Rimpa Cho Été Variation",
             description:
-                "Variation du style Rinpa d'été Ohara, montrant la richesse créative possible avec les fleurs estivales."
+                "Variation du style Rimpa d'été Ohara, montrant la richesse créative possible avec les fleurs estivales."
         },
         {
-            imageUrl: "/images/ikebana-creation/rinpa-cho-jaune-automne.webp",
-            altText: "Arrangement Rinpa Cho jaune automne style Ohara",
-            title: "Rinpa Cho Jaune Automne",
+            imageUrl: "/images/ikebana-creation/rimpa-cho-jaune-automne.webp",
+            altText: "Arrangement Rimpa Cho jaune automne style Ohara",
+            title: "Rimpa Cho Jaune Automne",
             description:
-                "Rinpa automnal Ohara aux tons dorés, capturant l'essence des feuillages d'automne et leur beauté éphémère."
+                "Rimpa automnal Ohara aux tons dorés, capturant l'essence des feuillages d'automne et leur beauté éphémère."
         },
         {
-            imageUrl: "/images/ikebana-creation/rinpa-cho-printemps.webp",
-            altText: "Arrangement Rinpa Cho printemps style Ohara",
-            title: "Rinpa Cho Printemps",
+            imageUrl: "/images/ikebana-creation/rimpa-cho-printemps.webp",
+            altText: "Arrangement Rimpa Cho printemps style Ohara",
+            title: "Rimpa Cho Printemps",
             description:
-                "Style Rinpa printanier Ohara célébrant le renouveau et la fraîcheur des premières fleurs de la saison."
+                "Style Rimpa printanier Ohara célébrant le renouveau et la fraîcheur des premières fleurs de la saison."
         },
         {
-            imageUrl: "/images/ikebana-creation/rinpa-cho-rouge-automne.webp",
-            altText: "Arrangement Rinpa Cho rouge automne style Ohara",
-            title: "Rinpa Cho Rouge Automne",
+            imageUrl: "/images/ikebana-creation/rimpa-cho-rouge-automne.webp",
+            altText: "Arrangement Rimpa Cho rouge automne style Ohara",
+            title: "Rimpa Cho Rouge Automne",
             description:
-                "Rinpa automnal Ohara aux couleurs flamboyantes, exprimant l'intensité et la passion de la saison rouge."
+                "Rimpa automnal Ohara aux couleurs flamboyantes, exprimant l'intensité et la passion de la saison rouge."
         },
         {
             imageUrl:
