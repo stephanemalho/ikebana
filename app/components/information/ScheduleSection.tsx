@@ -35,8 +35,7 @@ export function ScheduleSection() {
 
                     <div className="grid gap-1">
                       <CardTitle className="text-xl text-[--secondary-color] leading-snug min-h-[56px]" itemProp="name">
-                        <span>Association IKEBANA PARIS</span><br />
-                        école Tenri Paris
+                        <span>Association Franco-Japonaise de Tenri</span>
                       </CardTitle>
                       <CardDescription className="text-[--secondary-color]/80 font-[var(--inter-ikebana)] min-h-[24px]">
                         Cours le lundi et le samedi

@@ -24,6 +24,10 @@ export default function MentionsLegalesPage() {
                         <p>Téléphone : 06 10 36 67 45</p>
                         <p>SIREN : 852 927 151</p>
                         <p>SIRET : 852 927 151 00013</p>
+                        <p>Liens vers data.gouv: <a target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline"
+                            href="https://annuaire-entreprises.data.gouv.fr/dirigeants/852927151">Liens vers les origines des infos.</a></p>
                     </section>
 
                     <section className="space-y-2">
@@ -64,14 +68,14 @@ export default function MentionsLegalesPage() {
                             Tous droits réservés à l'École Ohara.
                             Site officiel de l'École Ohara :
                             {" "}
-                            <Link
+                            <a
                                 href="https://www.ohararyu.or.jp/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline"
                             >
                                 https://www.ohararyu.or.jp/
-                            </Link>
+                            </a>
                         </p>
                     </section>
 
