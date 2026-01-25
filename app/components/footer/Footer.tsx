@@ -1,6 +1,6 @@
 import Container from '../ui/Container'
 import Link from 'next/link'
-import { Facebook, Instagram } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 import CookiePreferencesButton from '../seo/CookiePreferencesButton'
 import HeaderTitle from '../header/headerTitle/HeaderTitle'
 
