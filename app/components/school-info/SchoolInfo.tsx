@@ -70,10 +70,10 @@ const SchoolInfo = () => {
                         </Card>
                     </div>
 
-                    {/* Historique */}
+                    {/* Histoire de l'école Ohara */}
                     <div className="mb-8">
                         <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
-                            Historique
+                            Histoire de l'école Ohara
                         </h3>
                         <Card className="text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                             <div className="flex flex-col md:flex-row md:items-start gap-6">
@@ -107,7 +107,7 @@ const SchoolInfo = () => {
                     {/* Aujourd&apos;hui */}
                     <div className="mb-8">
                         <h3 className="text-xl font-semibold text-[--secondary-color] mb-4 md:text-left text-center">
-                            Aujourd&apos;hui
+                            L&apos;école Ohara aujourd&apos;hui
                         </h3>
                         <Card className="text-[--secondary-color] bg-white p-4 rounded-md" style={{ fontFamily: 'var(--inter-ikebana)' }}>
                             <div className="flex flex-col md:flex-row md:items-start gap-6">
