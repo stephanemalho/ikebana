@@ -5,7 +5,6 @@ import Link from "next/link";
 const SchoolInfo = () => {
     return (
         <section
-            id="nos-sites"
             className="
     pb-16 
     bg-gradient-to-b

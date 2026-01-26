@@ -16,7 +16,7 @@ const Information = () => {
                 <p>
                     L'École d'Ikebana Ohara - Chapitre Yvelines Paris transmet l'art japonais de l'ikebana selon l'enseignement officiel de l'École Ohara, à travers{" "}
                     <Link
-                        href="#nos-sites" className="underline"
+                        href="#cours" className="underline"
                     ><strong>trois lieux d'enseignement à Paris et en Île-de-France.</strong></Link>.
                 </p>
                 <p>À travers des cours réguliers, des ateliers et des événements culturels, nous accompagnons les débutants comme les pratiquants confirmés dans l'apprentissage de l'ikebana, un art floral vivant, enraciné dans la tradition japonaise et ouvert à la création contemporaine à travers le <Link
