@@ -60,9 +60,9 @@ const structuredData = {
                     value: "94.99Z"
                 }
             ],
-            logo: `${siteUrl}/images/logo-ohara-yvelines-paris.png`,
+            logo: `${siteUrl}/images/logo-ikebana-chapitre-yvelines-paris.png`,
             image: [
-                `${siteUrl}/images/logo-ohara-yvelines-paris.png`,
+                `${siteUrl}/images/logo-ikebana-chapitre-yvelines-paris.png`,
                 `${siteUrl}/assets/ikuko_kato.jpg`
             ],
             foundingLocation: {
@@ -103,7 +103,7 @@ const structuredData = {
             inLanguage: "fr",
             primaryImageOfPage: {
                 "@type": "ImageObject",
-                url: `${siteUrl}/images/logo-ohara-yvelines-paris.png`
+                url: `${siteUrl}/images/logo-ikebana-chapitre-yvelines-paris.png`
             },
             breadcrumb: {
                 "@id": `${siteUrl}#breadcrumb`
