@@ -35,10 +35,6 @@ export default function ConsentScripts() {
 
         const addGa = () => {
             if (!GA_MEASUREMENT_ID) {
-                if (isDev) {
-                    // eslint-disable-next-line no-console
-                    console.warn("[ConsentScripts] GA measurement ID missing");
-                }
                 return;
             }
 
