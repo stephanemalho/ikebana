@@ -40,7 +40,7 @@ export const carouselIkebanaData: carouselMetadataType = {
         {
             imageUrl: "/images/ikebana-creation/mawaru-katachi-4-saisons.webp",
             altText: "Arrangement Mawaru Katachi quatre saisons style Ohara",
-            title: "Mawaru Katachi 4 Saisons",
+            title: "Hiraku Katachi",
             description:
                 "Forme circulaire Ohara évoquant le mouvement cyclique des saisons et l'éternité du temps qui passe."
         },

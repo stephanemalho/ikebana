@@ -115,7 +115,7 @@ const SchoolInfo = () => {
                                         <img
                                             src="/images/ohara/hiroki-ohara-portrait.webp"
                                             alt="Unshin Ohara fondateur de l'école Ohara d'Ikebana"
-                                            className="w-full h-auto rounded-md object-cover"
+                                            className="w-full h-[260px] rounded-md object-cover object-top"
                                         />
                                         <figcaption className="mt-2 text-xs md:text-sm text-black">
                                             Portrait de Hiroki Ohara.<br />&copy; Ohararyu All rights reserved
