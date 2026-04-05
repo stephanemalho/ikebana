@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Container from "@/app/components/ui/Container";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Mentions légales",
+    description:
+        "Mentions légales de l'École Ikebana Ohara - Chapitre Yvelines Paris : éditeur, publication, hébergement, propriété intellectuelle et crédits images.",
+    alternates: {
+        canonical: "/mentions-legales"
+    }
+};
 
 export default function MentionsLegalesPage() {
     return (

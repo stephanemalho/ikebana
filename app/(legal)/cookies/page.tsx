@@ -1,6 +1,16 @@
+import type { Metadata } from "next";
 import Container from "@/app/components/ui/Container";
 import CookiePreferencesButton from "@/app/components/seo/CookiePreferencesButton";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Politique de cookies",
+    description:
+        "Politique de cookies de l'École Ikebana Ohara - Chapitre Yvelines Paris : cookies essentiels, mesure d'audience et gestion du consentement.",
+    alternates: {
+        canonical: "/cookies"
+    }
+};
 
 export default function CookiesPage() {
     return (

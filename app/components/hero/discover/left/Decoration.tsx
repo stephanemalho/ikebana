@@ -6,7 +6,7 @@ const Decoration = () => {
     return (
         <div  id="sakura-zone" className="relative mx-auto">
             <Image
-                src="/assets/sakura-hero-section.png"
+                src="/assets/sakura-hero-section.webp"
                 alt="sakura branch"
                 width={700}
                 height={100}

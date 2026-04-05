@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Container from "@/app/components/ui/Container";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+    title: "Politique de confidentialité",
+    description:
+        "Politique de confidentialité de l'École Ikebana Ohara - Chapitre Yvelines Paris : données collectées, finalités, durée de conservation et droits des personnes.",
+    alternates: {
+        canonical: "/politique-de-confidentialite"
+    }
+};
 
 export default function PolitiqueConfidentialitePage() {
     return (

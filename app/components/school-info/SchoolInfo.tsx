@@ -114,7 +114,7 @@ const SchoolInfo = () => {
                                     <figure>
                                         <img
                                             src="/images/ohara/hiroki-ohara-portrait.webp"
-                                            alt="Unshin Ohara fondateur de l'école Ohara d'Ikebana"
+                                            alt="Portrait de Hiroki Ohara, cinquième Iemoto de l'école Ohara"
                                             className="h-[260px] w-auto max-w-full mx-auto rounded-md object-contain"
                                         />
                                         <figcaption className="mt-2 text-xs md:text-sm text-black">

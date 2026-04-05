@@ -9,6 +9,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 const siteUrl = "https://ohara-chapitre-yvelines-paris.fr";
+const defaultOgImage = "/images/logo-ikebana-ecole-ohara-paris-yvelines.png";
 
 const notoSansJP = Noto_Sans_JP({
     variable: '--font-noto-sans-jp',
@@ -30,11 +31,12 @@ const jakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
     metadataBase: new URL(siteUrl),
-    title: metaDataString.title,
-    description: metaDataString.description,
-    alternates: {
-        canonical: siteUrl
+    title: {
+        default: metaDataString.title,
+        template: `%s | ${metaDataString.siteName}`
     },
+    description: metaDataString.description,
+    applicationName: metaDataString.siteName,
     openGraph: {
         type: "website",
         url: siteUrl,
@@ -44,7 +46,7 @@ export const metadata: Metadata = {
         locale: metaDataString.locale,
         images: [
             {
-                url: "/images/logo-ohara-removebg.png",
+                url: defaultOgImage,
                 alt: metaDataString.siteName
             }
         ]
@@ -53,7 +55,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: metaDataString.title,
         description: metaDataString.description,
-        images: ["/images/logo-ohara-removebg.png"]
+        images: [defaultOgImage]
     },
     robots: {
         index: true,

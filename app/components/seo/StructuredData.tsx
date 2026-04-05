@@ -1,5 +1,4 @@
 import { faqItems } from "@/app/constant/seo/faq";
-import { sectionLinks } from "@/app/constant/seo/sections";
 
 const siteUrl = "https://ohara-chapitre-yvelines-paris.fr";
 
@@ -10,6 +9,7 @@ const structuredData = {
             "@type": "NonprofitOrganization",
             "@id": `${siteUrl}#organization`,
             name: "Ikebana Ohara - Chapitre Yvelines",
+            alternateName: "Ikebana école Ohara - Chapitre Yvelines Paris",
             legalName: "IKEBANA OHARA YVELINES BORDS DE SEINE",
             url: siteUrl,
             email: "ikebana.ybs@gmail.com",
@@ -62,8 +62,8 @@ const structuredData = {
             ],
             logo: `${siteUrl}/images/logo-ikebana-chapitre-yvelines-paris.png`,
             image: [
-                `${siteUrl}/images/logo-ikebana-chapitre-yvelines-paris.png`,
-                `${siteUrl}/assets/ikuko_kato.jpg`
+                `${siteUrl}/images/logo-ikebana-ecole-ohara-paris-yvelines.png`,
+                `${siteUrl}/assets/ikuko_kato.webp`
             ],
             foundingLocation: {
                 "@type": "Place",
@@ -103,10 +103,7 @@ const structuredData = {
             inLanguage: "fr",
             primaryImageOfPage: {
                 "@type": "ImageObject",
-                url: `${siteUrl}/images/logo-ikebana-chapitre-yvelines-paris.png`
-            },
-            breadcrumb: {
-                "@id": `${siteUrl}#breadcrumb`
+                url: `${siteUrl}/images/logo-ikebana-ecole-ohara-paris-yvelines.png`
             }
         },
         {
@@ -114,22 +111,13 @@ const structuredData = {
             "@id": `${siteUrl}#person-ikuko-kato`,
             name: "Ikuko Kurenai Kato",
             jobTitle: "Présidente",
+            image: `${siteUrl}/assets/ikuko_kato.webp`,
             affiliation: {
                 "@id": `${siteUrl}#organization`
             },
             sameAs: [
                 "https://www.facebook.com/ikuko.katoenfroy/"
             ]
-        },
-        {
-            "@type": "BreadcrumbList",
-            "@id": `${siteUrl}#breadcrumb`,
-            itemListElement: sectionLinks.map((section, index) => ({
-                "@type": "ListItem",
-                position: index + 1,
-                name: section.label,
-                item: section.id === "top" ? siteUrl : `${siteUrl}#${section.id}`
-            }))
         },
         {
             "@type": "FAQPage",
@@ -142,80 +130,6 @@ const structuredData = {
                     text: item.answer
                 }
             }))
-        },
-        {
-            "@type": "EventSeries",
-            "@id": `${siteUrl}#event-ikebana-tenri`,
-            name: "Cours d'Ikebana - Association Tenri",
-            description: "Cours d'ikebana au sein de l'Association Tenri.",
-            eventStatus: "https://schema.org/EventScheduled",
-            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-            location: {
-                "@type": "Place",
-                name: "Association Tenri",
-                address: {
-                    "@type": "PostalAddress",
-                    streetAddress: "8-12 Rue Bertin Poirée",
-                    postalCode: "75001",
-                    addressLocality: "Paris",
-                    addressCountry: "FR"
-                }
-            },
-            organizer: {
-                "@id": `${siteUrl}#organization`
-            },
-            eventSchedule: {
-                "@type": "Schedule",
-                repeatFrequency: "P1W",
-                byDay: [
-                    "https://schema.org/Monday",
-                    "https://schema.org/Saturday"
-                ]
-            }
-        },
-        {
-            "@type": "EventSeries",
-            "@id": `${siteUrl}#event-ikebana-courbevoie`,
-            name: "Cours d'Ikebana - Centre culturel de Courbevoie",
-            description: "Cours d'ikebana au centre culturel de Courbevoie.",
-            eventStatus: "https://schema.org/EventScheduled",
-            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-            location: {
-                "@type": "Place",
-                name: "Centre culturel de Courbevoie",
-                address: {
-                    "@type": "PostalAddress",
-                    streetAddress: "14bis square de l'Hôtel de ville",
-                    postalCode: "92400",
-                    addressLocality: "Courbevoie",
-                    addressCountry: "FR"
-                }
-            },
-            organizer: {
-                "@id": `${siteUrl}#organization`
-            }
-        },
-        {
-            "@type": "EventSeries",
-            "@id": `${siteUrl}#event-ikebana-gif`,
-            name: "Cours d'Ikebana - Association Fleurs & Japon",
-            description: "Cours d'ikebana à Gif-sur-Yvette.",
-            eventStatus: "https://schema.org/EventScheduled",
-            eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-            location: {
-                "@type": "Place",
-                name: "Association Fleurs & Japon",
-                address: {
-                    "@type": "PostalAddress",
-                    streetAddress: "3 All. de l'Étang",
-                    postalCode: "91190",
-                    addressLocality: "Gif-sur-Yvette",
-                    addressCountry: "FR"
-                }
-            },
-            organizer: {
-                "@id": `${siteUrl}#organization`
-            }
         }
     ]
 };

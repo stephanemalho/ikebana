@@ -59,7 +59,7 @@ export function ContactForm() {
                                         <figure className="relative w-40 aspect-square my-4">
                                             <Image
                                                 src="/assets/qr_code_to_google_contact_form.svg"
-                                                alt="QR code pour contacter Exotic Perle Teckel"
+                                                alt="QR code pour accéder au formulaire de contact de l'école d'ikebana"
                                                 fill
                                                 className="object-cover"
                                             />

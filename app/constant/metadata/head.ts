@@ -1,7 +1,7 @@
 export const metaDataString = {
-    title: " Ikebana école Ohara - chapitre Yvelines Paris, cours et enseignement de l'ikebana, art floral japonais à Paris et dans les Yvelines",
+    title: "Ikebana école Ohara - chapitre Yvelines Paris.",
     description:
-        "L'École d'Ikebana Ohara - Chapitre Yvelines Paris transmet l'art japonais de l'ikebana selon l'enseignement officiel de l'École Ohara, à travers trois lieux d'enseignement à Paris et en Île-de-France.",
+        "Enseignement officiel de l'École Ohara, à travers trois lieux d'enseignement à Paris 1er et en Île-de-France. Cours et enseignement de l'ikebana, art floral japonais, pour tous les niveaux et tous les âges.",
     siteName: "Ikebana Ohara - Chapitre Yvelines",
     locale: "fr_FR"
 } as const;
