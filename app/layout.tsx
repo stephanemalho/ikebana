@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Noto_Sans_JP, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import { metaDataString } from './constant/metadata/head';
-import AOSProvider from './components/wrapper/AOSProvider';
 import CookieBanner from "./components/seo/CookieBanner";
 import ConsentScripts from "./components/seo/ConsentScripts";
 import Header from './components/header/Header';
@@ -81,11 +80,9 @@ export default function RootLayout({
     return (
         <html lang="fr">
             <body className={`${notoSansJP.variable} ${playfair.variable} ${jakarta.variable}`}>
-                <AOSProvider>
-                    <Header />
-                    {children}
-                    <Footer />
-                </AOSProvider>
+                <Header />
+                {children}
+                <Footer />
                 <ConsentScripts />
                 <CookieBanner />
             </body>

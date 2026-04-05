@@ -43,7 +43,6 @@ function CarouselReveal({ carouselData, mobileMaxItems = 5 }: CarouselRevealProp
                             alt={previewItem.altText}
                             fill
                             className="object-cover"
-                            priority
                             sizes="(max-width: 1023px) 100vw, 900px"
                         />
                         <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white p-4">

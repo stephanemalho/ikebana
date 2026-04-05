@@ -11,7 +11,7 @@ const Decoration = () => {
                 width={700}
                 height={100}
                 priority
-                data-aos="fade-down"
+                className="intro-reveal"
             />
             <LazySakuraPetals />
             <div className="hero-image__overlay" />

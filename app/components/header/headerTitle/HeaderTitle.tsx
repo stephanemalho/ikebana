@@ -14,7 +14,7 @@ const HeaderTitle = () => {
             />
             <div className="lg:flex-col lg:align-center z-1 flex-1 text-nowrap hidden lg:flex">
                 <h4>{stringHeader.title}</h4>
-                <div data-aos="fade-down" className="text-[--title-color]">
+                <div className="text-[--title-color] intro-reveal">
                     {stringHeader.paragraph}
                 </div>
             </div>
