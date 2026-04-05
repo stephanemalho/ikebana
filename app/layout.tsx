@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Noto_Sans_JP, Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 import './globals.css';
 import { metaDataString } from './constant/metadata/head';
 import CookieBanner from "./components/seo/CookieBanner";
@@ -10,22 +10,11 @@ import Footer from './components/footer/Footer';
 const siteUrl = "https://ohara-chapitre-yvelines-paris.fr";
 const defaultOgImage = "/images/logo-ikebana-ecole-ohara-paris-yvelines.png";
 
-const notoSansJP = Noto_Sans_JP({
-    variable: '--font-noto-sans-jp',
-    weight: ['100', '400', '700', '900'],
-    subsets: ['latin', 'latin-ext']
-});
-
-const playfair = Playfair_Display({
-    subsets: ['latin'],
-    weight: ['400', '500', '600', '700', '800', '900'],
-    variable: '--font-playfair',
-});
-
-const jakarta = Plus_Jakarta_Sans({
-    subsets: ['latin'],
-    weight: ['200', '300', '400', '500', '600', '700', '800'],
-    variable: '--font-jakarta',
+const roboto = Roboto({
+    subsets: ['latin', 'latin-ext'],
+    weight: ['300', '400', '500', '700', '900'],
+    variable: '--font-roboto',
+    display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -79,7 +68,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="fr">
-            <body className={`${notoSansJP.variable} ${playfair.variable} ${jakarta.variable}`}>
+            <body className={roboto.variable}>
                 <Header />
                 {children}
                 <Footer />

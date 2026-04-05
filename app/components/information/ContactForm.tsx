@@ -45,7 +45,7 @@ export function ContactForm() {
                                 className="text-3xl font-bold text-[--secondary-color] md:text-4xl"
                                 style={{ fontFamily: "var(--playfair-display)" }}
                             >
-                                Formulaire de contact direct avec Ikuko Kato
+                                Formulaire de contact
                             </h2>
                             <p className="mt-4 max-w-2xl text-base leading-8 text-[--secondary-color]/82 md:text-[1.03rem]">
                                 Quelques questions pour mieux comprendre votre demande avant de vous répondre.
