@@ -1,213 +1,224 @@
-import Container from "../ui/Container"
-import { BookOpen, Flower, Leaf, Trees, Eye, Palette, Sprout } from "lucide-react"
+import Container from "../ui/Container";
+import { BookOpen, Flower, Leaf, Trees, Eye, Palette, Sprout } from "lucide-react";
+
+const shellClass =
+    "w-full overflow-hidden rounded-[32px] border border-white/70 bg-[linear-gradient(180deg,rgba(255,250,247,0.96),rgba(243,232,226,0.82))] shadow-[0_24px_70px_rgba(84,52,40,0.08)] backdrop-blur-sm";
+
+const cardClass =
+    "rounded-[24px] border border-[#ead9d1] bg-[linear-gradient(180deg,#fffdfa_0%,#f9f0ea_100%)] shadow-[0_18px_44px_rgba(84,52,40,0.08)]";
+
+const iconWrapClass =
+    "flex h-12 w-12 items-center justify-center rounded-[16px] border border-[--secondary-color]/10 bg-[linear-gradient(180deg,#f5e8e1_0%,#efe1da_100%)] text-[--secondary-color]";
+
+const learningSteps = [
+    {
+        title: "Observation",
+        description:
+            "Observer les saisons, les végétaux et les rythmes du vivant pour comprendre la composition avant même de la réaliser.",
+        icon: Eye
+    },
+    {
+        title: "Pratique",
+        description:
+            "Travailler les formes de base avec des matériaux variés afin d'affiner le geste, l'équilibre et la sensibilité.",
+        icon: Palette
+    },
+    {
+        title: "Évolution",
+        description:
+            "Approfondir progressivement les styles traditionnels et libres, avec l'accompagnement du maître et une critique constructive.",
+        icon: Sprout
+    }
+];
 
 function IkebanaInfo() {
     return (
-        <section className="py-16 px-2">
+        <section className="px-2 py-16">
             <Container>
-                <div className="mx-auto p-2">
-                    {/* Titre principal */}
-                    <div id="le-style-ohara" className="text-center mb-16">
-                        <h2
-                            className="text-2xl font-bold text-[var(--secondary-color)] mb-6"
-                            style={{ fontFamily: "var(--playfair-display)" }}
-                        >
-                            Qu&apos;est-ce que l&apos;Ikebana ?
-                        </h2>
-                        <div className="w-24 h-1 bg-[var(--secondary-color)] mx-auto"></div>
-                    </div>
+                <div className={shellClass}>
+                    <div className="px-5 py-10 md:px-8 lg:px-10">
+                        <header id="le-style-ohara" className="mx-auto mb-14 max-w-3xl text-center">
+                            <span className="mb-4 inline-flex rounded-sm border border-[--secondary-color]/15 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[--secondary-color]/70">
+                                Art floral japonais
+                            </span>
+                            <h2
+                                className="mb-5 text-3xl font-bold text-[var(--secondary-color)] md:text-4xl"
+                                style={{ fontFamily: "var(--playfair-display)" }}
+                            >
+                                Qu&apos;est-ce que l&apos;Ikebana ?
+                            </h2>
+                            <p className="text-base leading-relaxed text-[--secondary-color]/80 md:text-lg">
+                                Une discipline artistique où la ligne, le vide, les saisons et l&apos;intention comptent autant que la fleur elle-meme.
+                            </p>
+                        </header>
 
-                    {/* Grille Bento */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                        {/* Histoire - Grande carte */}
-                        <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <div className="flex items-center mb-6">
-                                <div className="w-12 h-12 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mr-4">
-                                    <BookOpen size={22} className="text-[var(--secondary-color)]" aria-hidden />
+                        <div className="grid gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
+                            <article className={`${cardClass} p-7 md:p-8`}>
+                                <div className="mb-6 flex items-start gap-4">
+                                    <div className={iconWrapClass}>
+                                        <BookOpen size={22} aria-hidden />
+                                    </div>
+                                    <div>
+                                        <h3
+                                            className="text-2xl font-semibold text-[--secondary-color]"
+                                            style={{ fontFamily: "var(--playfair-display)" }}
+                                        >
+                                            Une tradition vivante
+                                        </h3>
+                                        <p className="mt-2 text-sm uppercase tracking-[0.18em] text-[--secondary-color]/50">
+                                            Plus de 600 ans d&apos;histoire
+                                        </p>
+                                    </div>
                                 </div>
-                                <h3
-                                    className="text-xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--Plus_Jakarta_Sans)" }}
-                                >
-                                    Une Tradition Millénaire
-                                </h3>
-                            </div>
-                            <p
-                                className="text-[var(--secondary-color)] leading-relaxed mb-4"
-                                style={{ fontFamily: "var(--inter-ikebana)" }}
-                            >
-                                L&apos;Ikebana, l&apos;un des arts traditionnels du Japon, se pratique depuis plus de <strong>600 ans</strong>. Il
-                                tire son origine des premières offrandes de fleurs aux morts dans les rites bouddhistes.
-                            </p>
-                            <p
-                                className="text-[var(--secondary-color)] leading-relaxed"
-                                style={{ fontFamily: "var(--inter-ikebana)" }}
-                            >
-                                Vers le milieu du XVème siècle, l&apos;Ikebana obtint son statut d&apos;art à part entière, indépendant de ses
-                                origines religieuses, tout en conservant ses nuances symboliques et philosophiques.
-                            </p>
-                        </div>
 
-                        {/* Philosophie */}
-                        <div className="bg-[var(--tercary-color)] rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <div className="text-center mb-4">
-                                <Flower size={36} className="mx-auto mb-4 text-[var(--secondary-color)]" aria-hidden />
-                                <h3
-                                    className="text-xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--inter-ikebana)" }}
-                                >
-                                    Philosophie
-                                </h3>
-                            </div>
-                            <p
-                                className="text-[var(--secondary-color)] text-sm leading-relaxed"
-                                style={{ fontFamily: "var(--inter-ikebana)" }}
-                            >
-                                Créer une beauté qui n&apos;existe pas dans la nature, en utilisant l&apos;asymétrie et l&apos;espace vide comme
-                                éléments essentiels.
-                            </p>
-                        </div>
-
-                        {/* Matériaux */}
-                        <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <div className="flex items-center mb-4">
-                                <Leaf size={28} className="mr-3 text-[var(--secondary-color)]" aria-hidden />
-                                <h3
-                                    className="text-xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--inter-ikebana)" }}
-                                >
-                                    Matériaux
-                                </h3>
-                            </div>
-                            <ul
-                                className="text-[var(--secondary-color)] text-sm space-y-2"
-                                style={{ fontFamily: "var(--inter-ikebana)" }}
-                            >
-                                <li>• Fleurs</li>
-                                <li>• Branches et feuilles</li>
-                                <li>• Herbes et mousses</li>
-                                <li>• Fruits et bourgeons</li>
-                                <li>• Feuilles mortes</li>
-                            </ul>
-                            <p className="text-xs text-[var(--secondary-color)] mt-3 italic">
-                                Chaque élément a autant de valeur que les fleurs épanouies
-                            </p>
-                        </div>
-
-                        {/* École Ohara - Grande carte */}
-                        <div className="lg:col-span-2 bg-gradient-to-r from-[var(--primary-color)] to-[var(--tercary-color)] rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <div className="flex items-center mb-6">
-                                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4">
-                                    <Trees size={22} className="text-[var(--secondary-color)]" aria-hidden />
-                                </div>
-                                <h3
-                                    className="text-xl font-bold text-[var(--secondary-color)]"
-                                    style={{ fontFamily: "var(--inter-ikebana)" }}
-                                >
-                                    L&apos;École Ohara
-                                </h3>
-                            </div>
-                            <div className="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h4
-                                        className="font-semibold text-[var(--secondary-color)] mb-2"
-                                        style={{ fontFamily: "var(--inter-ikebana)" }}
-                                    >
-                                        Style Moribana
-                                    </h4>
-                                    <p className="text-sm text-[var(--secondary-color)] mb-4">
-                                        Utilise des vases plats et peu profonds, parfait pour les arrangements paysagers.
+                                <div className="space-y-4 text-[--secondary-color]/85">
+                                    <p className="leading-relaxed">
+                                        L&apos;Ikebana, l&apos;un des arts traditionnels du Japon, se pratique depuis plus de <strong>600 ans</strong>.
+                                        Il trouve son origine dans les offrandes florales faites aux morts dans les rites bouddhistes.
+                                    </p>
+                                    <p className="leading-relaxed">
+                                        Vers le milieu du XVe siècle, il acquiert le statut d&apos;art autonome. Il se détache progressivement
+                                        de ses origines religieuses tout en conservant une profondeur symbolique et philosophique.
                                     </p>
                                 </div>
-                                <div>
-                                    <h4
-                                        className="font-semibold text-[var(--secondary-color)] mb-2"
-                                        style={{ fontFamily: "var(--inter-ikebana)" }}
+                            </article>
+
+                            <aside className="grid gap-6">
+                                <article className="rounded-[24px] border border-[--secondary-color]/10 bg-[linear-gradient(180deg,#f1dfd7_0%,#ead1c6_100%)] p-6 shadow-[0_16px_34px_rgba(84,52,40,0.08)]">
+                                    <Flower size={32} className="mb-5 text-[--secondary-color]" aria-hidden />
+                                    <h3
+                                        className="mb-3 text-xl font-semibold text-[--secondary-color]"
+                                        style={{ fontFamily: "var(--playfair-display)" }}
                                     >
-                                        Style Heika
-                                    </h4>
-                                    <p className="text-sm text-[var(--secondary-color)]">
-                                        Utilise de hauts vases cylindriques pour des compositions verticales élégantes.
+                                        Philosophie
+                                    </h3>
+                                    <p className="text-sm leading-relaxed text-[--secondary-color]/85">
+                                        Créer une beauté qui n&apos;existe pas telle quelle dans la nature, grâce a l&apos;asymétrie, au rythme
+                                        des lignes et a la puissance du vide.
+                                    </p>
+                                </article>
+
+                                <article className={`${cardClass} p-6`}>
+                                    <div className="mb-4 flex items-center gap-3">
+                                        <div className={iconWrapClass}>
+                                            <Leaf size={20} aria-hidden />
+                                        </div>
+                                        <h3
+                                            className="text-xl font-semibold text-[--secondary-color]"
+                                            style={{ fontFamily: "var(--playfair-display)" }}
+                                        >
+                                            Matériaux
+                                        </h3>
+                                    </div>
+                                    <ul className="space-y-2 text-sm text-[--secondary-color]/85">
+                                        <li>Fleurs et boutons</li>
+                                        <li>Branches, feuilles et herbes</li>
+                                        <li>Mousses, fruits et bourgeons</li>
+                                        <li>Feuilles séchées ou éléments saisonniers</li>
+                                    </ul>
+                                    <p className="mt-4 text-xs italic text-[--secondary-color]/65">
+                                        Chaque élément a la meme valeur expressive qu&apos;une fleur pleinement éclose.
+                                    </p>
+                                </article>
+                            </aside>
+                        </div>
+
+                        <article className={`mt-6 ${cardClass} overflow-hidden`}>
+                            <div className="grid gap-0 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
+                                <div className="bg-[linear-gradient(160deg,#f1dfd7_0%,#e5cbc0_100%)] p-7 md:p-8">
+                                    <div className="mb-5 flex items-center gap-4">
+                                        <div className="flex h-12 w-12 items-center justify-center rounded-[16px] bg-white/80 text-[--secondary-color] shadow-sm">
+                                            <Trees size={22} aria-hidden />
+                                        </div>
+                                        <div>
+                                            <h3
+                                                className="text-2xl font-semibold text-[--secondary-color]"
+                                                style={{ fontFamily: "var(--playfair-display)" }}
+                                            >
+                                                L&apos;École Ohara
+                                            </h3>
+                                            <p className="mt-1 text-sm text-[--secondary-color]/60">
+                                                Une approche naturaliste et contemporaine de l&apos;ikebana
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <p className="leading-relaxed text-[--secondary-color]/85">
+                                        L&apos;École Ohara a développé des formes qui dialoguent avec le paysage, les saisons et les volumes
+                                        naturels. Elle relie l&apos;héritage classique a une lecture plus sensible et moderne du végétal.
                                     </p>
                                 </div>
+
+                                <div className="grid gap-px bg-[#ead9d1] md:grid-cols-2">
+                                    <div className="bg-[linear-gradient(180deg,#fffdfa_0%,#f8eee8_100%)] p-7">
+                                        <h4 className="mb-2 text-lg font-semibold text-[--secondary-color]">Style Moribana</h4>
+                                        <p className="text-sm leading-relaxed text-[--secondary-color]/80">
+                                            Utilise des vases plats et peu profonds, idéals pour les compositions paysagères et l&apos;expression
+                                            d&apos;une nature mise en scène.
+                                        </p>
+                                    </div>
+                                    <div className="bg-[linear-gradient(180deg,#fffdfa_0%,#f8eee8_100%)] p-7">
+                                        <h4 className="mb-2 text-lg font-semibold text-[--secondary-color]">Style Heika</h4>
+                                        <p className="text-sm leading-relaxed text-[--secondary-color]/80">
+                                            Utilise de hauts vases cylindriques et privilégie des lignes verticales plus sobres, élégantes et
+                                            structurées.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
+                        </article>
+
+                        <section className={`mt-6 ${cardClass} p-7 md:p-8`}>
+                            <div className="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+                                <div>
+                                    <h3
+                                        className="text-2xl font-semibold text-[--secondary-color]"
+                                        style={{ fontFamily: "var(--playfair-display)" }}
+                                    >
+                                        Le chemin de l&apos;apprentissage
+                                    </h3>
+                                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-[--secondary-color]/75">
+                                        L&apos;ikebana se construit dans le temps, par la répétition, l&apos;observation et l&apos;évolution du regard.
+                                    </p>
+                                </div>
+                                <span className="rounded-sm border border-[--secondary-color]/12 bg-[--primary-color]/55 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[--secondary-color]/60">
+                                    Observer • pratiquer • évoluer
+                                </span>
+                            </div>
+
+                            <div className="grid gap-6 md:grid-cols-3">
+                                {learningSteps.map((step) => {
+                                    const Icon = step.icon;
+
+                                    return (
+                                        <article
+                                            key={step.title}
+                                            className="rounded-[22px] border border-[#ead9d1] bg-[linear-gradient(180deg,#fffdfa_0%,#f8eee8_100%)] p-6"
+                                        >
+                                            <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-[18px] bg-[linear-gradient(180deg,#f5e8e1_0%,#efe1da_100%)] text-[--secondary-color]">
+                                                <Icon size={24} aria-hidden />
+                                            </div>
+                                            <h4 className="mb-3 text-lg font-semibold text-[--secondary-color]">{step.title}</h4>
+                                            <p className="text-sm leading-relaxed text-[--secondary-color]/80">{step.description}</p>
+                                        </article>
+                                    );
+                                })}
+                            </div>
+                        </section>
+
+                        <div className="mt-12 text-center">
+                            <blockquote
+                                className="mx-auto max-w-4xl text-lg italic leading-relaxed text-[var(--secondary-color)] md:text-2xl"
+                                style={{ fontFamily: "var(--playfair-display)" }}
+                            >
+                                &quot;Ce qui distingue l&apos;ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et
+                                l&apos;utilisation de l&apos;espace vide comme donnée essentielle de la composition.&quot;
+                            </blockquote>
                         </div>
-                    </div>
-
-                    {/* Section Apprentissage */}
-                    <div className="bg-white rounded-2xl p-8 shadow-lg">
-                        <h3
-                            className="text-xl font-bold text-[var(--secondary-color)] mb-8 text-center"
-                            style={{ fontFamily: "var(--inter-ikebana)" }}
-                        >
-                            Le Chemin de l&apos;Apprentissage
-                        </h3>
-
-                        <div className="grid md:grid-cols-3 gap-8">
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <Eye size={26} className="text-[var(--secondary-color)]" aria-hidden />
-                                </div>
-                                <h4
-                                    className="font-semibold text-[var(--secondary-color)] mb-3"
-                                    style={{ fontFamily: "var(--inter-ikebana)" }}
-                                >
-                                    Observation
-                                </h4>
-                                <p className="text-sm text-[var(--secondary-color)] leading-relaxed">
-                                    L&apos;observation de la nature est essentielle : changements de saisons, croissance des plantes, beauté de
-                                    l&apos;environnement.
-                                </p>
-                            </div>
-
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <Palette size={26} className="text-[var(--secondary-color)]" aria-hidden />
-                                </div>
-                                <h4
-                                    className="font-semibold text-[var(--secondary-color)] mb-3"
-                                    style={{ fontFamily: "var(--inter-ikebana)" }}
-                                >
-                                    Pratique
-                                </h4>
-                                <p className="text-sm text-[var(--secondary-color)] leading-relaxed">
-                                    Maîtrise des arrangements de base avec des matériaux toujours différents pour développer la technique
-                                    et la sensibilité.
-                                </p>
-                            </div>
-
-                            <div className="text-center">
-                                <div className="w-16 h-16 bg-[var(--tercary-color)] rounded-full flex items-center justify-center mx-auto mb-4">
-                                    <Sprout size={26} className="text-[var(--secondary-color)]" aria-hidden />
-                                </div>
-                                <h4
-                                    className="font-semibold text-[var(--secondary-color)] mb-3"
-                                    style={{ fontFamily: "var(--inter-ikebana)" }}
-                                >
-                                    Évolution
-                                </h4>
-                                <p className="text-sm text-[var(--secondary-color)] leading-relaxed">
-                                    Perfectionnement progressif vers des styles traditionnels et libres, guidé par les critiques
-                                    constructives du maître.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Citation finale */}
-                    <div className="mt-12 text-center">
-                        <blockquote
-                            className="text-sm md:text-xl text-[var(--secondary-color)] italic max-w-3xl mx-auto"
-                            style={{ fontFamily: "var(--inter-ikebana)" }}
-                        >
-                            &quot;Ce qui distingue l&apos;Ikebana d&apos;une simple décoration, c&apos;est sa forme asymétrique et l&apos;utilisation de
-                            l&apos;espace vide comme donnée essentielle de la composition.&quot;
-                        </blockquote>
                     </div>
                 </div>
             </Container>
         </section>
-    )
+    );
 }
 
-export default IkebanaInfo
+export default IkebanaInfo;

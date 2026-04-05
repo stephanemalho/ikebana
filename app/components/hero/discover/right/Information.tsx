@@ -7,8 +7,8 @@ const Information = () => {
                 {/* Ikebana école Ohara chapitre Yvelines Paris */}
                 <h1 className="text-4xl">
                     Ikebana école
-                    <span className="text-[#b75d71]"> Ohara</span> - chapitre Yvelines Paris<br />
-                    <span className="text-[#b75d71]">
+                    <span className="text-[#E7463C]"> Ohara</span> - chapitre Yvelines Paris<br />
+                    <span className="text-[#E7463C]">
                         cours et enseignement de l'ikebana, art floral japonais
                     </span>
                 </h1>

@@ -34,12 +34,12 @@ export default function CookieBanner() {
         flex items-center justify-center
         h-12 w-12
         rounded-full
-        border border-[--secondary-color]/30
-        bg-white/70 backdrop-blur-md
+        border border-[var(--button-soft-border)]
+        bg-[var(--button-soft-bg)]/90 backdrop-blur-md
         text-[--secondary-color]
-        shadow-lg
+        shadow-[0_14px_28px_rgba(163,78,86,0.16)]
         transition
-        hover:bg-white/90 hover:shadow-xl
+        hover:bg-white hover:shadow-[0_18px_32px_rgba(163,78,86,0.18)]
         focus:outline-none focus-visible:ring-2 focus-visible:ring-[--secondary-color]/40
     "
             >
@@ -75,7 +75,7 @@ export default function CookieBanner() {
                                 setConsent("refused");
                                 setIsOpen(false);
                             }}
-                            className="rounded border border-[--secondary-color]/30 px-4 py-2 text-sm text-[--secondary-color] hover:text-black"
+                            className="rounded-sm border border-[var(--button-soft-border)] bg-[var(--button-soft-bg)] px-4 py-2 text-sm font-medium text-[--secondary-color] transition hover:-translate-y-0.5 hover:bg-white hover:text-black"
                         >
                             Refuser
                         </button>
@@ -85,7 +85,7 @@ export default function CookieBanner() {
                                 setConsent("accepted");
                                 setIsOpen(false);
                             }}
-                            className="rounded bg-[--secondary-color] px-4 py-2 text-sm text-white hover:opacity-90"
+                            className="rounded-sm border border-transparent bg-[linear-gradient(135deg,var(--button-primary-start),var(--button-primary-end))] px-4 py-2 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(163,78,86,0.22)] transition hover:-translate-y-0.5 hover:opacity-95"
                         >
                             Accepter
                         </button>

@@ -1,67 +1,96 @@
-﻿"use client";
-
-import { useEffect, useMemo, useState } from "react";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import CarouselMainTitle from "./IkebanaTitle";
 import type { carouselMetadataType } from "./carouselConfig";
 
-const IkebanaCarousel = dynamic(() => import("./IkebanaCarousel"), { ssr: false });
-
 type CarouselRevealProps = {
     carouselData: carouselMetadataType;
-    mobileMaxItems?: number;
 };
 
-const MOBILE_QUERY = "(max-width: 1023px)";
-
-function CarouselReveal({ carouselData, mobileMaxItems = 5 }: CarouselRevealProps) {
-    const [showCarousel, setShowCarousel] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        if (typeof window === "undefined") return;
-        const media = window.matchMedia(MOBILE_QUERY);
-        const update = () => setIsMobile(media.matches);
-        update();
-        media.addEventListener("change", update);
-        return () => media.removeEventListener("change", update);
-    }, []);
-
-    const previewItem = carouselData.items[0];
-    const maxItems = useMemo(() => (isMobile ? mobileMaxItems : undefined), [isMobile, mobileMaxItems]);
+function CarouselReveal({ carouselData }: CarouselRevealProps) {
+    const [featuredItem, ...galleryItems] = carouselData.items;
 
     return (
-        <div className="w-full">
-            <CarouselMainTitle id={carouselData.id} title={carouselData.title} description={carouselData.description} />
+        <section className="w-full space-y-8" aria-labelledby={carouselData.id}>
+            <CarouselMainTitle
+                id={carouselData.id}
+                title={carouselData.title}
+                description={carouselData.description}
+            />
 
-            {!showCarousel ? (
-                <div className="w-full flex flex-col items-center">
-                    <figure className="relative w-full max-w-4xl h-[400px] rounded-lg overflow-hidden">
+            <div className="overflow-hidden rounded-[28px] border border-[#ead9d1] bg-[linear-gradient(180deg,#fffdfa_0%,#f7ece6_100%)] shadow-[0_18px_48px_rgba(84,52,40,0.08)]">
+                <div className="grid gap-0 lg:grid-cols-[minmax(0,1.35fr)_minmax(22rem,0.9fr)]">
+                    <figure className="relative min-h-[340px] lg:min-h-[520px]">
                         <Image
-                            src={previewItem.imageUrl}
-                            alt={previewItem.altText}
+                            src={featuredItem.imageUrl}
+                            alt={featuredItem.altText}
                             fill
                             className="object-cover"
-                            sizes="(max-width: 1023px) 100vw, 900px"
+                            sizes="(max-width: 1023px) 100vw, 58vw"
                         />
-                        <div className="absolute inset-0 bg-black/30 flex flex-col justify-center items-center text-white p-4">
-                            <h3 className="text-xl font-bold mb-2 text-center">{previewItem.title}</h3>
-                            <p className="text-sm text-center">{previewItem.description}</p>
-                        </div>
                     </figure>
-                    <button
-                        type="button"
-                        className="mt-6 underline text-[--secondary-color] hover:text-black"
-                        onClick={() => setShowCarousel(true)}
-                    >
-                        {carouselData.seeMoreUrl || "Voir le carrousel complet"}
-                    </button>
+
+                    <div className="flex flex-col justify-between gap-6 p-6 md:p-8 text-[--secondary-color]">
+                        <div className="space-y-4">
+                            <span className="inline-flex w-fit rounded-sm border border-[--secondary-color]/15 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[--secondary-color]/70">
+                                Selection
+                            </span>
+                            <h3 className="text-2xl md:text-3xl font-semibold" style={{ fontFamily: "var(--playfair-display)" }}>
+                                {featuredItem.title}
+                            </h3>
+                            <p className="text-sm md:text-base leading-relaxed">
+                                {featuredItem.description}
+                            </p>
+                        </div>
+
+                        <figcaption className="border-t border-[--secondary-color]/10 pt-4 text-sm text-[--secondary-color]/75">
+                            {featuredItem.altText}
+                        </figcaption>
+                    </div>
                 </div>
-            ) : (
-                <IkebanaCarousel carouselData={carouselData} maxItems={maxItems} />
-            )}
-        </div>
+            </div>
+
+            <div className="flex items-center justify-between gap-4 px-1">
+                <p className="text-sm text-[--secondary-color]/70">
+                    Faites défiler pour explorer la galerie.
+                </p>
+                <p className="hidden text-xs font-medium uppercase tracking-[0.18em] text-[--secondary-color]/45 md:block">
+                    {carouselData.items.length} visuels
+                </p>
+            </div>
+
+            <ul className="modern-scrollbar flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4" aria-label={carouselData.title}>
+                {galleryItems.map((item, index) => (
+                    <li key={`${carouselData.id}-${item.title}-${index}`} className="min-w-[18rem] flex-[0_0_18rem] snap-start md:min-w-[21rem] md:flex-[0_0_21rem]">
+                        <article className="h-full overflow-hidden rounded-[24px] border border-[#ead9d1] bg-[linear-gradient(180deg,#fffdfa_0%,#f9f0ea_100%)] shadow-[0_14px_36px_rgba(84,52,40,0.08)] transition-transform duration-300 hover:-translate-y-1">
+                            <figure className="flex h-full flex-col">
+                                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                                    <Image
+                                        src={item.imageUrl}
+                                        alt={item.altText}
+                                        fill
+                                        className="object-cover"
+                                        sizes="(max-width: 768px) 72vw, 336px"
+                                    />
+                                </div>
+                                <figcaption className="flex flex-1 flex-col gap-3 p-5 text-[--secondary-color]">
+                                    <div className="flex items-center justify-between gap-3">
+                                        <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--playfair-display)" }}>
+                                            {item.title}
+                                        </h3>
+                                        <span className="shrink-0 rounded-sm bg-[--primary-color] px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[--secondary-color]/65">
+                                            {String(index + 2).padStart(2, "0")}
+                                        </span>
+                                    </div>
+                                    <p className="text-sm leading-relaxed text-[--secondary-color]/80">
+                                        {item.description}
+                                    </p>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </li>
+                ))}
+            </ul>
+        </section>
     );
 }
 

@@ -13,6 +13,12 @@
     --primary-color: #dfd6d5;
     --secondary-color: #410602;
     --tercary-color: #e5c6c1;
+    --button-primary-start: #5a3b31;
+    --button-primary-end: #7a5a4d;
+    --button-primary-shadow: rgba(65, 6, 2, 0.18);
+    --button-primary-ring: rgba(122, 90, 77, 0.24);
+    --button-soft-bg: #efe4df;
+    --button-soft-border: rgba(65, 6, 2, 0.14);
 
     --black-200: #020202;
     --black-300: #333333;
@@ -188,42 +194,45 @@ body {
 }
 
 .hero-content__cta-button {
-    padding: 12px 16px;
+    padding: 13px 18px;
     margin-top: 50px;
     min-width: 220px;
 
-    border-radius: 10px;
-    border: 1px solid rgba(65, 6, 2, 0.15);
+    border-radius: 0.125rem;
+    border: 1px solid rgba(65, 6, 2, 0.12);
 
-    background: linear-gradient(135deg, #675247, #77675e);
+    background: linear-gradient(135deg, var(--button-primary-start), var(--button-primary-end));
 
     color: white;
     font-family: var(--plus-jakarta-sans);
     font-weight: 600;
     font-size: 16px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.2px;
 
     cursor: pointer;
     position: relative;
-    transition: color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease,
+    box-shadow: 0 14px 30px var(--button-primary-shadow);
+    transition: color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease,
         background 0.25s ease;
 }
 
 /* Hover premium */
 .hero-content__cta-button:hover {
-    text-decoration: underline;
-    box-shadow: 0 2px 6px rgba(65, 6, 2, 0.1);
+    text-decoration: none;
+    transform: translateY(-2px);
+    filter: brightness(1.03);
+    box-shadow: 0 18px 34px rgba(65, 6, 2, 0.22);
 }
 
 /* Click */
 .hero-content__cta-button:active {
-    transform: translateY(0) scale(0.97);
+    transform: translateY(0) scale(0.98);
 }
 
 /* Focus accessible */
 .hero-content__cta-button:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(183, 93, 113, 0.35);
+    box-shadow: 0 0 0 4px var(--button-primary-ring), 0 14px 30px var(--button-primary-shadow);
 }
 
 .hero-content__testimonial {
@@ -287,7 +296,7 @@ body {
 }
 
 #sakura-zone {
-    cursor: crosshair;
+    cursor: default;
 }
 
 .about-ikebana {
