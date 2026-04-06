@@ -51,12 +51,12 @@ const Information = () => {
                 </div>
 
                 <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-8">
-                    <Link href="#cours" className="hero-content__cta-button inline-flex items-center justify-center">
+                    <Link href="#cours" className="hero-content__cta-button inline-flex items-center justify-center m-auto">
                         Découvrir les cours
                     </Link>
                     <Link
                         href="#contact"
-                        className="mx-auto mt-12 text-sm font-semibold uppercase tracking-[0.16em] text-red-950 underline decoration-white/22 underline-offset-4 transition hover:text-red-700 sm:pl-1"
+                        className="mx-auto my-12 text-sm font-semibold uppercase tracking-[0.16em] text-red-950 underline decoration-white/22 underline-offset-4 transition hover:text-red-700 sm:pl-1"
                     >
                         Me contacter
                     </Link>

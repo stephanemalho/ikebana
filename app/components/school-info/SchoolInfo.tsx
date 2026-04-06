@@ -153,15 +153,17 @@ function SchoolInfo() {
                                     </p>
 
                                     <div className="mx-auto w-full max-w-[15rem] xl:mx-0 xl:ml-auto">
-                                        <figure>
-                                            <div className="relative aspect-[3/4] overflow-hidden rounded-[24px] border border-white/70 bg-[linear-gradient(180deg,#f7ede8_0%,#f0e0d8_100%)] shadow-[0_20px_42px_rgba(84,52,40,0.08)]">
-                                                <Image
-                                                    src="/images/ohara/hiroki-ohara-portrait.webp"
-                                                    alt="Portrait de Hiroki Ohara, cinquième Iemoto de l'école Ohara"
-                                                    fill
-                                                    className="object-contain object-bottom p-4 md:p-5"
-                                                    sizes="(max-width: 1279px) 240px, 18vw"
-                                                />
+                                        <figure className="mt-8">
+                                            <div className="rounded-[24px] h-60 border border-white/70 bg-[linear-gradient(180deg,#f7ede8_0%,#f0e0d8_100%)] p-4 shadow-[0_20px_42px_rgba(84,52,40,0.08)]">
+                                                <div className="relative aspect-[3/3] overflow-hidden rounded-[20px]">
+                                                    <Image
+                                                        src="/images/ohara/hiroki-ohara-portrait.webp"
+                                                        alt="Portrait de Hiroki Ohara, cinquième Iemoto de l'école Ohara"
+                                                        fill
+                                                        className="object-cover"
+                                                        sizes="(max-width: 1279px) 100vw, 48vw"
+                                                    />
+                                                </div>
                                             </div>
                                             <figcaption className="mt-4 text-xs leading-6 text-[--secondary-color]/65">
                                                 Portrait de Hiroki Ohara.<br />&copy; Ohararyu All rights reserved
