@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import HeaderNav from "./HeaderNav";
 import SectionBreadcrumb from "../../seo/SectionBreadcrumb";
 
 const HeaderNavTo = () => {
@@ -21,19 +20,7 @@ const HeaderNavTo = () => {
         );
     }
 
-    return (
-        <>
-            {/* Mobile */}
-            <div className="block lg:hidden">
-                <HeaderNav />
-            </div>
-
-            {/* Desktop */}
-            <div className="hidden lg:block">
-                <SectionBreadcrumb />
-            </div>
-        </>
-    );
+    return <SectionBreadcrumb />;
 };
 
 export default HeaderNavTo;

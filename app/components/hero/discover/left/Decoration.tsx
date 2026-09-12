@@ -14,7 +14,7 @@ const Decoration = () => {
                         width={1763}
                         height={2180}
                         priority
-                        className="h-auto w-full object-cover"
+                        className="h-auto w-full object-contain"
                         sizes="(max-width: 1023px) 88vw, 520px"
                     />
                 </div>

@@ -72,7 +72,7 @@ function SchoolInfo() {
                                         alt="Portrait de Unshin Ohara fondateur de l'école Ohara d'Ikebana"
                                         width={180}
                                         height={180}
-                                        className="h-auto w-[180px] rounded-full object-cover"
+                                        className="h-auto w-[180px] rounded-full object-contain"
                                         sizes="180px"
                                     />
                                 </div>
@@ -93,7 +93,7 @@ function SchoolInfo() {
                                                 src="/images/ohara/ikebana-historical-unshin-ohara.webp"
                                                 alt="arrangement historique de Unshin Ohara"
                                                 fill
-                                                className="object-cover"
+                                                className="object-contain"
                                                 sizes="(max-width: 1023px) 100vw, 48vw"
                                             />
                                         </div>
@@ -160,7 +160,7 @@ function SchoolInfo() {
                                                         src="/images/ohara/hiroki-ohara-portrait.webp"
                                                         alt="Portrait de Hiroki Ohara, cinquième Iemoto de l'école Ohara"
                                                         fill
-                                                        className="object-cover"
+                                                        className="object-contain"
                                                         sizes="(max-width: 1279px) 100vw, 48vw"
                                                     />
                                                 </div>
@@ -179,7 +179,7 @@ function SchoolInfo() {
                                                 src="/assets/Moribana-tashu-ike-printemps.jpg"
                                                 alt="Composition moribana tashu ike au printemps"
                                                 fill
-                                                className="object-cover"
+                                                className="object-contain"
                                                 sizes="(max-width: 1279px) 100vw, 48vw"
                                             />
                                         </div>
@@ -252,7 +252,7 @@ function SchoolInfo() {
                                             src="/images/ikuko/groupe-eleve-avec-ikuko.jpg"
                                             alt="Ikuko Kato avec un groupe d'élèves lors d'un moment de transmission autour de l'ikebana"
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             sizes="(max-width: 1023px) 100vw, 36vw"
                                         />
                                     </div>
@@ -267,7 +267,7 @@ function SchoolInfo() {
                                             src="/assets/Katamukeru-katachi-Printemps.jpg"
                                             alt="Composition katamukeru katachi au printemps"
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             sizes="(max-width: 1023px) 100vw, 36vw"
                                         />
                                     </div>
@@ -315,7 +315,7 @@ function SchoolInfo() {
                                             src="/assets/ikuko_kato.webp"
                                             alt="Ikuko Kato Kurenaï, présidente du chapitre Yvelines-Paris"
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             sizes="(max-width: 1023px) 100vw, 22vw"
                                         />
                                     </div>
@@ -336,7 +336,7 @@ function SchoolInfo() {
                                             src="/assets/ikebana-ateru-katachi-printemps.JPG"
                                             alt="Composition ikebana ateru katachi au printemps"
                                             fill
-                                            className="object-cover"
+                                            className="object-contain"
                                             sizes="(max-width: 1023px) 100vw, 42vw"
                                         />
                                     </div>

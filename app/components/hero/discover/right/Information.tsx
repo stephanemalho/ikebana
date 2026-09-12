@@ -15,15 +15,15 @@ const Information = () => {
                     style={{ fontFamily: "var(--playfair-display)" }}
                 >
                     Ikebana école <span className="text-[#E7463C]">Ohara</span>
-                    <span className="mt-2 block text-[0.58em] font-medium uppercase tracking-[0.08em] text-[#E7463C] md:text-sm">
+                    <span className="mt-2 block text-[0.58em] font-normal uppercase tracking-[0.08em] text-[#E7463C] md:text-sm">
                         Cours et enseignement de l&apos;ikebana, art floral japonais
                     </span>
                 </h1>
 
-                <p className="mt-6 max-w-[48rem] text-lg leading-8 text-[--secondary-color]/84 md:text-[1.15rem]">
+                <p className="mt-6 max-w-[48rem] text-base font-normal leading-7 text-[--secondary-color]/76 md:text-lg md:leading-8">
                     L&apos;École d&apos;Ikebana Ohara - Chapitre Yvelines Paris transmet l&apos;art japonais de l&apos;ikebana selon l&apos;enseignement officiel de l&apos;École Ohara, à travers{" "}
-                    <Link href="#cours" className="underline decoration-[--secondary-color]/25 underline-offset-4">
-                        <strong>trois lieux d&apos;enseignement à Paris et en Île-de-France.</strong>
+                    <Link href="#cours" className="font-medium text-[--secondary-color] underline decoration-[--secondary-color]/30 underline-offset-4 transition hover:decoration-[--secondary-color]">
+                        trois lieux d&apos;enseignement à Paris et en Île-de-France.
                     </Link>
                 </p>
 
@@ -39,13 +39,13 @@ const Information = () => {
                 </div>
 
                 <div className="mt-8 grid gap-4 text-[--secondary-color]/82">
-                    <p className="max-w-[50rem] text-base leading-8 md:text-[1.03rem]">
+                    <p className="max-w-[50rem] text-base font-normal leading-7 text-[--secondary-color]/76 md:text-[1.03rem] md:leading-8">
                         À travers des cours réguliers, des ateliers et des événements culturels, nous accompagnons les débutants comme les pratiquants confirmés dans l&apos;apprentissage de l&apos;ikebana, un art floral vivant, enraciné dans la tradition japonaise et ouvert à la création contemporaine à travers le{" "}
-                        <Link href="#le-style-ohara" className="underline decoration-[--secondary-color]/25 underline-offset-4">
-                            <strong>style Ohara.</strong>
+                        <Link href="#le-style-ohara" className="font-medium text-[--secondary-color] underline decoration-[--secondary-color]/30 underline-offset-4 transition hover:decoration-[--secondary-color]">
+                            style Ohara.
                         </Link>
                     </p>
-                    <p className="max-w-[46rem] text-base leading-8 md:text-[1.03rem]">
+                    <p className="max-w-[46rem] text-base font-normal leading-7 text-[--secondary-color]/76 md:text-[1.03rem] md:leading-8">
                         Rejoignez-nous pour découvrir la beauté de l&apos;ikebana et développer votre sensibilité artistique au cœur de la tradition japonaise.
                     </p>
                 </div>

@@ -23,119 +23,214 @@ export const carouselIkebanaData: carouselMetadataType = {
     seeMoreUrl: "Voir plus de créations pour chaque saisons",
     items: [
         {
-            imageUrl: "/images/ikebana-creation/heika-4-saisons.webp",
-            altText: "Arrangement Heika quatre saisons style Ohara",
-            title: "Heika 4 Saisons",
-            description:
-                "Style Heika Ohara représentant l'harmonie des quatre saisons dans un seul arrangement, exprimant le cycle naturel de la vie."
+            imageUrl: "/images/ikebana-creation/2026/5shu%20ike%20vertical.jpg",
+            altText: "Moribana Tashu ike 盛花多種活け",
+            title: "Moribana Tashu ike 盛花多種活け",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/katamukeru-katachi-printemps.webp",
-            altText: "Arrangement Katamukeru Katachi printemps style Ohara",
-            title: "Katamukeru Katachi Printemps",
-            description:
-                "Style Ohara du printemps avec forme inclinée, symbolisant le réveil de la nature et l'énergie nouvelle qui émerge."
+            imageUrl: "/images/ikebana-creation/2026/Bunjin%20Cho-2.jpg",
+            altText: "Bunjin Cho 文人調",
+            title: "Bunjin Cho 文人調",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/mawaru-katachi-4-saisons.webp",
-            altText: "Arrangement Mawaru Katachi quatre saisons style Ohara",
-            title: "Hiraku Katachi",
-            description:
-                "Forme circulaire Ohara évoquant le mouvement cyclique des saisons et l'éternité du temps qui passe."
+            imageUrl: "/images/ikebana-creation/2026/Bunjin%20Cho.jpg",
+            altText: "Bunjin Cho 文人調",
+            title: "Bunjin Cho 文人調",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/moribana-chokuritsu-kei-ete.webp",
-            altText: "Arrangement Moribana Chokuritsu Kei été style Ohara",
-            title: "Moribana Chokuritsu Kei Été",
-            description:
-                "Style Moribana vertical d'été Ohara, capturant la force et la vitalité de la saison chaude avec des lignes droites."
+            imageUrl: "/images/ikebana-creation/2026/Free%20style.jpg",
+            altText: "Free style 創作",
+            title: "Free style 創作",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/moribana-tashu-ike-4-saisons.webp",
-            altText:
-                "Arrangement Moribana Tashu Ike quatre saisons style Ohara",
-            title: "Moribana Tashu Ike 4 Saisons",
-            description:
-                "Style Moribana multi-variétés Ohara célébrant la diversité florale à travers les quatre saisons."
+            imageUrl: "/images/ikebana-creation/2026/Free11.jpg",
+            altText: "Free style 自由創作",
+            title: "Free style 自由創作",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/moribana-tashu-ike-printemps.webp",
-            altText: "Arrangement Moribana Tashu Ike printemps style Ohara",
-            title: "Moribana Tashu Ike Printemps",
-            description:
-                "Moribana printanier Ohara mélangeant plusieurs variétés pour célébrer l'explosion florale du printemps."
+            imageUrl: "/images/ikebana-creation/2026/Free12%20vertical.JPG",
+            altText: "Free style 自由創作",
+            title: "Free style 自由創作",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/narabu-katachi-4-saisons.webp",
-            altText: "Arrangement Narabu Katachi quatre saisons style Ohara",
-            title: "Narabu Katachi 4 Saisons",
-            description:
-                "Forme alignée Ohara représentant l'harmonie et l'équilibre constant à travers toutes les saisons."
+            imageUrl: "/images/ikebana-creation/2026/Hana%20Kanade11.jpg",
+            altText: "Hana Kanade 花奏",
+            title: "Hana Kanade 花奏",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/rimpa-cho-automne.webp",
-            altText: "Arrangement Rimpa Cho automne style Ohara",
-            title: "Rimpa Cho Automne",
-            description:
-                "Style Rimpa décoratif d'automne Ohara, évoquant la beauté mélancolique et les couleurs chaudes de la saison."
+            imageUrl: "/images/ikebana-creation/2026/Heika%20IMG_9375.jpg",
+            altText: "Heika 瓶花",
+            title: "Heika 瓶花",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/rimpa-cho-ete.webp",
-            altText: "Arrangement Rimpa Cho été variation style Ohara",
-            title: "Rimpa Cho Été Variation",
-            description:
-                "Variation du style Rimpa d'été Ohara, montrant la richesse créative possible avec les fleurs estivales."
+            imageUrl: "/images/ikebana-creation/2026/Heika.jpg",
+            altText: "Heika 瓶花",
+            title: "Heika 瓶花",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/rimpa-cho-jaune-automne.webp",
-            altText: "Arrangement Rimpa Cho jaune automne style Ohara",
-            title: "Rimpa Cho Jaune Automne",
-            description:
-                "Rimpa automnal Ohara aux tons dorés, capturant l'essence des feuillages d'automne et leur beauté éphémère."
+            imageUrl: "/images/ikebana-creation/2026/Hiraki%20karachi%20vertical.jpg",
+            altText: "Hiraku karachi ひらくかたち",
+            title: "Hiraku karachi ひらくかたち",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/rimpa-cho-printemps.webp",
-            altText: "Arrangement Rimpa Cho printemps style Ohara",
-            title: "Rimpa Cho Printemps",
-            description:
-                "Style Rimpa printanier Ohara célébrant le renouveau et la fraîcheur des premières fleurs de la saison."
+            imageUrl: "/images/ikebana-creation/2026/IMG_0951%20vertical.jpg",
+            altText: "Paysage naturel 写景自然",
+            title: "Paysage naturel 写景自然",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl: "/images/ikebana-creation/rimpa-cho-rouge-automne.webp",
-            altText: "Arrangement Rimpa Cho rouge automne style Ohara",
-            title: "Rimpa Cho Rouge Automne",
-            description:
-                "Rimpa automnal Ohara aux couleurs flamboyantes, exprimant l'intensité et la passion de la saison rouge."
+            imageUrl: "/images/ikebana-creation/2026/IMG_1712.jpg",
+            altText: "Bunjin Cho 文人調",
+            title: "Bunjin Cho 文人調",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/shakei-moribana-shizen-honi-printemps.webp",
-            altText:
-                "Arrangement Shakei Moribana Shizen Honi printemps style Ohara",
-            title: "Shakei Moribana Shizen Honi Printemps",
-            description:
-                "Moribana paysagé naturel Ohara du printemps, recréant un paysage miniature avec la beauté sauvage de la nature."
+            imageUrl: "/images/ikebana-creation/2026/IMG_9230%20vertical.jpg",
+            altText: "Moribana Tashu ike 盛花多種活け",
+            title: "Moribana Tashu ike 盛花多種活け",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/shakei-moribana-youshiki-honi-ete.webp",
-            altText:
-                "Arrangement Shakei Moribana Youshiki Honi été style Ohara",
-            title: "Shakei Moribana Youshiki Honi Été",
-            description:
-                "Moribana paysagé stylisé Ohara d'été, combinant tradition et modernité dans un paysage floral raffiné."
+            imageUrl: "/images/ikebana-creation/2026/Kakitsubata%20Natsu11.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
         },
         {
-            imageUrl:
-                "/images/ikebana-creation/shikisai-moribana-youshiki-honi.webp",
-            altText: "Arrangement Shikisai Moribana Youshiki Honi style Ohara",
-            title: "Shikisai Moribana Youshiki Honi",
-            description:
-                "Moribana coloré Ohara utilisant la technique des couleurs harmonieuses pour créer un paysage floral vibrant et équilibré."
+            imageUrl: "/images/ikebana-creation/2026/Kansui-Kei11.jpg",
+            altText: "Kansui-Kei 観水型",
+            title: "Kansui-Kei 観水型",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Katamukeru%20katachi%20vertical.jpg",
+            altText: "Katamukeru katachi かたむけるかたち",
+            title: "Katamukeru katachi かたむけるかたち",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Mizukagami%20no%20Kei11%20vertical.jpg",
+            altText: "Mizukagami no Kei 水鏡の景",
+            title: "Mizukagami no Kei 水鏡の景",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Moribana%20Chokuritsu-kei11.jpg",
+            altText: "Moribana chokuritsu-Kei 盛花直立型",
+            title: "Moribana chokuritsu-Kei 盛花直立型",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Moribana%20chokuritsu-Kei%20vertical.jpg",
+            altText: "Moribana chokuritsu-Kei 盛花直立型",
+            title: "Moribana chokuritsu-Kei 盛花直立型",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Moribana11%20vertical.jpg",
+            altText: "Moribana Tashu ike 盛花多種活け",
+            title: "Moribana Tashu ike 盛花多種活け",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Narabu%20katachi%20vertical.jpg",
+            altText: "Narabu katachi ならぶかたち",
+            title: "Narabu katachi ならぶかたち",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Narabu%20katachi11%20vertical.jpg",
+            altText: "Narabu katachi ならぶかたち",
+            title: "Narabu katachi ならぶかたち",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Rinpa%20cho%20vertical.jpg",
+            altText: "Rinpa cho 琳派調",
+            title: "Rinpa cho 琳派調",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Rinpa%20cho%20vertical3.jpg",
+            altText: "Rinpa cho 琳派調",
+            title: "Rinpa cho 琳派調",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Rinpa%20cho11%20vertical.jpg",
+            altText: "Rinpa cho 琳派調",
+            title: "Rinpa cho 琳派調",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Rinpa%20cho13%20vertical.jpg",
+            altText: "Rinpa cho 琳派調",
+            title: "Rinpa cho 琳派調",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shakei%20Moribana%20Yoshiki%20honi-2.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shakei%20Moribana%20Yoshiki%20honi-4.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shakei%20Moribana%20Yoshiki%20honi.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shakei%20yoshiki%20chukei11%20vertical.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shakei%20yoshiki11.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shikisai%20Moribana%20Yoshiki%20honi-2.jpg",
+            altText: "Shikisai Moribana Yoshiki honi 色彩盛花様式本位",
+            title: "Shikisai Moribana Yoshiki honi 色彩盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Shikisai%20yoshiki11%20vertical.jpg",
+            altText: "Shikisai Moribana Yoshiki honi 色彩盛花様式本位",
+            title: "Shikisai Moribana Yoshiki honi 色彩盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Yoshiki14%20vertical.jpg",
+            altText: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            title: "Shakei Moribana Yoshiki honi 写景盛花様式本位",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
+            imageUrl: "/images/ikebana-creation/2026/Yoshiki15%20vertical.jpg",
+            altText: "Yoshiki 様式本位",
+            title: "Yoshiki 様式本位",
+            description: "Création Ikebana de l'École Ohara."
         }
     ]
 };

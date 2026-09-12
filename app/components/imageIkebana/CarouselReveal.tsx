@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import CarouselMainTitle from "./IkebanaTitle";
 import type { carouselMetadataType } from "./carouselConfig";
@@ -8,6 +10,8 @@ type CarouselRevealProps = {
 
 function CarouselReveal({ carouselData }: CarouselRevealProps) {
     const [featuredItem, ...galleryItems] = carouselData.items;
+    const showsCompleteImages = carouselData.id === "creations-ikebana";
+    const imageFitClass = "object-contain rounded-md";
 
     return (
         <section className="w-full space-y-8" aria-labelledby={carouselData.id}>
@@ -17,14 +21,14 @@ function CarouselReveal({ carouselData }: CarouselRevealProps) {
                 description={carouselData.description}
             />
 
-            <div className="overflow-hidden rounded-[28px] border border-[#ead9d1] bg-[linear-gradient(180deg,#fffdfa_0%,#f7ece6_100%)] shadow-[0_18px_48px_rgba(84,52,40,0.08)]">
+            <div className={`overflow-hidden bg-[linear-gradient(180deg,#fffdfa_0%,#f7ece6_100%)] shadow-[0_18px_48px_rgba(84,52,40,0.08)] ${showsCompleteImages ? "" : "rounded-[28px] border border-[#ead9d1]"}`}>
                 <div className="grid gap-0 lg:grid-cols-[minmax(0,1.35fr)_minmax(22rem,0.9fr)]">
-                    <figure className="relative min-h-[340px] lg:min-h-[520px]">
+                    <figure className={`relative min-h-[340px] lg:min-h-[520px] ${showsCompleteImages ? "bg-[#f7ece6]" : ""}`}>
                         <Image
                             src={featuredItem.imageUrl}
                             alt={featuredItem.altText}
                             fill
-                            className="object-cover"
+                            className={imageFitClass}
                             sizes="(max-width: 1023px) 100vw, 58vw"
                         />
                     </figure>
@@ -43,7 +47,7 @@ function CarouselReveal({ carouselData }: CarouselRevealProps) {
                         </div>
 
                         <figcaption className="border-t border-[--secondary-color]/10 pt-4 text-sm text-[--secondary-color]/75">
-                            {featuredItem.altText}
+                            Création de l&apos;École Ohara
                         </figcaption>
                     </div>
                 </div>
@@ -61,15 +65,24 @@ function CarouselReveal({ carouselData }: CarouselRevealProps) {
             <ul className="modern-scrollbar flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4" aria-label={carouselData.title}>
                 {galleryItems.map((item, index) => (
                     <li key={`${carouselData.id}-${item.title}-${index}`} className="min-w-[18rem] flex-[0_0_18rem] snap-start md:min-w-[21rem] md:flex-[0_0_21rem]">
-                        <article className="h-full overflow-hidden rounded-[24px] border border-[#ead9d1] bg-[linear-gradient(180deg,#fffdfa_0%,#f9f0ea_100%)] shadow-[0_14px_36px_rgba(84,52,40,0.08)] transition-transform duration-300 hover:-translate-y-1">
+                        <article className={`h-full overflow-hidden bg-[linear-gradient(180deg,#fffdfa_0%,#f9f0ea_100%)] shadow-[0_14px_36px_rgba(84,52,40,0.08)] transition-transform duration-300 hover:-translate-y-1 ${showsCompleteImages ? "" : "rounded-[24px] border border-[#ead9d1]"}`}>
                             <figure className="flex h-full flex-col">
-                                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                                <div className={`relative aspect-[4/5] w-full overflow-hidden ${showsCompleteImages ? "bg-[#f7ece6]" : ""}`}>
                                     <Image
                                         src={item.imageUrl}
                                         alt={item.altText}
                                         fill
-                                        className="object-cover"
+                                        className={imageFitClass}
                                         sizes="(max-width: 768px) 72vw, 336px"
+                                        onLoad={(event) => {
+                                            if (showsCompleteImages) {
+                                                const image = event.currentTarget;
+                                                image.parentElement?.style.setProperty(
+                                                    "aspect-ratio",
+                                                    `${image.naturalWidth} / ${image.naturalHeight}`
+                                                );
+                                            }
+                                        }}
                                     />
                                 </div>
                                 <figcaption className="flex flex-1 flex-col gap-3 p-5 text-[--secondary-color]">

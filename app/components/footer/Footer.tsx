@@ -100,7 +100,7 @@ const Footer = () => {
                                         src="/assets/Heika-printemps.jpg"
                                         alt="Composition heika au printemps"
                                         fill
-                                        className="object-cover"
+                                        className="object-contain"
                                         sizes="(max-width: 1023px) 100vw, 28vw"
                                     />
                                 </div>

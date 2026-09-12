@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Le site adopte une géométrie entièrement angulaire : aucun élément arrondi. */
+*,
+*::before,
+*::after {
+    border-radius: 0 !important;
+}
+
 :root {
     --background: #f9f5f0;
     --foreground: #4f0b06;
