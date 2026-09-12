@@ -60,7 +60,7 @@ export default function SectionBreadcrumb() {
             {isOpen && (
                 <div
                     id="section-navigation"
-                    className="absolute right-0 top-full z-50 mt-2 w-72 border border-[--secondary-color]/15 bg-[#fffdfa] p-2 shadow-[0_16px_36px_rgba(84,52,40,0.14)]"
+                    className="absolute right-0 top-full z-50 mt-2 w-[min(18rem,calc(100vw-2rem))] border border-[--secondary-color]/15 bg-[#fffdfa] p-2 shadow-[0_16px_36px_rgba(84,52,40,0.14)]"
                 >
                     <ol className="grid">
                         {sectionLinks.map((section) => (

@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header className="fixed w-full top-0 left-0 right-0 z-50 backdrop-blur-md border-b border-white/60">
             <Container>
-                <div className="flex justify-between items-center w-full">
+                <div className="flex w-full items-center justify-between px-4 lg:px-0">
                     <HeaderTitle />
                     <HeaderNavTo />
                 </div>

@@ -8,6 +8,21 @@ type CarouselRevealProps = {
     carouselData: carouselMetadataType;
 };
 
+function TitleWithJapanese({ title }: { title: string }) {
+    const match = title.match(/^(.*?)(\s+[\u3040-\u30ff\u3400-\u9fff]+)$/u);
+
+    if (!match) {
+        return <>{title}</>;
+    }
+
+    return (
+        <>
+            {match[1]}
+            <span className="mt-1 block whitespace-nowrap text-[0.9em]">{match[2].trim()}</span>
+        </>
+    );
+}
+
 function CarouselReveal({ carouselData }: CarouselRevealProps) {
     const [featuredItem, ...galleryItems] = carouselData.items;
     const showsCompleteImages = carouselData.id === "creations-ikebana";
@@ -39,7 +54,7 @@ function CarouselReveal({ carouselData }: CarouselRevealProps) {
                                 Selection
                             </span>
                             <h3 className="text-2xl md:text-3xl font-semibold" style={{ fontFamily: "var(--playfair-display)" }}>
-                                {featuredItem.title}
+                                <TitleWithJapanese title={featuredItem.title} />
                             </h3>
                             <p className="text-sm md:text-base leading-relaxed">
                                 {featuredItem.description}
@@ -88,7 +103,7 @@ function CarouselReveal({ carouselData }: CarouselRevealProps) {
                                 <figcaption className="flex flex-1 flex-col gap-3 p-5 text-[--secondary-color]">
                                     <div className="flex items-center justify-between gap-3">
                                         <h3 className="text-lg font-semibold" style={{ fontFamily: "var(--playfair-display)" }}>
-                                            {item.title}
+                                            <TitleWithJapanese title={item.title} />
                                         </h3>
                                         <span className="shrink-0 rounded-sm bg-[--primary-color] px-2 py-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-[--secondary-color]/65">
                                             {String(index + 2).padStart(2, "0")}

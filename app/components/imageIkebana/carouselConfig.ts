@@ -23,6 +23,12 @@ export const carouselIkebanaData: carouselMetadataType = {
     seeMoreUrl: "Voir plus de créations pour chaque saisons",
     items: [
         {
+            imageUrl: "/images/ikebana-creation/2026/Hana%20Kanade11.jpg",
+            altText: "Hana Kanade 花奏",
+            title: "Hana Kanade 花奏",
+            description: "Création Ikebana de l'École Ohara."
+        },
+        {
             imageUrl: "/images/ikebana-creation/2026/5shu%20ike%20vertical.jpg",
             altText: "Moribana Tashu ike 盛花多種活け",
             title: "Moribana Tashu ike 盛花多種活け",
@@ -56,12 +62,6 @@ export const carouselIkebanaData: carouselMetadataType = {
             imageUrl: "/images/ikebana-creation/2026/Free12%20vertical.JPG",
             altText: "Free style 自由創作",
             title: "Free style 自由創作",
-            description: "Création Ikebana de l'École Ohara."
-        },
-        {
-            imageUrl: "/images/ikebana-creation/2026/Hana%20Kanade11.jpg",
-            altText: "Hana Kanade 花奏",
-            title: "Hana Kanade 花奏",
             description: "Création Ikebana de l'École Ohara."
         },
         {
