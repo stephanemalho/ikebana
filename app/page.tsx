@@ -4,6 +4,7 @@ import Discover from "./components/hero/discover/Discover";
 import IkebanaInfo from "./components/ikebana-info/Ikebana-info";
 import { ContactForm } from "./components/information/ContactForm";
 import { ScheduleSection } from "./components/information/ScheduleSection";
+import { ParisCoursesHighlight } from "./components/information/ParisCoursesHighlight";
 import Container from "./components/ui/Container";
 import SchoolInfo from "./components/school-info/SchoolInfo";
 
@@ -24,13 +25,16 @@ export default function Home() {
                 <Discover />
             </Container>
             <Container>
-                <SchoolInfo />
+                <ParisCoursesHighlight />
             </Container>
             <IkebanaInfo />
             <Container>
                 <ImageIkebana />
             </Container>
             <ScheduleSection />
+            <Container>
+                <SchoolInfo />
+            </Container>
             <ContactForm />
             <FaqSection />
         </main>

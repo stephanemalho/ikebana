@@ -1,12 +1,10 @@
 export const sectionLinks = [
     { id: "top", label: "Accueil" },
-    { id: "ecole-ohara", label: "École Ohara" },
-    { id: "nos-activites", label: "Nos activités" },
-    { id: "ikebana", label: "L'Ikebana" },
-    { id: "le-style-ohara", label: "Qu'est-ce que l'Ikebana ?" },
+    { id: "cours-ikebana-paris", label: "Cours à Paris" },
+    { id: "le-style-ohara", label: "Découvrir l'Ikebana" },
     { id: "creations-ikebana", label: "Créations Ikebana" },
-    { id: "inspirations-ikebana", label: "Sources d'inspiration" },
-    { id: "cours", label: "Cours d'Ikebana" },
+    { id: "cours", label: "Tous les lieux de cours" },
+    { id: "ecole-ohara", label: "L'École Ohara" },
     { id: "contact", label: "Contact" },
     { id: "faq", label: "FAQ" }
 ];

@@ -27,9 +27,16 @@ const structuredData = {
                 {
                     "@type": "AdministrativeArea",
                     "name": "Île-de-France"
+                },
+                {
+                    "@type": "City",
+                    "name": "Paris"
+                },
+                {
+                    "@type": "AdministrativeArea",
+                    "name": "Yvelines"
                 }
-            ]
-            ,
+            ],
             sameAs: [
                 "https://www.instagram.com/ikebanaparis/",
                 "https://www.facebook.com/ikuko.katoenfroy/"

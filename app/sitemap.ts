@@ -6,9 +6,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
             url: siteUrl,
-            lastModified: "2026-04-05",
+            lastModified: "2026-09-12",
             changeFrequency: "monthly",
             priority: 1.0
+        },
+        {
+            url: `${siteUrl}/cours-ikebana-paris`,
+            lastModified: "2026-09-12",
+            changeFrequency: "monthly",
+            priority: 0.9
         },
         {
             url: `${siteUrl}/mentions-legales`,

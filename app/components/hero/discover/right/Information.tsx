@@ -22,7 +22,7 @@ const Information = () => {
 
                 <p className="mt-6 max-w-[48rem] text-base font-normal leading-7 text-[--secondary-color]/76 md:text-lg md:leading-8">
                     L&apos;École d&apos;Ikebana Ohara - Chapitre Yvelines Paris transmet l&apos;art japonais de l&apos;ikebana selon l&apos;enseignement officiel de l&apos;École Ohara, à travers{" "}
-                    <Link href="#cours" className="font-medium text-[--secondary-color] underline decoration-[--secondary-color]/30 underline-offset-4 transition hover:decoration-[--secondary-color]">
+                    <Link href="#cours" className="font-normal text-[--secondary-color]/82 underline decoration-[--secondary-color]/30 underline-offset-4 transition hover:text-[--secondary-color] hover:decoration-[--secondary-color]">
                         trois lieux d&apos;enseignement à Paris et en Île-de-France.
                     </Link>
                 </p>
@@ -50,13 +50,13 @@ const Information = () => {
                     </p>
                 </div>
 
-                <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-8">
-                    <Link href="#cours" className="hero-content__cta-button inline-flex items-center justify-center m-auto">
+                <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8">
+                    <Link href="#cours" className="hero-content__cta-button inline-flex items-center justify-center">
                         Découvrir les cours
                     </Link>
                     <Link
                         href="#contact"
-                        className="mx-auto my-12 text-sm font-semibold uppercase tracking-[0.16em] text-red-950 underline decoration-white/22 underline-offset-4 transition hover:text-red-700 sm:pl-1"
+                        className="text-sm font-semibold uppercase tracking-[0.16em] text-red-950 underline decoration-white/22 underline-offset-4 transition hover:text-red-700"
                     >
                         Me contacter
                     </Link>

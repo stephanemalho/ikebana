@@ -251,13 +251,6 @@ export const carouselInspirationData: carouselMetadataType = {
                 "Un mélange délicat de nuances bleues et violettes pour apaiser l'âme."
         },
         {
-            imageUrl: "/images/inspiration-for-ikebana/blue-flower.webp",
-            altText: "Fleur bleue en arrangement ikebana",
-            title: "Sérénité Azurée",
-            description:
-                "La pureté du bleu exprime la tranquillité et la méditation profonde."
-        },
-        {
             imageUrl: "/images/inspiration-for-ikebana/big-sakura-white.webp",
             altText: "Grand arrangement de sakura blanc",
             title: "Élégance du Sakura",
@@ -327,13 +320,6 @@ export const carouselInspirationData: carouselMetadataType = {
             title: "Élégance Intemporelle",
             description:
                 "La rose, reine des fleurs, exprime l'amour dans sa forme la plus pure."
-        },
-        {
-            imageUrl: "/images/inspiration-for-ikebana/sakura-white.webp",
-            altText: "Sakura blanc pur",
-            title: "Pureté Immaculée",
-            description:
-                "Le blanc immaculé des sakura symbolise la pureté et la renaissance."
         },
         {
             imageUrl: "/images/inspiration-for-ikebana/sea-view.webp",

@@ -130,10 +130,10 @@ export function ScheduleSection() {
                                 className="text-3xl font-bold text-[--secondary-color] md:text-4xl"
                                 style={{ fontFamily: "var(--playfair-display)" }}
                             >
-                                Nos cours d&apos;Ikebana
+                                Tous les lieux de cours d&apos;ikebana
                             </h2>
                             <p className="mt-4 max-w-2xl text-base leading-8 text-[--secondary-color]/82 md:text-[1.03rem]">
-                                Retrouvez les lieux de cours et les contacts pour s&apos;inscrire aux ateliers d&apos;Ikebana à l&apos;adresse de votre choix.
+                                Retrouvez les cours proposés à Paris, Courbevoie et Gif-sur-Yvette, ainsi que les contacts pour vous inscrire.
                             </p>
                         </div>
 

@@ -10,6 +10,7 @@ import {
     GraduationCap,
     Home,
     Mail,
+    MapPin,
     Menu,
     Sparkles,
     X,
@@ -20,19 +21,28 @@ import { sectionLinks } from "@/app/constant/seo/sections";
 
 const sectionIcons: Record<string, LucideIcon> = {
     top: Home,
+    "cours-ikebana-paris": MapPin,
     "ecole-ohara": GraduationCap,
-    "nos-activites": CalendarDays,
     ikebana: Flower2,
     "le-style-ohara": BookOpen,
     "creations-ikebana": GalleryVerticalEnd,
     "inspirations-ikebana": Sparkles,
-    cours: GraduationCap,
+    cours: CalendarDays,
     contact: Mail,
     faq: CircleHelp,
 };
 
 export default function SectionBreadcrumb() {
     const [isOpen, setIsOpen] = useState(false);
+    const [previewedSection, setPreviewedSection] = useState<string | null>(null);
+
+    const previewSection = (sectionId: string) => {
+        setPreviewedSection(sectionId);
+        document.getElementById(sectionId)?.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
 
     return (
         <nav className="relative" aria-label="Navigation des sections">
@@ -60,8 +70,15 @@ export default function SectionBreadcrumb() {
 
                                     return (
                                         <Link
-                                            className="flex items-center gap-3 px-3 py-2 text-sm font-normal text-[--secondary-color]/82 transition hover:bg-[--primary-color]/35 hover:text-[--secondary-color]"
+                                            className={`flex items-center gap-3 px-3 py-2 text-sm font-normal transition duration-200 ${
+                                                previewedSection === section.id
+                                                    ? "translate-x-1 bg-[--secondary-color] text-white"
+                                                    : "text-[--secondary-color]/82 hover:translate-x-1 hover:bg-[--secondary-color] hover:text-white"
+                                            }`}
                                             href={`#${section.id}`}
+                                            onMouseEnter={() => previewSection(section.id)}
+                                            onFocus={() => setPreviewedSection(section.id)}
+                                            onMouseLeave={() => setPreviewedSection(null)}
                                             onClick={() => setIsOpen(false)}
                                         >
                                             <Icon aria-hidden="true" size={17} strokeWidth={1.6} />
